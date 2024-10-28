@@ -9,7 +9,7 @@ const Navbar = () => {
     <main className='w-full fixed top-0 font-medium text-lightBlack z-50 bg-white '>
       <div className='max-w-7xl  mx-auto py-4 flex justify-between '>
         {navLinks.slice(0, 1).map((nav, i) => (
-          <div key={i} className='flex gap-x-6'>
+          <div key={i} className='flex gap-x-12'>
             {nav.header.map((item, i) => (
               // console.log(item)
               <a href={item.link} key={i}>{item.title}</a>
@@ -22,7 +22,7 @@ const Navbar = () => {
         ))}
 
         {navLinks.slice(2, 3).map((nav, i) => (
-          <div key={i} className='flex gap-x-6'>
+          <div key={i} className='flex gap-x-12'>
             {nav.header.map((item, i) => (
               // console.log(item)
               <a href={item.link} key={i}>{item.title}</a>

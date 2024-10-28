@@ -20,7 +20,7 @@ export const navLinks = [
     id: "3",
     header: [
       {title: 'Our Work', link: 'our-work'},
-      {title: 'Our Work', link: 'our-team'},
+      {title: 'Our Team', link: 'our-team'},
     ]
   },
 ]
