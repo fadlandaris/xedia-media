@@ -14,15 +14,14 @@ const ProjectStats = ({ data, isFirst }) => {
   }
 
   return (
-    <main className={`p-10 rounded-xl flex relative ${className}`}>
+    <main className={`p-10 rounded-2xl flex relative ${className}`}>
       {isFirst && (
         <img src={objectImage} className='absolute right-0 bottom-0 w-896' />
       )}
       <div className='mt-32 z-20'>
         <h2 className='font-medium'>{data.title}</h2>
         <p className='text-5xl font-bold my-4'>
-          {/* Using CountUp for counter effect */}
-          <CountUp end={parseFloat(data.data)} duration={40} suffix="%" />
+          <CountUp end={parseFloat(data.data)} duration={50} suffix="%" />
         </p>
         <p className='w-[80%]'>{data.desc}</p>
       </div>
