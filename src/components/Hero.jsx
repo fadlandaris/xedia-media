@@ -23,7 +23,7 @@ const Hero = () => {
                       <p className='text-text font-medium'>costumer rating</p>
                     </div>
                   </div>
-                  <div className='font-bold text-6xl'>
+                  <div className='font-bold text-5xl'>
                     <h2>{item.title}</h2>
                     <h2 className='my-4'>{item.subTitle}</h2>
                     <h2>{item.thirdTitle}</h2>
