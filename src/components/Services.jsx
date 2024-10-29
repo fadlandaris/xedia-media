@@ -31,7 +31,7 @@ const Services = () => {
 
         <div className='flex justify-between'>
           {servicesData.slice(1, 8).map((serv, i) => (
-            <a key={i} className={`text-center text-[12px] py-4 px-4 rounded-lg cursor-pointer transition-all duration-150 text-lightBlack  ${selectedService.id === serv.id ? 'bg-blue-100 text-primaryBlue ' :'hover:bg-blue-100 hover:text-primaryBlue'}`} onClick={() => handleClick(serv)}>
+            <a key={i} className={`text-center text-[12px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150 text-lightBlack  ${selectedService.id === serv.id ? 'bg-blue-100 text-primaryBlue ' :'hover:bg-blue-100 hover:text-primaryBlue'}`} onClick={() => handleClick(serv)}>
               {serv.serviceData.map((item, j) => (
                 <h2 key={j} className='font-medium '>{item.title}</h2>
               ))}
@@ -39,7 +39,7 @@ const Services = () => {
           ))}
         </div>
 
-        <div className='mt-12 grid grid-cols-3 gap-x-8'>
+        <div className='mt-8 grid grid-cols-3 gap-x-8'>
           <div className={`container h-[320px] ${animate ? 'animate-fadeIn' : ''}`}>
             {selectedService.serviceData.map((item, i) => (
               <img className='w-full h-full object-cover object-left rounded-2xl' key={i} src={item.content[0].img} alt={item.title} />
