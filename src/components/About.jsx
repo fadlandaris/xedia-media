@@ -2,13 +2,14 @@ import React from 'react'
 import { aboutData } from '../constants/constants'
 import ProjectStats from './ProjectStats'
 import Title from './Title'
+import styles from '../styles';
 
 const About = () => {
 
   // console.log(aboutData)
 
   return (
-    <main className='w-full bg-darkenBlue py-24 text-white'>
+    <main className={`w-full bg-darkenBlue text-white ${styles.containerPadding}`} id='about-us'>
       <div className='max-w-7xl mx-auto'>
         {aboutData.slice(0, 1).map((about, i) => (
           <Title key={i} aboutHeader={about.header} aboutTitle={about.title} aboutSubTitle={about.subTitle}/>

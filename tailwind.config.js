@@ -1,4 +1,3 @@
-// tailwind.config.js
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   mode: "jit",
@@ -19,6 +18,15 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         roboto: ['Roboto', 'sans-serif'],
       },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease-in-out',
+      },
     },
     screens: {
       xs: "480px",
@@ -29,5 +37,21 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.desc-text::first-letter': {
+          'font-size': '1.5em',
+          'font-weight': 'bold',
+        },
+        '.scrollbar-none': {
+          '-ms-overflow-style': 'none',  /* Internet Explorer 10+ */
+          'scrollbar-width': 'none',  /* Firefox */
+          '&::-webkit-scrollbar': {
+            display: 'none',  /* Safari and Chrome */
+          },
+        },
+      });
+    },
+  ],
 };

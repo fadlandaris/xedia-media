@@ -1,29 +1,35 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
-
-export {
-  IoIosArrowRoundForward
-}
+import { BsPhone, BsPerson } from "react-icons/bs";
+import { BiHome, BiCollection, } from "react-icons/bi";
+import { RiStarSFill } from "react-icons/ri";
 
 import { p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7 } from "../assets/assets";
 
+
 export const navLinks = [
   {
-    id: "1",
-    header: [
-      {title: 'Home', link: 'home'},
-      {title: 'About Us', link: 'about'}
-    ]
-  },
-  {
     id: '2',
-    title: 'Xedia media'
+    link: 'home',
+    nav: "Home",
+    icon: BiHome
   },
   {
-    id: "3",
-    header: [
-      {title: 'Our Work', link: 'our-work'},
-      {title: 'Our Team', link: 'our-team'},
-    ]
+    id: '3',
+    link: 'collection',
+    nav: "Collection",
+    icon: BiCollection
+  },
+  {
+    id: '4',
+    link: 'about-us',
+    nav: "About",
+    icon: BsPerson
+  },
+  {
+    id: '5',
+    link: 'contact',
+    nav: "Contact",
+    icon: BsPhone
   },
 ]
 
@@ -55,7 +61,7 @@ export const heroData = [
     id: '2',
     projectData: [
       { data: '50K+ ', desc: "Clients",},
-      { data: '13+ ', desc: "Experience"},
+      { data: '13+', desc: "Experience"},
       { data: '20+ ', desc: "Designer"},
       { data: '10K+ ', desc: "Product"}
     ]
@@ -82,7 +88,7 @@ export const aboutData = [
 export const servicesData = [
   {
     id: '1',
-    header: "Services",
+    header: "Our Services",
     title: "We provide end-to-end EPC services that",
     subTitle: "ensure the success of your project"
   },
@@ -192,6 +198,30 @@ export const servicesData = [
     ]
   }
 ];
+
+export const clientsData = [
+  {
+    id: '1',
+    header: "Our Clients",
+    title: "We known in delivering exceptional creative and design services",
+    subTitle: "Our focus is on creating impactful solutions that drive success"
+  },
+  {
+    id: '2',
+    statsData: [
+      {name: 'Raka Eldiansyah', company: "CEO FintechHub", desc: `Xedia Media memberikan wawasan membantu kami melihat strategi marketing secara terarah dan menarik perhatian pengguna baru.      `},
+      {name: 'Rayhan Aulia', company: "Founder of DigiMarket", desc: `Pendekatan kreatif Xedia Media membantu kami menciptakan kehadiran brand yang relevan dan mudah diingat di kalangan pelanggan  `},
+      {name: 'Fadlan Daris', company: "Director at BizInnovate", desc: `Dengan strategi inovatif dan disesuaikan, Xedia Media membawa perubahan dalam pertumbuhan pasar dan meningkatkan engagement kami. `},
+      {name: 'Nabila Pratiwi', company: "CTO at HealthPlus", desc: `Kolaborasi dengan Xedia Media optimalkan strategi digital dengan solusi yang terarah dan berkelanjutan memberikan dampak yang kuat    `},
+      {name: 'Andi Wijaya', company: "CEO of RetailHub", desc: `Xedia Media menunjukkan profesionalitas dan kreativitas dalam membantu kami mencapai hasil yang lebih baik dalam kampanye marketing    `},
+      {name: 'Sari Kusuma', company: "Manager at FoodieWay", desc: `Kami sangat puas dengan hasil yang diberikan oleh Xedia Media dalam pengembangan strategi pemasaran yang lebih efektif dan kreatif     `},
+    ]
+  },
+];
+
+
+
+
 
 
 
