@@ -1,9 +1,15 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { BsPhone, BsPerson } from "react-icons/bs";
 import { BiHome, BiCollection, } from "react-icons/bi";
-import { RiStarSFill } from "react-icons/ri";
+import { FaBuildingCircleCheck } from "react-icons/fa6";
+import { FaMoneyCheckAlt } from "react-icons/fa";
+import { IoLogoDesignernews } from "react-icons/io";
+import { IoPhonePortrait } from "react-icons/io5";
+import { FaLaptopCode } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaVideo } from "react-icons/fa";
 
-import { p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7 } from "../assets/assets";
+import { p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, port_img21, port_img22, port_img23, port_img24, port_img25, port_img26, port_img27, port_img28, port_img29 } from "../assets/assets";
 
 
 export const navLinks = [
@@ -72,7 +78,7 @@ export const aboutData = [
   {
     id: '1',
     header: "About Us",
-    title: "We are a Local leader in Creative Solutions and Design Services",
+    title: "🦁We are a Local leader in Creative Solutions and Design Services",
     subTitle: "Committed to delivering innovative and impactful solutions across the creative landscape"
   },
   {
@@ -88,8 +94,8 @@ export const aboutData = [
 export const servicesData = [
   {
     id: '1',
-    header: "Our Services",
-    title: "We provide end-to-end EPC services that",
+    header: "Services",
+    title: "💻We provide end-to-end EPC services that",
     subTitle: "ensure the success of your project"
   },
   {
@@ -202,8 +208,8 @@ export const servicesData = [
 export const clientsData = [
   {
     id: '1',
-    header: "Our Clients",
-    title: "We known in delivering exceptional creative and design services",
+    header: "Clients",
+    title: "🚚We known in delivering exceptional creative and design services",
     subTitle: "Our focus is on creating impactful solutions that drive success"
   },
   {
@@ -218,6 +224,309 @@ export const clientsData = [
     ]
   },
 ];
+
+export const portofolioData = [
+  {
+    id: '1',
+    header: "Our Portfolio",
+    title: "🌟We Shine in Delivering Exceptional Creative and Design Services!",
+    subTitle: "Our Passion is Crafting Impactful Solutions That Propel Your Success!"
+  },  
+  {
+    id: '2',
+    serviceData: [
+      {
+        title: 'Company Profile Creation',
+        icon: FaBuildingCircleCheck,
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          { img: port_img7 },
+          { img: port_img8 },
+          // { img: port_img9 },
+          // { img: port_img10 },
+          // { img: port_img11 },
+          // { img: port_img12 },
+          // { img: port_img13 },
+          // { img: port_img14 },
+          // { img: port_img15 },
+          // { img: port_img16 },
+          // { img: port_img17 },
+          // { img: port_img18 },
+          // { img: port_img19 },
+          // { img: port_img20 },
+          // { img: port_img21 },
+          // { img: port_img22 },
+          // { img: port_img23 },
+          // { img: port_img24 },
+          // { img: port_img25 },
+          // { img: port_img26 },
+          // { img: port_img27 },
+          // { img: port_img28 },
+          // { img: port_img29 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '3',
+    serviceData: [
+      {
+        title: 'Digital Advertising',
+        icon: FaMoneyCheckAlt,
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          { img: port_img7 },
+          { img: port_img8 },
+          // { img: port_img9 },
+          // { img: port_img10 },
+          // { img: port_img11 },
+          // { img: port_img12 },
+          // { img: port_img13 },
+          // { img: port_img14 },
+          // { img: port_img15 },
+          // { img: port_img16 },
+          // { img: port_img17 },
+          // { img: port_img18 },
+          // { img: port_img19 },
+          // { img: port_img20 },
+          // { img: port_img21 },
+          // { img: port_img22 },
+          // { img: port_img23 },
+          // { img: port_img24 },
+          // { img: port_img25 },
+          // { img: port_img26 },
+          // { img: port_img27 },
+          // { img: port_img28 },
+          // { img: port_img29 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '4',
+    serviceData: [
+      {
+        title: 'Logo Design',
+        icon: IoLogoDesignernews,
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          { img: port_img7 },
+          { img: port_img8 },
+          { img: port_img9 },
+          { img: port_img10 },
+          { img: port_img11 },
+          { img: port_img12 },
+          // { img: port_img13 },
+          // { img: port_img14 },
+          // { img: port_img15 },
+          // { img: port_img16 },
+          // { img: port_img17 },
+          // { img: port_img18 },
+          // { img: port_img19 },
+          // { img: port_img20 },
+          // { img: port_img21 },
+          // { img: port_img22 },
+          // { img: port_img23 },
+          // { img: port_img24 },
+          // { img: port_img25 },
+          // { img: port_img26 },
+          // { img: port_img27 },
+          // { img: port_img28 },
+          // { img: port_img29 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '5',
+    serviceData: [
+      {
+        title: 'Social Media Management',
+        icon: IoPhonePortrait,
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          { img: port_img7 },
+          { img: port_img8 },
+          // { img: port_img9 },
+          // { img: port_img10 },
+          // { img: port_img11 },
+          // { img: port_img12 },
+          // { img: port_img13 },
+          // { img: port_img14 },
+          // { img: port_img15 },
+          // { img: port_img16 },
+          // { img: port_img17 },
+          // { img: port_img18 },
+          // { img: port_img19 },
+          // { img: port_img20 },
+          // { img: port_img21 },
+          // { img: port_img22 },
+          // { img: port_img23 },
+          // { img: port_img24 },
+          // { img: port_img25 },
+          // { img: port_img26 },
+          // { img: port_img27 },
+          // { img: port_img28 },
+          // { img: port_img29 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '6',
+    serviceData: [
+      {
+        title: 'Website Development',
+        icon: FaLaptopCode,
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          // { img: port_img7 },
+          // { img: port_img8 },
+          // { img: port_img9 },
+          // { img: port_img10 },
+          // { img: port_img11 },
+          // { img: port_img12 },
+          // { img: port_img13 },
+          // { img: port_img14 },
+          // { img: port_img15 },
+          // { img: port_img16 },
+          // { img: port_img17 },
+          // { img: port_img18 },
+          // { img: port_img19 },
+          // { img: port_img20 },
+          // { img: port_img21 },
+          // { img: port_img22 },
+          // { img: port_img23 },
+          // { img: port_img24 },
+          // { img: port_img25 },
+          // { img: port_img26 },
+          // { img: port_img27 },
+          // { img: port_img28 },
+          // { img: port_img29 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '7',
+    serviceData: [
+      {
+        title: 'Instagram Feeds Design',
+        icon: RiInstagramFill,
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          { img: port_img7 },
+          { img: port_img8 },
+          // { img: port_img9 },
+          // { img: port_img10 },
+          // { img: port_img11 },
+          // { img: port_img12 },
+          // { img: port_img13 },
+          // { img: port_img14 },
+          // { img: port_img15 },
+          // { img: port_img16 },
+          // { img: port_img17 },
+          // { img: port_img18 },
+          // { img: port_img19 },
+          // { img: port_img20 },
+          // { img: port_img21 },
+          // { img: port_img22 },
+          // { img: port_img23 },
+          // { img: port_img24 },
+          // { img: port_img25 },
+          // { img: port_img26 },
+          // { img: port_img27 },
+          // { img: port_img28 },
+          // { img: port_img29 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '8',
+    serviceData: [
+      {
+        title: 'Video Production',
+        icon: FaVideo,
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          { img: port_img7 },
+          { img: port_img8 },
+          { img: port_img9 },
+          { img: port_img10 },
+          { img: port_img11 },
+          { img: port_img12 },
+          // { img: port_img13 },
+          // { img: port_img14 },
+          // { img: port_img15 },
+          // { img: port_img16 },
+          // { img: port_img17 },
+          // { img: port_img18 },
+          // { img: port_img19 },
+          // { img: port_img20 },
+          // { img: port_img21 },
+          // { img: port_img22 },
+          // { img: port_img23 },
+          // { img: port_img24 },
+          // { img: port_img25 },
+          // { img: port_img26 },
+          // { img: port_img27 },
+          // { img: port_img28 },
+          // { img: port_img29 },
+        ]
+      }
+    ]
+  }
+];
+
+export const locationData = [
+  {
+    id: '1',
+    header: "Location",
+    title: "🗺️ Let's Discover Our Vibrant Location",
+    subTitle: "Connect with us in the heart of the action"
+  },
+  {},
+];
+
+
+
+
 
 
 

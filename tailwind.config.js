@@ -9,7 +9,8 @@ module.exports = {
         darkenBlue: "#072f6A",
         greenBlue: "#01D0D2",
         text: "#A8B4C7",
-        lightBlack: "#25262A"
+        lightBlack: "#25262A",
+        primaryGray: "#f1f5f9"
       },
       fontFamily: {
         kanit: ['Kanit', 'sans-serif'],

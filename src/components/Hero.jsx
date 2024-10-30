@@ -10,7 +10,7 @@ const Hero = () => {
   // console.log(heroData.slice(1, 2))
   
   return (
-    <main className={`w-full text-lightBlack ${styles.containerPadding}`}>
+    <main className={`w-full text-lightBlack ${styles.containerPadding} `}>
       <div className='max-w-7xl mx-auto grid grid-cols-2 gap-8'>
         <div className='border-2 border-dashed rounded-2xl border-primaryBlue p-10'>
           {heroData.slice(0, 1).map((head, i) => (
@@ -59,9 +59,9 @@ const Hero = () => {
               {heroData.slice(1, 2).map((data, i) => (
               <div key={i} className='grid grid-cols-4 p-4 gap-x-4'>
                 {data.projectData.map((item, j) => (
-                  <div key={j} className=' bg-white p-4 text-center rounded-lg hover:bg-primaryBlue transition-all duration-150 hover:scale-110 cursor-pointer group'>
-                    <h2 className='text-light font-bold text-xl group-hover:text-white transition-all duration-150'>{item.data}</h2>
-                    <p className=' text-[12px] text-text font-medium group-hover:text-white transition-all duration-150'>{item.desc}</p>
+                  <div key={j} className=' bg-white p-4 text-center rounded-lg hover:bg-primaryBlue transition-all duration-300 hover:scale-110 cursor-pointer group'>
+                    <h2 className='text-light font-bold text-xl group-hover:text-white transition-all duration-300'>{item.data}</h2>
+                    <p className=' text-[12px] text-text font-medium group-hover:text-white transition-all duration-300'>{item.desc}</p>
                   </div>
                 ))}
               </div>

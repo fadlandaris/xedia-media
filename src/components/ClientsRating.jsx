@@ -7,23 +7,22 @@ const ClientsRating = ({ data, icon }) => {
   switch (data.name) {
 
   case 'Raka Eldiansyah':
-  case 'Andi Wijaya':
-  case 'Fadlan Daris':
+  // case 'Fadlan Daris':
+  case 'Nabila Pratiwi':
     className = "bg-primaryBlue";
     break;
   case 'Rayhan Aulia':
-  case 'Sari Kusuma':
-  case 'Nabila Pratiwi':
-    className = "text-darkenBlue bg-white";
+  case 'Andi Wijaya':
+    className = "border-[2px] border-dashed";
     break;
   default:
-    className = "";
+    className = " text-darkenBlue bg-white";
   }
 
   return (
     <section className={`p-10 rounded-2xl group  ${className} hover:scale-105 transition-all duration-300 cursor-pointer`}>
       {icon}
-      <p className='h-[150px] w-80 mb-12 desc-text'>
+      <p className='h-[150px] w-[310px] mb-12 desc-text'>
         <p className='text-4xl font-bold font-serif'>" </p>
         {data.desc}
       </p>

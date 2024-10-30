@@ -23,7 +23,9 @@ const Services = () => {
   }, [animate]);
 
   return (
-    <main className={`w-full ${styles.containerPadding}`}>
+    <main className={`relative w-full ${styles.containerPadding} `}>
+      {/* <div className='container w-14 h-24 absolute right-0 top-0 bg-primaryBlue rounded-bl-full  '></div>
+      <div className='container w-14 h-24 absolute left-0 bottom-0 bg-primaryBlue rounded-tr-full '></div> */}
       <div className='max-w-7xl mx-auto'>
         {servicesData.slice(0, 1).map((serv, i) => (
           <Title key={i} serviceHeader={serv.header} serviceTitle={serv.title} serviceSubTitle={serv.subTitle} />
@@ -31,7 +33,7 @@ const Services = () => {
 
         <div className='flex justify-between'>
           {servicesData.slice(1, 8).map((serv, i) => (
-            <a key={i} className={`text-center text-[12px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150 text-lightBlack  ${selectedService.id === serv.id ? 'bg-blue-100 text-primaryBlue ' :'hover:bg-blue-100 hover:text-primaryBlue'}`} onClick={() => handleClick(serv)}>
+            <a key={i} className={`text-center text-[12px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150 text-lightBlack  ${selectedService.id === serv.id ? 'text-white bg-primaryBlue ' :' hover:text-primaryBlue hover:bg-blue-50'}`} onClick={() => handleClick(serv)}>
               {serv.serviceData.map((item, j) => (
                 <h2 key={j} className='font-medium '>{item.title}</h2>
               ))}

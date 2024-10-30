@@ -16,7 +16,7 @@ const ProjectStats = ({ data, isFirst }) => {
   return (
     <main className={`p-10 rounded-2xl flex relative ${className}`}>
       {isFirst && (
-        <img src={objectImage} className='absolute right-0 bottom-0 w-896' />
+        <img src={objectImage} className='absolute right-0 bottom-0 w-896 ' />
       )}
       <div className='mt-32 z-20'>
         <h2 className='font-medium'>{data.title}</h2>
