@@ -9,8 +9,200 @@ import { FaLaptopCode } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaVideo } from "react-icons/fa";
 
-import { p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, port_img21, port_img22, port_img23, port_img24, port_img25, port_img26, port_img27, port_img28, port_img29 } from "../assets/assets";
+import { p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, port_img21, port_img22, port_img23, port_img24, port_img25, port_img26, port_img27, port_img28, port_img29, if_1, if_2, client_1, client_2, client_3, client_4, client_6, client_7, client_9, client_10, client_13 } from "../assets/assets";
 
+export const portofolioData = [
+  {
+    id: '1',
+    header: "Portfolio",
+    title: "🌟We Shine in Delivering Creative and Design Services",
+    subTitle: "Crafting Impactful Solutions That Propel Your Success"
+  },  
+  {
+    id: '2',
+    serviceData: [
+      {
+        title: 'Company Profile Creation',
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          { img: port_img7 },
+          { img: port_img8 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '3',
+    serviceData: [
+      {
+        title: 'Digital Advertising',
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          { img: port_img7 },
+          { img: port_img8 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '4',
+    serviceData: [
+      {
+        title: 'Logo Design Service',
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          { img: port_img7 },
+          { img: port_img8 },
+          { img: port_img9 },
+          { img: port_img10 },
+          { img: port_img11 },
+          { img: port_img12 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '5',
+    serviceData: [
+      {
+        title: 'Social Media Management',
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          { img: port_img7 },
+          { img: port_img8 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '6',
+    serviceData: [
+      {
+        title: 'Website Development',
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '7',
+    serviceData: [
+      {
+        title: 'Instagram Feeds Design',
+        content: [
+          { img: if_1 },
+          { img: if_2 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '8',
+    serviceData: [
+      {
+        title: 'Video Production',
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          { img: port_img7 },
+          { img: port_img8 },
+          { img: port_img9 },
+          { img: port_img10 },
+          { img: port_img11 },
+          { img: port_img12 },
+          { img: port_img13 },
+          { img: port_img14 },
+          { img: port_img15 },
+          { img: port_img16 },
+          { img: port_img17 },
+          { img: port_img18 },
+          { img: port_img19 },
+          { img: port_img20 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '9',
+    serviceData: [
+      {
+        title: 'Management Marketplace',
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+          { img: port_img5 },
+          { img: port_img6 },
+          // { img: port_img7 },
+          // { img: port_img8 },
+          // { img: port_img9 },
+          // { img: port_img10 },
+          // { img: port_img11 },
+          // { img: port_img12 },
+          // { img: port_img13 },
+          // { img: port_img14 },
+          // { img: port_img15 },
+          // { img: port_img16 },
+          // { img: port_img17 },
+          // { img: port_img18 },
+          // { img: port_img19 },
+          // { img: port_img20 },
+          // { img: port_img21 },
+          // { img: port_img22 },
+          // { img: port_img23 },
+          // { img: port_img24 },
+          // { img: port_img25 },
+          // { img: port_img26 },
+          // { img: port_img27 },
+          // { img: port_img28 },
+          // { img: port_img29 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '10',
+    serviceData: [
+      {
+        title: 'Online Media News',
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+        ]
+      }
+    ]
+  },
+];
 
 export const navLinks = [
   {
@@ -49,7 +241,7 @@ export const heroData = [
         subTitle:"Feels Alive ",
         thirdTitle: "With Us",
         desc: "We create and design applications, website, or other digital product with professionalism",
-        button: "Get Started",
+        button: "Contact Us",
         icon: IoIosArrowRoundForward,
         service: [
           {serv: "Company Profile Creation"},
@@ -58,7 +250,9 @@ export const heroData = [
           {serv: "Social Media Management"},
           {serv: "Website Development"},
           {serv: "Instagram Feeds Design"},
-          {serv: "Video Production"},
+          {serv: "Video Production Service"},
+          {serv: "Management Marketplace"},
+          {serv: "Online Media News"},
         ]
       },
     ],
@@ -79,7 +273,7 @@ export const aboutData = [
     id: '1',
     header: "About Us",
     title: "🦁We are a Local leader in Creative Solutions and Design Services",
-    subTitle: "Committed to delivering innovative and impactful solutions across the creative landscape"
+    subTitle: "Innovative and Impactful Solutions Across the Industry"
   },
   {
     id: '2',
@@ -95,8 +289,8 @@ export const servicesData = [
   {
     id: '1',
     header: "Services",
-    title: "💻We provide end-to-end EPC services that",
-    subTitle: "ensure the success of your project"
+    title: "💻We Provide end-to-end EPC Services that",
+    subTitle: "Ensure the Success of Your Project"
   },
   {
     id: '2',
@@ -132,7 +326,7 @@ export const servicesData = [
     id: '4',
     serviceData: [
       {
-        title: 'Logo Design',
+        title: 'Logo Design Service',
         content: [
           {
             desc: "We create distinctive, memorable logos that reflect your brand’s essence, ensuring a strong visual presence that resonates with audiences and builds brand recognition",
@@ -202,317 +396,66 @@ export const servicesData = [
         ]
       }
     ]
-  }
+  },
+  {
+    id: '9',
+    serviceData: [
+      {
+        title: 'Management Marketplace',
+        content: [
+          {
+            desc: "e provide top-tier management services that connect your brand with the right market, crafting strategies that amplify your message and drive meaningful engagement with your audience",
+            img: p_img7,
+            point: ['Comprehensive Strategy Development', 'Professional Vendor & Product Management', 'Effective Branding & Market Positioning']
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: '10',
+    serviceData: [
+      {
+        title: 'Online Media News',
+        content: [
+          {
+            desc: "We produce high-quality, engaging videos that effectively convey your brand’s story and message, creating a lasting impact and deepening connections with your audience",
+            img: p_img7,
+            point: ['Concept Development', 'Professional Filming', 'Impactful Editing']
+          }
+        ]
+      }
+    ]
+  },
 ];
 
 export const clientsData = [
   {
     id: '1',
     header: "Clients",
-    title: "🚚We known in delivering exceptional creative and design services",
-    subTitle: "Our focus is on creating impactful solutions that drive success"
+    title: "🚛Delivering Exceptional Creative and Design Services",
+    subTitle: "to Create Impactful Solutions that Drive Success"
   },
   {
     id: '2',
     statsData: [
-      {name: 'Raka Eldiansyah', company: "CEO FintechHub", desc: `Xedia Media memberikan wawasan membantu kami melihat strategi marketing secara terarah dan menarik perhatian pengguna baru.      `},
-      {name: 'Rayhan Aulia', company: "Founder of DigiMarket", desc: `Pendekatan kreatif Xedia Media membantu kami menciptakan kehadiran brand yang relevan dan mudah diingat di kalangan pelanggan  `},
-      {name: 'Fadlan Daris', company: "Director at BizInnovate", desc: `Dengan strategi inovatif dan disesuaikan, Xedia Media membawa perubahan dalam pertumbuhan pasar dan meningkatkan engagement kami. `},
-      {name: 'Nabila Pratiwi', company: "CTO at HealthPlus", desc: `Kolaborasi dengan Xedia Media optimalkan strategi digital dengan solusi yang terarah dan berkelanjutan memberikan dampak yang kuat    `},
-      {name: 'Andi Wijaya', company: "CEO of RetailHub", desc: `Xedia Media menunjukkan profesionalitas dan kreativitas dalam membantu kami mencapai hasil yang lebih baik dalam kampanye marketing    `},
-      {name: 'Sari Kusuma', company: "Manager at FoodieWay", desc: `Kami sangat puas dengan hasil yang diberikan oleh Xedia Media dalam pengembangan strategi pemasaran yang lebih efektif dan kreatif     `},
+      {name: 'Mahkota Enterprise', img: client_1, desc: `Xedia Media benar-benar membantu memperkuat kehadiran kami di dunia digital. Dalam waktu enam bulan, leads kami
+      meningkat hingga 50%, dan banyak calon klien yang lebih mudah menemukan kami      `},
+      {name: 'Ave Salon', img: client_2, desc: `Dengan strategi yang tepat dari Xedia, AVÉ kami mampu memperluas pasar kami di luar area lokal. Kini, salon kami dikenal Hair & Beauty Salon lebih luas, dan peluang bisnis baru terus bermunculan  `},
+      {name: 'Heli Jateng', img: client_3, desc: `Xedia Media berhasil membantu kami HELITE memperkenalkan layanan helikopter kami dengan pendekatan digital yang tepat, menjangkau pasar yang sebelumnya sulit kami capai `},
+      {name: 'Galaxy Decoration', img: client_4, desc: `Melalui kerja sama dengan Xedia, kami GALAXY mendapatkan visibilitas yang lebih tinggi dalam industri dekorasi. Klien kami meningkat, terutama dari segmen acara besar    `},
+      {name: 'The Facial', company: "CEO of RetailHub", desc: `Xedia Media membantu kami Amembangun branding yang kuat di media sosial, sehingga layanan kecantikan kami semakin dikenal luas oleh banyak orang    `},
+      {name: 'Pusat Aquatic', img: client_6, desc: `Dengan strategi pemasaran digital dari Xedia, kami berhasil meningkatkan PUSAT penjualan keperluan aquarium serta memperkuat relasi dengan klien-klien baru     `},
+      {name: 'United E-Motor Jateng & DIY', img: client_7, desc: `Berkat Xedia Media, kami bisa memperkenalkan produk motor listrik UNITED kami ke lebih banyak calon pelanggan, meningkatkan penjualan dan memperkuat posisi kami di pasar kendaraan ramah lingkungan     `},
+      {name: 'Reza Lunar Lighting', company: "Manager at FoodieWay", desc: `Xedia membantu kami memperluas LUNAR jangkauan pasar kami di sektor pencahayaan, dan hasilnya, kami mendapatkan banyak proyek baru dan memperkuat hubungan dengan klien lama     `},
+      {name: 'PT Segara Alam Sinergi', img: client_9, desc: `Bekerja sama dengan Xedia Media telah membantu kami merancang strategi pemasaran yang efektif untuk memperkenalkan produk energi biomass kami ke pasar yang lebih luas, baik di tingkat lokal, nasional, maupun internasional     `},
+      {name: 'Virenze Interior', img: client_10, desc: `Xedia Media membantu kami memperkuat citra merek di sektor desain interior. Berkat strategi pemasaran yang tepat, proyek kami kini lebih mudah ditemukan oleh klien potensial, dan permintaan untuk layanan kami meningkat secara signifikan     `},
+      {name: 'Satset Indonesia', company: "Manager at FoodieWay", desc: `Berkat dukungan dari Xedia, bisnis kami semakin dikenal di berbagai wilayah. Kami melihat peningkatan signifikan dalam jumlah pelanggan yang menggunakan layanan kebersihan kami, baik untuk rumah tangga maupun bisnis.     `},
+      {name: 'Aquaone', company: "Manager at FoodieWay", desc: `Xedia Media membantu kami dalam A UA membangun brand awareness di industri pipa, sehingga produk kami semakin dikenal dan diandalkan oleh para kontraktor dan perusahaan besar     `},
     ]
   },
 ];
 
-export const portofolioData = [
-  {
-    id: '1',
-    header: "Our Portfolio",
-    title: "🌟We Shine in Delivering Exceptional Creative and Design Services!",
-    subTitle: "Our Passion is Crafting Impactful Solutions That Propel Your Success!"
-  },  
-  {
-    id: '2',
-    serviceData: [
-      {
-        title: 'Company Profile Creation',
-        icon: FaBuildingCircleCheck,
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
-          { img: port_img7 },
-          { img: port_img8 },
-          // { img: port_img9 },
-          // { img: port_img10 },
-          // { img: port_img11 },
-          // { img: port_img12 },
-          // { img: port_img13 },
-          // { img: port_img14 },
-          // { img: port_img15 },
-          // { img: port_img16 },
-          // { img: port_img17 },
-          // { img: port_img18 },
-          // { img: port_img19 },
-          // { img: port_img20 },
-          // { img: port_img21 },
-          // { img: port_img22 },
-          // { img: port_img23 },
-          // { img: port_img24 },
-          // { img: port_img25 },
-          // { img: port_img26 },
-          // { img: port_img27 },
-          // { img: port_img28 },
-          // { img: port_img29 },
-        ]
-      }
-    ]
-  },
-  {
-    id: '3',
-    serviceData: [
-      {
-        title: 'Digital Advertising',
-        icon: FaMoneyCheckAlt,
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
-          { img: port_img7 },
-          { img: port_img8 },
-          // { img: port_img9 },
-          // { img: port_img10 },
-          // { img: port_img11 },
-          // { img: port_img12 },
-          // { img: port_img13 },
-          // { img: port_img14 },
-          // { img: port_img15 },
-          // { img: port_img16 },
-          // { img: port_img17 },
-          // { img: port_img18 },
-          // { img: port_img19 },
-          // { img: port_img20 },
-          // { img: port_img21 },
-          // { img: port_img22 },
-          // { img: port_img23 },
-          // { img: port_img24 },
-          // { img: port_img25 },
-          // { img: port_img26 },
-          // { img: port_img27 },
-          // { img: port_img28 },
-          // { img: port_img29 },
-        ]
-      }
-    ]
-  },
-  {
-    id: '4',
-    serviceData: [
-      {
-        title: 'Logo Design',
-        icon: IoLogoDesignernews,
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
-          { img: port_img7 },
-          { img: port_img8 },
-          { img: port_img9 },
-          { img: port_img10 },
-          { img: port_img11 },
-          { img: port_img12 },
-          // { img: port_img13 },
-          // { img: port_img14 },
-          // { img: port_img15 },
-          // { img: port_img16 },
-          // { img: port_img17 },
-          // { img: port_img18 },
-          // { img: port_img19 },
-          // { img: port_img20 },
-          // { img: port_img21 },
-          // { img: port_img22 },
-          // { img: port_img23 },
-          // { img: port_img24 },
-          // { img: port_img25 },
-          // { img: port_img26 },
-          // { img: port_img27 },
-          // { img: port_img28 },
-          // { img: port_img29 },
-        ]
-      }
-    ]
-  },
-  {
-    id: '5',
-    serviceData: [
-      {
-        title: 'Social Media Management',
-        icon: IoPhonePortrait,
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
-          { img: port_img7 },
-          { img: port_img8 },
-          // { img: port_img9 },
-          // { img: port_img10 },
-          // { img: port_img11 },
-          // { img: port_img12 },
-          // { img: port_img13 },
-          // { img: port_img14 },
-          // { img: port_img15 },
-          // { img: port_img16 },
-          // { img: port_img17 },
-          // { img: port_img18 },
-          // { img: port_img19 },
-          // { img: port_img20 },
-          // { img: port_img21 },
-          // { img: port_img22 },
-          // { img: port_img23 },
-          // { img: port_img24 },
-          // { img: port_img25 },
-          // { img: port_img26 },
-          // { img: port_img27 },
-          // { img: port_img28 },
-          // { img: port_img29 },
-        ]
-      }
-    ]
-  },
-  {
-    id: '6',
-    serviceData: [
-      {
-        title: 'Website Development',
-        icon: FaLaptopCode,
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
-          // { img: port_img7 },
-          // { img: port_img8 },
-          // { img: port_img9 },
-          // { img: port_img10 },
-          // { img: port_img11 },
-          // { img: port_img12 },
-          // { img: port_img13 },
-          // { img: port_img14 },
-          // { img: port_img15 },
-          // { img: port_img16 },
-          // { img: port_img17 },
-          // { img: port_img18 },
-          // { img: port_img19 },
-          // { img: port_img20 },
-          // { img: port_img21 },
-          // { img: port_img22 },
-          // { img: port_img23 },
-          // { img: port_img24 },
-          // { img: port_img25 },
-          // { img: port_img26 },
-          // { img: port_img27 },
-          // { img: port_img28 },
-          // { img: port_img29 },
-        ]
-      }
-    ]
-  },
-  {
-    id: '7',
-    serviceData: [
-      {
-        title: 'Instagram Feeds Design',
-        icon: RiInstagramFill,
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
-          { img: port_img7 },
-          { img: port_img8 },
-          // { img: port_img9 },
-          // { img: port_img10 },
-          // { img: port_img11 },
-          // { img: port_img12 },
-          // { img: port_img13 },
-          // { img: port_img14 },
-          // { img: port_img15 },
-          // { img: port_img16 },
-          // { img: port_img17 },
-          // { img: port_img18 },
-          // { img: port_img19 },
-          // { img: port_img20 },
-          // { img: port_img21 },
-          // { img: port_img22 },
-          // { img: port_img23 },
-          // { img: port_img24 },
-          // { img: port_img25 },
-          // { img: port_img26 },
-          // { img: port_img27 },
-          // { img: port_img28 },
-          // { img: port_img29 },
-        ]
-      }
-    ]
-  },
-  {
-    id: '8',
-    serviceData: [
-      {
-        title: 'Video Production',
-        icon: FaVideo,
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
-          { img: port_img7 },
-          { img: port_img8 },
-          { img: port_img9 },
-          { img: port_img10 },
-          { img: port_img11 },
-          { img: port_img12 },
-          // { img: port_img13 },
-          // { img: port_img14 },
-          // { img: port_img15 },
-          // { img: port_img16 },
-          // { img: port_img17 },
-          // { img: port_img18 },
-          // { img: port_img19 },
-          // { img: port_img20 },
-          // { img: port_img21 },
-          // { img: port_img22 },
-          // { img: port_img23 },
-          // { img: port_img24 },
-          // { img: port_img25 },
-          // { img: port_img26 },
-          // { img: port_img27 },
-          // { img: port_img28 },
-          // { img: port_img29 },
-        ]
-      }
-    ]
-  }
-];
 
 export const locationData = [
   {

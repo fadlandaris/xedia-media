@@ -8,6 +8,19 @@ import p_img4 from './p_img_4.jpg'
 import p_img5 from './p_img_5.jpg' 
 import p_img6 from './p_img_6.jpg' 
 import p_img7 from './p_img_7.jpg' 
+import client_1 from './client_1.png';
+import client_2 from './client_2.png';
+import client_3 from './client_3.png';
+import client_4 from './client_4.jpg';
+// import client_5 from './client_5.jpg';
+import client_6 from './client_6.png';
+import client_7 from './client_7.png';
+// import client_8 from './client_8.jpg';
+import client_9 from './client_9.png';
+import client_10 from './client_10.png';
+// import client_11 from './client_11.jpg';
+// import client_12 from './client_12.jpg';
+import client_13 from './client_13.jpg';
 import port_img1 from './1.png';
 import port_img2 from './2.png';
 import port_img3 from './3.png';
@@ -37,6 +50,8 @@ import port_img26 from './26.png';
 import port_img27 from './27.png';
 import port_img28 from './28.png';
 import port_img29 from './29.png';
+import if_1 from './if_1.jpg'
+import if_2 from './if_2.jpg'
 
 export {
   headerImage,
@@ -78,4 +93,19 @@ export {
   port_img27,
   port_img28,
   port_img29,
+  if_1,
+  if_2,
+  client_1, 
+  client_2,
+  client_3, 
+  client_4, 
+  // client_5, 
+  client_6, 
+  client_7,
+  // client_8, 
+  client_9,
+  client_10, 
+  // client_11, 
+  // client_12, 
+  client_13
 };

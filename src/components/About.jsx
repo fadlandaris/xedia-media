@@ -16,7 +16,7 @@ const About = () => {
         ))}
 
           {aboutData.slice(1, 2).map((about, i) => (
-            <div key={i} className='grid grid-cols-4 gap-x-4'>
+            <div key={i} className='grid grid-cols-4 gap-x-4 border-2 rounded-2xl border-dashed p-2 '>
               {about.statsData.map((item, i) => (
                 <ProjectStats key={i} data={item} isFirst={i === 0} />
               ))}

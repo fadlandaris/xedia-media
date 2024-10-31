@@ -4,25 +4,28 @@ import Title from './Title';
 import { portofolioData } from '../constants/constants';
 import PortofolioItem from './PortofolioItem';
 import { objectImage } from '../assets/assets';
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 const Portofolio = () => {
   const [selectedService, setSelectedService] = useState(portofolioData[1]);
   const [animate, setAnimate] = useState(false);
   const [itemsToShow, setItemsToShow] = useState(4);
   const [showSeeMore, setShowSeeMore] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = (service) => {
     setSelectedService(service);
     setAnimate(true);
-    setItemsToShow(4); // Reset items to show when a new service is selected
-    setShowSeeMore(true); // Show the "See More" button again
+    setItemsToShow(4);
+    setShowSeeMore(true);
+    setIsOpen(false);
   };
 
   const handleSeeMore = () => {
     setAnimate(true);
-    setItemsToShow(itemsToShow + 8);
-    if (itemsToShow + 8 >= selectedService.serviceData[0].content.length) {
-      setShowSeeMore(false); // Hide the "See More" button if all items are shown
+    setItemsToShow(itemsToShow + 16);
+    if (itemsToShow + 16 >= selectedService.serviceData[0].content.length) {
+      setShowSeeMore(false);
     }
   };
 
@@ -37,7 +40,7 @@ const Portofolio = () => {
 
   useEffect(() => {
     if (selectedService.serviceData[0].content.length <= 4) {
-      setShowSeeMore(false); // Hide the "See More" button if there are 4 or fewer items
+      setShowSeeMore(false);
     }
   }, [selectedService]);
 
@@ -56,27 +59,42 @@ const Portofolio = () => {
           />
         ))}
 
-        <div className='flex justify-between'>
-          {portofolioData.slice(1, 8).map((port, i) => (
-            <a
-              key={i}
-              className={`text-center text-[12px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150 text-lightBlack ${
-                selectedService.id === port.id ? 'bg-primaryBlue text-white' : ' hover:text-primaryBlue hover:bg-blue-50'
-              }`}
-              onClick={() => handleClick(port)}
-            >
-              {port.serviceData.map((item, j) => (
-                <h2 key={j} className='font-medium '>{item.title}</h2>
-              ))}
-            </a>
-          ))}
+        <div className='relative'>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className='text-[12px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150 bg-primaryBlue text-white flex justify-center items-center gap-x-2'
+          >
+            {selectedService.serviceData.map((item, j) => (
+              <h2 key={j} className='font-medium flex justify-start items-center gap-x-2'>
+                {item.title}
+                {isOpen ? <IoMdArrowDropup className='text-lg' /> : <IoMdArrowDropdown className='text-lg' />}
+              </h2>
+            ))}
+          </button>
+          {isOpen && (
+            <div className='absolute z-10 mt-2 p-4 border-2 border-dashed border-primaryBlue bg-white rounded-2xl'>
+              <div className='py-1' role='menu' aria-orientation='vertical' aria-labelledby='options-menu'>
+                {portofolioData.slice(1, 10).map((port, i) => (
+                  <a
+                    key={i}
+                    onClick={() => handleClick(port)}
+                    className={`block px-4 py-2 text-[12px] text-lightBlack cursor-pointer hover:bg-blue-50 hover:text-primaryBlue duration-300 transition-all ${
+                      selectedService.id === port.id ? 'text-primaryBlue' : ''
+                    }`}
+                    role='menuitem'
+                  >
+                    {port.serviceData.map((item, j) => (
+                      <h2 key={j} className='font-medium'>{item.title}</h2>
+                    ))}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         {selectedService.serviceData.map((item, i) => (
-          <div
-            key={i}
-            className={`mt-10 rounded-2xl grid grid-cols-4 gap-6 ${animate ? 'animate-fadeIn' : ''}`}
-          >
+          <div key={i} className={`mt-10 rounded-2xl grid grid-cols-4 gap-6 ${animate ? 'animate-fadeIn' : ''}`}>
             {item.content.slice(0, itemsToShow).map((contentItem, j) => (
               <div key={j}>
                 <PortofolioItem data={contentItem} />
@@ -87,7 +105,7 @@ const Portofolio = () => {
 
         {showSeeMore && (
           <div className='text-center mt-4'>
-            <button className={`font-semibold uppercase text-primaryBlue py-4 px-4  text-[12px] rounded-2xl ${animate ? 'animate-fadeIn' : ''}`} onClick={handleSeeMore}>
+            <button className={`font-semibold uppercase text-primaryBlue py-4 px-4 text-[12px] rounded-2xl ${animate ? 'animate-fadeIn' : ''}`} onClick={handleSeeMore}>
               View More
             </button>
           </div>

@@ -12,13 +12,13 @@ const Clients = () => {
 
   const sliderRight = () => {
     if (elementRef.current) {
-      elementRef.current.scrollLeft += 1600;
+      elementRef.current.scrollLeft += 1000;
     }
   };
 
   const sliderLeft = () => {
     if (elementRef.current) {
-      elementRef.current.scrollLeft -= 1600;
+      elementRef.current.scrollLeft -= 1000;
     }
   };
 
