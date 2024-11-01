@@ -3,7 +3,6 @@ import styles from '../styles';
 import Title from './Title';
 import { portofolioData } from '../constants/constants';
 import PortofolioItem from './PortofolioItem';
-import { objectImage } from '../assets/assets';
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 const Portofolio = () => {
@@ -46,9 +45,6 @@ const Portofolio = () => {
 
   return (
     <main className={`w-full relative ${styles.containerPadding} border-black z-10`} id='our-portofolio'>
-      {/* <img src={objectImage} alt="" className='absolute right-0 bottom-0 w-[24' /> */}
-      {/* <div className='container w-12 h-24 absolute right-0 top-0 bg-primaryBlue rounded-bl-full '></div>
-      <div className='container w-12 h-24 absolute left-0 bottom-0 bg-primaryBlue rounded-tr-full '></div> */}
       <div className='max-w-7xl mx-auto z-20'>
         {portofolioData.slice(0, 1).map((port, i) => (
           <Title
@@ -94,7 +90,7 @@ const Portofolio = () => {
         </div>
 
         {selectedService.serviceData.map((item, i) => (
-          <div key={i} className={`mt-10 rounded-2xl grid grid-cols-4 gap-6 ${animate ? 'animate-fadeIn' : ''}`}>
+          <div key={i} className={`mt-10 rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ${animate ? 'animate-fadeIn' : ''}`}>
             {item.content.slice(0, itemsToShow).map((contentItem, j) => (
               <div key={j}>
                 <PortofolioItem data={contentItem} />

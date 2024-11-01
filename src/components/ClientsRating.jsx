@@ -4,18 +4,18 @@ const ClientsRating = ({ data, icon }) => {
   let className = '';
 
   if (data.id % 3 === 1) {
-    className = "bg-primaryBlue";
+    className = "bg-primaryBlue border-2 border-primaryBlue";
   } else if (data.id % 3 === 2) {
     className = "border-[2px] border-dashed border-white";
   } else {
-    className = "text-darkenBlue bg-white";
+    className = "text-darkenBlue bg-white border-2 border-white";
   }
 
   return (
-    <section className={`p-10 rounded-2xl group ${className} hover:scale-105 transition-all duration-300 cursor-pointer`}>
+    <section className={`p-10 rounded-2xl group ${className} cursor-pointer group`}>
       {icon}
       <span className='font-bold text-2xl font-mono'>"</span>
-      <p className='h-[200px] w-[310px] mb-4'>
+      <p className='h-[120px] sm:h-[170px] mb-10 md:mb-4 text-[14px] font-medium '>
         {data.desc}
       </p>
       <div className='flex items-center gap-x-4'>

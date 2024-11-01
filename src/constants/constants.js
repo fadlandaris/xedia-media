@@ -236,10 +236,10 @@ export const heroData = [
   {
     id: '2',
     projectData: [
-      { data: '50K+ ', desc: "Clients",},
-      { data: '13+', desc: "Experience"},
+      { data: '100 + ', desc: "Clients",},
+      { data: '1 +', desc: "Experience"},
       { data: '20+ ', desc: "Designer"},
-      { data: '10K+ ', desc: "Product"}
+      { data: '100 + ', desc: "Product"}
     ]
   },
 ]
@@ -254,9 +254,9 @@ export const aboutData = [
   {
     id: '2',
     statsData: [
-      {title: 'Completion Rate', data: '99%', desc: "On-time project Delivery accross various global market"},
-      {title: 'Client Statisfication', data: '95%', desc: "Driven by our commitment to quality and innovation"},
-      {title: 'Cost Efficiency', data: '20%', desc: "Cost saving for clients through optimized engineering processes"},
+      {title: 'Completion Rate', data: '100%', desc: "On-time project Delivery "},
+      {title: 'Client Statisfication', data: '95%', desc: "commitment to quality"},
+      {title: 'Cost Efficiency', data: '20%', desc: "Cost saving for clients "},
     ]
   },
 ]

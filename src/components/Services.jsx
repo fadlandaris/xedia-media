@@ -66,8 +66,8 @@ const Services = () => {
           )}
         </div>
 
-        <div className='mt-10 grid grid-cols-3 gap-x-8'>
-          <div className={`container  ${animate ? 'animate-fadeIn' : ''}`}>
+        <div className='mt-10 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-8 '>
+          <div className={`  ${animate ? 'animate-fadeIn' : ''}`}>
             {selectedService.serviceData.map((item, i) => (
               <img className='w-full h-full object-cover object-left rounded-2xl' key={i} src={item.content[0].img} alt={item.title} />
             ))}
@@ -75,7 +75,7 @@ const Services = () => {
 
           {selectedService.serviceData.map((item, i) => (
             <div key={i} className={`col-span-2 p-10 border-2 border-dashed border-primaryBlue rounded-2xl ${animate ? 'animate-fadeIn' : ''}`}>
-              <h2 className='font-bold tracking-wide text-2xl text-lightBlack'>{item.title}</h2>
+              <h2 className='font-bold tracking-wide lg:text-2xl text-lightBlack'>{item.title}</h2>
               {item.content.map((contentItem, j) => (
                 <div key={j}>
                   <p className='text-text font-medium w-[80%] mt-4 mb-6'>{contentItem.desc}</p>

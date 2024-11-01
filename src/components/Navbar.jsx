@@ -43,7 +43,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full py-4 px-20 bg-white shadow-sm fixed top-0 z-50">
+    <nav className="w-full py-4 px-8 md:px-20 bg-white shadow-sm fixed top-0 z-50">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
@@ -73,8 +73,8 @@ const Navbar = () => {
             >
               <div className="hamburger">
                 <span className={`block w-6 h-0.5 bg-lightBlack transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-                <span className={`block w-6 h-0.5 bg-lightBlack transition-all duration-300 my-1 ${isOpen ? 'opacity-0' : ''}`}></span>
-                <span className={`block w-6 h-0.5 bg-lightBlack transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+                <span className={`block w-4 h-0.5 bg-lightBlack transition-all duration-300 my-1 ${isOpen ? 'opacity-0' : ''}`}></span>
+                <span className={`block w-6 h-0.5 bg-lightBlack transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-1.5 ' : ''}`}></span>
               </div>
             </button>
           </div>

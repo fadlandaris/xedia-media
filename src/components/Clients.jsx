@@ -4,21 +4,24 @@ import { clientsData } from '../constants/constants';
 import styles from '../styles';
 import ClientsRating from './ClientsRating';
 import { RiStarSFill } from "react-icons/ri";
-import { FaAngleLeft } from 'react-icons/fa';
-import { FaAngleRight } from 'react-icons/fa';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 const Clients = () => {
-  const elementRef = useRef(null);
+  const swiperRef = useRef(null);
 
-  const sliderRight = () => {
-    if (elementRef.current) {
-      elementRef.current.scrollLeft += 1267;
+  const handlePrev = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
     }
   };
 
-  const sliderLeft = () => {
-    if (elementRef.current) {
-      elementRef.current.scrollLeft -= 1267;
+  const handleNext = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
     }
   };
 
@@ -29,27 +32,55 @@ const Clients = () => {
           <Title key={i} clientsHeader={cli.header} clientsTitle={cli.title} clientsSubTitle={cli.subTitle} />
         ))}
 
-        <div className='relative group '>
-          <div className="flex justify-between mb-2">
-            <FaAngleLeft  onClick={sliderLeft} className={`${styles.carouselButton}`} />
-            <FaAngleRight onClick={sliderRight} className={`${styles.carouselButton}`} />
+        <div className='relative group'>
+          <div className="flex justify-between mb-4 ">
+            <FaAngleLeft onClick={handlePrev} className={`${styles.carouselButton}`} />
+            <FaAngleRight onClick={handleNext} className={`${styles.carouselButton}`} />
           </div>
 
-          {clientsData.slice(1, 2).map((clie, i) => (
-            <div key={i} ref={elementRef} className='flex overflow-x-auto w-full scroll-smooth scrollbar-none rounded-lg gap-x-8 p-3 '>
-              {clie.statsData.map((item, i) => (
-                <ClientsRating key={i} data={item} icon={
-                  <div className='flex text-xl text-yellow-500 mb-6'>
-                    <RiStarSFill />
-                    <RiStarSFill />
-                    <RiStarSFill />
-                    <RiStarSFill />
-                    <RiStarSFill />
-                  </div>
-                } />
-              ))}
-            </div>
-          ))}
+          <Swiper
+            ref={swiperRef}
+            navigation={{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }}
+            modules={[Navigation]}
+            slidesPerView={1}
+            spaceBetween={30}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+            }}
+            className="mySwiper "
+          >
+            {clientsData.slice(1, 2).map((clie, i) => (
+              <div key={i}>
+                {clie.statsData.map((item, i) => (
+                  <SwiperSlide key={i}>
+                    <ClientsRating data={item} icon={
+                      <div className='flex text-xl text-yellow-500 mb-6'>
+                        <RiStarSFill />
+                        <RiStarSFill />
+                        <RiStarSFill />
+                        <RiStarSFill />
+                        <RiStarSFill />
+                      </div>
+                    } />
+                  </SwiperSlide>
+                ))}
+              </div>
+            ))}
+          </Swiper>
         </div>
       </div>
     </main>
