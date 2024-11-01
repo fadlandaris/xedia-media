@@ -8,7 +8,7 @@ import AutoSlider from './AutoSlider'; // Import the AutoSlider component
 
 const Hero = () => {
   return (
-    <main className={`w-full text-lightBlack ${styles.containerPadding}`}>
+    <main className={`w-full text-lightBlack ${styles.containerPadding}`} id='home'>
       <div className='max-w-7xl mx-auto grid grid-cols-2 gap-8'>
         <div className='border-2 border-dashed rounded-2xl border-primaryBlue p-10'>
           {heroData.slice(0, 1).map((head, i) => (

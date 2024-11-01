@@ -5,10 +5,10 @@ const Title = ({ aboutHeader, aboutTitle, aboutSubTitle, serviceHeader, serviceT
     <div>
       <p className="text-text uppercase font-medium">/ {aboutHeader}{serviceHeader}{clientsHeader}{portofolioHeader}{locationHeader}</p>
       <div className="text-4xl mt-4 mb-12">
-        <h2 className={`font-semibold ${serviceTitle || portofolioTitle  ? 'text-lightBlack' : 'text-white'}`}>
+        <h2 className={`font-bold ${serviceTitle || portofolioTitle  ? 'text-lightBlack' : 'text-white'}`}>
           {aboutTitle}{serviceTitle}{clientsTitle}{portofolioTitle}{locationTitle}
         </h2>
-        <h2 className={`font-semibold ${serviceSubTitle || portofolioSubTitle  ? 'text-lightBlack' : 'text-text'}`}>
+        <h2 className={`font-bold ${serviceSubTitle || portofolioSubTitle  ? 'text-lightBlack' : 'text-text'}`}>
           {aboutSubTitle}{serviceSubTitle}{clientsSubTitle}{portofolioSubTitle}{locationSubTitle}
         </h2>
       </div>

@@ -12,18 +12,18 @@ const Clients = () => {
 
   const sliderRight = () => {
     if (elementRef.current) {
-      elementRef.current.scrollLeft += 1000;
+      elementRef.current.scrollLeft += 1267;
     }
   };
 
   const sliderLeft = () => {
     if (elementRef.current) {
-      elementRef.current.scrollLeft -= 1000;
+      elementRef.current.scrollLeft -= 1267;
     }
   };
 
   return (
-    <main className={`w-full bg-darkenBlue text-white ${styles.containerPadding}`}>
+    <main className={`w-full bg-darkenBlue text-white ${styles.containerPadding}`} id='our-clients'>
       <div className='max-w-7xl mx-auto'>
         {clientsData.slice(0, 1).map((cli, i) => (
           <Title key={i} clientsHeader={cli.header} clientsTitle={cli.title} clientsSubTitle={cli.subTitle} />

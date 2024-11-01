@@ -45,7 +45,7 @@ const Portofolio = () => {
   }, [selectedService]);
 
   return (
-    <main className={`w-full relative ${styles.containerPadding} border-black z-10`}>
+    <main className={`w-full relative ${styles.containerPadding} border-black z-10`} id='our-portofolio'>
       {/* <img src={objectImage} alt="" className='absolute right-0 bottom-0 w-[24' /> */}
       {/* <div className='container w-12 h-24 absolute right-0 top-0 bg-primaryBlue rounded-bl-full '></div>
       <div className='container w-12 h-24 absolute left-0 bottom-0 bg-primaryBlue rounded-tr-full '></div> */}

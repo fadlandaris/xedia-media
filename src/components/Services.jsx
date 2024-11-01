@@ -26,7 +26,7 @@ const Services = () => {
   }, [animate]);
 
   return (
-    <main className={`relative w-full ${styles.containerPadding} `}>
+    <main className={`relative w-full ${styles.containerPadding} `} id='our-services'>
       <div className='max-w-7xl mx-auto'>
         {servicesData.slice(0, 1).map((serv, i) => (
           <Title key={i} serviceHeader={serv.header} serviceTitle={serv.title} serviceSubTitle={serv.subTitle} />

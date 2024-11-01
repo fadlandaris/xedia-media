@@ -5,7 +5,7 @@ import { locationData } from '../constants/constants';
 
 const Location = () => {
   return (
-    <main className={`${styles.containerPadding} bg-darkenBlue`}>
+    <main className={`${styles.containerPadding} bg-darkenBlue`} id='our-location'>
       <div className='max-w-7xl mx-auto'>
 
         {locationData.slice(0, 1).map((loc, i) => (
