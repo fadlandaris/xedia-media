@@ -67,7 +67,7 @@ const Services = () => {
         </div>
 
         <div className='mt-10 grid grid-cols-3 gap-x-8'>
-          <div className={`container h-[320px] ${animate ? 'animate-fadeIn' : ''}`}>
+          <div className={`container  ${animate ? 'animate-fadeIn' : ''}`}>
             {selectedService.serviceData.map((item, i) => (
               <img className='w-full h-full object-cover object-left rounded-2xl' key={i} src={item.content[0].img} alt={item.title} />
             ))}

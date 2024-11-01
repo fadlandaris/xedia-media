@@ -6,7 +6,7 @@ import { FaFacebookF, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <main className={`pb-20 bg-darkenBlue`}>
+    <main className={`pb-20 bg-darkenBlue px-20`}>
       <div className='max-w-7xl mx-auto'>
         <div className='w-full grid grid-cols-4 gap-6'>
           {footerData.map((xedia, i) => (
@@ -15,24 +15,27 @@ const Footer = () => {
               
               {xedia.contact && xedia.contact.map((item, index) => (
                 <div key={index} className={`flex justify-start items-start font-medium  ${item.id === '1' ? 'my-4' : ''}`}>
-                  <p className='mr-2 '>{item.icon}</p>
-                  <a className='hover:text-primaryBlue duration-300 transition-all cursor-pointer'>{item.stat}</a>
+                  <item.icon className='mr-2 text-[16px] mt-1'/>
+                  <a className='hover:text-primaryBlue duration-300 transition-all cursor-pointer text-[14px]'>{item.stat}</a>
                 </div>
               ))}
 
               {xedia.stat && xedia.stat.map((item, index) => (
-                <div key={index} className='mt-4  text-white'>
-                  <a href="" className=' font-medium hover:text-primaryBlue duration-300 transition-all'>{item.text}</a>
+                <div key={index} className='mt-2  text-white'>
+                  <a href="" className=' font-medium hover:text-primaryBlue duration-300 transition-all text-[14px]'>{item.text}</a>
                 </div>
               ))}
             </div>
           ))}
         </div>
 
-        <div className='w-full mt-6 flex justify-between font-medium text-white border-2 p-6 border-dashed rounded-2xl'>
+        <div className='w-full mt-6 text-[14px] flex justify-between font-medium text-white border-2 p-6 border-dashed rounded-2xl'>
           <p className=''>© Xedia Media 2024. All rights reserved</p>
 
           <div className='flex gap-x-4 justify-between items-center'>
+            {/* <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Tiktok</a> */}
             <FaFacebookF/>
             <FaTiktok/>
             <RiInstagramFill/>

@@ -4,7 +4,7 @@ import { FaPenNib } from 'react-icons/fa';
 import { FaCheck } from 'react-icons/fa6';
 import { headerImage } from '../assets/assets';
 import styles from '../styles';
-import AutoSlider from './AutoSlider'; // Import the AutoSlider component
+import AutoSlider from './AutoSlider'; 
 
 const Hero = () => {
   return (

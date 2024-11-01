@@ -1,6 +1,5 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { BsPhone, BsPerson } from "react-icons/bs";
-import { BiHome, BiCollection, } from "react-icons/bi";
+import { FaLocationDot, FaPhone } from "react-icons/fa6";
 
 
 import { p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, port_img21, port_img22, port_img23, port_img24, port_img25, port_img26, port_img27, port_img28, port_img29, if_1, if_2, client_1, client_2, client_3, client_4, client_6, client_7, client_9, client_10, client_13 } from "../assets/assets";
@@ -458,12 +457,12 @@ export const footerData = [
       {
         id: '1',
         stat: 'Jl. Pandan Biru III, Blok C No 03, Pandanaran Hills, Mangunharjo, Kec. Tembalang, Kota Semarang, Jawa Tengah 50272', 
-        icon: '☎️',
+        icon: FaPhone,
       },
       {
         id: '2',
         stat: '+ 0872348972349', 
-        icon: '📌',
+        icon: FaLocationDot,
       },
     ] 
   },
