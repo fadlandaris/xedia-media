@@ -1,6 +1,12 @@
 import headerImage from './header.jpg'
 import objectImage from './3d.png'
+import phoneImage from './3dphone.png'
 import Profile from './profile.jpg'
+import xediaLogo from './logo.png'
+import Right from './right.png'
+import Left from './left.png'
+import Cloud from './cloud.png'
+import Graphic from './graphic.png'
 import p_img1 from './p_img_1.jpg' 
 import p_img2 from './p_img_2.jpg' 
 import p_img3 from './p_img_3.jpg' 
@@ -54,8 +60,14 @@ import if_1 from './if_1.jpg'
 import if_2 from './if_2.jpg'
 
 export {
+  Graphic,
+  Right,
+  Left,
+  Cloud,
+  xediaLogo,
   headerImage,
   objectImage,
+  phoneImage,
   Profile,
   p_img1,
   p_img2,

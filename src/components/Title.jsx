@@ -2,7 +2,7 @@ import React from 'react';
 
 const Title = ({ aboutHeader, aboutTitle, aboutSubTitle, serviceHeader, serviceTitle, serviceSubTitle, clientsHeader, clientsTitle, clientsSubTitle, portofolioTitle, portofolioHeader, portofolioSubTitle, locationHeader, locationTitle, locationSubTitle }) => {
   return (
-    <div>
+    <div className=''>
       <p className="text-text uppercase font-medium">/ {aboutHeader}{serviceHeader}{clientsHeader}{portofolioHeader}{locationHeader}</p>
       <div className="text-2xl lg:text-4xl mt-4 mb-12">
         <h2 className={`font-bold ${serviceTitle || portofolioTitle  ? 'text-lightBlack' : 'text-white'}`}>

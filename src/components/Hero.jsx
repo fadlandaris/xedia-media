@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <main className={`w-full text-lightBlack ${styles.containerPadding}`} id='home'>
       <div className='max-w-7xl mx-auto grid grid-cols-1 gap-y-8 md:grid-cols-2 gap-x-8 '>
-        <div className='border-2 border-dashed rounded-2xl border-primaryBlue p-10'>
+        <div className='border-2 border-dashed rounded-2xl border-primaryBlue  p-10'>
           {heroData.slice(0, 1).map((head, i) => (
             <div key={i}>
               {head.header.map((item, j) => (

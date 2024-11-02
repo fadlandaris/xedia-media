@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { navLinks } from '../constants/constants';
+import { xediaLogo } from '../assets/assets';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,17 +28,21 @@ const Navbar = () => {
     );
 
     navLinks.forEach((link) => {
-      const element = document.getElementById(link.link);
-      if (element) {
-        observer.observe(element);
+      if (link.link !== 'our-team') {
+        const element = document.getElementById(link.link);
+        if (element) {
+          observer.observe(element);
+        }
       }
     });
 
     return () => {
       navLinks.forEach((link) => {
-        const element = document.getElementById(link.link);
-        if (element) {
-          observer.unobserve(element);
+        if (link.link !== 'our-team') {
+          const element = document.getElementById(link.link);
+          if (element) {
+            observer.unobserve(element);
+          }
         }
       });
     };
@@ -47,23 +53,33 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
-            <a href="#home" className="text-primaryBlue text-lg font-bold">XediaMedia</a>
+            <img src={xediaLogo} alt='Xedia Media' className='h-8' />
           </div>
           <div className="hidden md:flex space-x-6">
             {navLinks.map((link) => (
-              <a
-                key={link.id}
-                href={`#${link.link}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(link.link);
-                }}
-                className={`text-lightBlack text-[13px] hover:text-text transition-all duration-300 font-medium ${
-                  activeSection === link.link ? 'underline underline-offset-4 decoration-primaryBlue text-primaryBlue' : ''
-                }`}
-              >
-                {link.nav}
-              </a>
+              link.link === 'our-team' ? (
+                <Link
+                  key={link.id}
+                  to="/our-team"
+                  className={`text-lightBlack text-[13px] hover:text-text transition-all duration-300 font-medium`}
+                >
+                  {link.nav}
+                </Link>
+              ) : (
+                <a
+                  key={link.id}
+                  href={`#${link.link}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(link.link);
+                  }}
+                  className={`text-lightBlack text-[13px] hover:text-text transition-all duration-300 font-medium ${
+                    activeSection === link.link ? 'underline underline-offset-4 decoration-primaryBlue text-primaryBlue' : ''
+                  }`}
+                >
+                  {link.nav}
+                </a>
+              )
             ))}
           </div>
           <div className="md:hidden">
@@ -83,19 +99,29 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="space-y-4 my-8">
               {navLinks.map((link) => (
-                <a
-                  key={link.id}
-                  href={`#${link.link}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(link.link);
-                  }}
-                  className={` block font-medium hover:text-text transition-all duration-300 ${
-                    activeSection === link.link ? 'underline underline-offset-4 decoration-primaryBlue text-primaryBlue' : ''
-                  }`}
-                >
-                  {link.nav}
-                </a>
+                link.link === 'our-team' ? (
+                  <Link
+                    key={link.id}
+                    to="/our-team"
+                    className={`block font-medium hover:text-text transition-all duration-300`}
+                  >
+                    {link.nav}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.id}
+                    href={`#${link.link}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(link.link);
+                    }}
+                    className={`block font-medium hover:text-text transition-all duration-300 ${
+                      activeSection === link.link ? 'underline underline-offset-4 decoration-primaryBlue text-primaryBlue' : ''
+                    }`}
+                  >
+                    {link.nav}
+                  </a>
+                )
               ))}
             </div>
           </div>

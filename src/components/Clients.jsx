@@ -68,7 +68,7 @@ const Clients = () => {
                 {clie.statsData.map((item, i) => (
                   <SwiperSlide key={i}>
                     <ClientsRating data={item} icon={
-                      <div className='flex text-xl text-yellow-500 mb-6'>
+                      <div className='flex text-xl text-yellow-400 mb-6'>
                         <RiStarSFill />
                         <RiStarSFill />
                         <RiStarSFill />

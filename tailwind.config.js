@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryBlue: "#236CF6",
+        // primaryBlue: "#236CF6",
+        // primaryPink: '#f472b6',
+        // #fa9a25 orange
+        primaryBlue: '#236CF6',
         lightBlue: "#A7C5FB",
-        darkenBlue: "#072f6A",
+        // darkenBlue: "#072f6A",
+        darkenBlue: '#072f6A',
         greenBlue: "#01D0D2",
         text: "#A8B4C7",
         lightBlack: "#25262A",

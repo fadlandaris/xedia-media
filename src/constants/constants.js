@@ -2,13 +2,13 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 
 
-import { p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, port_img21, port_img22, port_img23, port_img24, port_img25, port_img26, port_img27, port_img28, port_img29, if_1, if_2, client_1, client_2, client_3, client_4, client_6, client_7, client_9, client_10, client_13 } from "../assets/assets";
+import { phoneImage, p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, port_img21, port_img22, port_img23, port_img24, port_img25, port_img26, port_img27, port_img28, port_img29, if_1, if_2, client_1, client_2, client_3, client_4, client_6, client_7, client_9, client_10, client_13 } from "../assets/assets";
 
 export const portofolioData = [
   {
     id: '1',
     header: "Portfolio",
-    title: "🌟We Shine in Delivering Creative and Design Services",
+    title: "✨We Shine in Delivering Creative and Design Services",
     subTitle: "Crafting Impactful Solutions That Propel Your Success"
   },  
   {
@@ -205,6 +205,11 @@ export const navLinks = [
     link: 'our-location',
     nav: "Location",
   },
+  {
+    id: '6',
+    link: 'our-team',
+    nav: "👨🏻‍💻Our Team",
+  },
 ]
 
 export const heroData = [
@@ -248,7 +253,7 @@ export const aboutData = [
   {
     id: '1',
     header: "About Us",
-    title: "🦁We are a Local leader in Creative Solutions and Design Services",
+    title: "🏅We are a Local leader in Creative Solutions and Design Services",
     subTitle: "Innovative and Impactful Solutions Across the Industry"
   },
   {
@@ -265,7 +270,7 @@ export const servicesData = [
   {
     id: '1',
     header: "Services",
-    title: "💻We Provide end-to-end EPC Services that",
+    title: "👨‍🔧We Provide end-to-end EPC Services that",
     subTitle: "Ensure the Success of Your Project"
   },
   {
@@ -409,7 +414,7 @@ export const clientsData = [
   {
     id: '1',
     header: "Clients",
-    title: "🚛Delivering Exceptional Creative and Solutions Services",
+    title: "🤝Delivering Exceptional Creative and Solutions Services",
     subTitle: "to Create Impactful Solutions that Drive Success"
   },
   {
@@ -443,10 +448,9 @@ export const locationData = [
   {
     id: '1',
     header: "Location",
-    title: "🗺️ Let's Discover Our Vibrant Location",
+    title: "🧭Let's Discover Our Vibrant Location",
     subTitle: "Connect with us in the heart of the action"
   },
-  {},
 ];
 
 export const footerData = [
@@ -461,47 +465,59 @@ export const footerData = [
       },
       {
         id: '2',
-        stat: '+ 0872348972349', 
+        stat: 'CP + 0872348972349', 
         icon: FaLocationDot,
       },
     ] 
   },
   {
     id: '2',
-    title: 'Clients',
+    title: 'Navigation',
     stat: [
       {
         id: '1',
-        text: 'Testimonials', 
+        text: 'Home', 
+        link: 'home',
       },
       {
         id: '2',
-        text: 'Case Studies', 
+        text: 'About', 
+        link: 'about-us',
       },
       {
         id: '3',
-        text: 'Success Stories'
+        text: 'Services',
+        link: 'our-services',
+      },
+      {
+        id: '3',
+        text: 'Clients',
+        link: 'our-clients',
+      },
+      {
+        id: '3',
+        text: 'Portofolio',
+        link: 'our-portofolio',
       },
     ]
   },  
   {
     id: '3',
-    title: 'Support',
+    title: 'Contact Us',
     stat: [
       {
         id: '1',
-        text: 'Contact Us', 
-      },
-      {
-        id: '2',
-        text: 'Help Center', 
-      },
-      {
-        id: '3',
-        text: 'Support Tickets'
+        img: phoneImage,
+        link: '',
       },
     ]
   },  
+];
+
+export const teamData = [
+  {
+    id: '1',
+  },
 ];
 
 

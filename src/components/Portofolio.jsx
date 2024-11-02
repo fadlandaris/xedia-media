@@ -4,6 +4,7 @@ import Title from './Title';
 import { portofolioData } from '../constants/constants';
 import PortofolioItem from './PortofolioItem';
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
+import LoadingSpinner from './LoadingSpinner'; // Import the LoadingSpinner component
 
 const Portofolio = () => {
   const [selectedService, setSelectedService] = useState(portofolioData[1]);
@@ -11,28 +12,41 @@ const Portofolio = () => {
   const [itemsToShow, setItemsToShow] = useState(4);
   const [showSeeMore, setShowSeeMore] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); // Add loading state
 
   const handleClick = (service) => {
+    setIsLoading(true); // Start loading
     setSelectedService(service);
     setAnimate(true);
     setItemsToShow(4);
     setShowSeeMore(true);
     setIsOpen(false);
+
+    // Simulate a delay to show the loading spinner
+    setTimeout(() => {
+      setIsLoading(false); // Stop loading
+    }, 1000); // Adjust the delay as needed
   };
 
   const handleSeeMore = () => {
+    setIsLoading(true); // Start loading
     setAnimate(true);
     setItemsToShow(itemsToShow + 16);
     if (itemsToShow + 16 >= selectedService.serviceData[0].content.length) {
       setShowSeeMore(false);
     }
+
+    // Simulate a delay to show the loading spinner
+    setTimeout(() => {
+      setIsLoading(false); // Stop loading
+    }, 1000); // Adjust the delay as needed
   };
 
   useEffect(() => {
     if (animate) {
       const timer = setTimeout(() => {
         setAnimate(false);
-      }, 500);
+      }, 2000);
       return () => clearTimeout(timer);
     }
   }, [animate]);
@@ -89,15 +103,21 @@ const Portofolio = () => {
           )}
         </div>
 
-        {selectedService.serviceData.map((item, i) => (
-          <div key={i} className={`mt-10 rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ${animate ? 'animate-fadeIn' : ''}`}>
-            {item.content.slice(0, itemsToShow).map((contentItem, j) => (
-              <div key={j}>
-                <PortofolioItem data={contentItem} />
-              </div>
-            ))}
+        {isLoading ? (
+          <div className='col-span-3 flex justify-center items-center h-full'>
+            <LoadingSpinner /> {/* Display the loading spinner */}
           </div>
-        ))}
+        ) : (
+          selectedService.serviceData.map((item, i) => (
+            <div key={i} className={`mt-10 rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ${animate ? 'animate-fadeIn' : ''}`}>
+              {item.content.slice(0, itemsToShow).map((contentItem, j) => (
+                <div key={j}>
+                  <PortofolioItem data={contentItem} />
+                </div>
+              ))}
+            </div>
+          ))
+        )}
 
         {showSeeMore && (
           <div className='text-center mt-4'>

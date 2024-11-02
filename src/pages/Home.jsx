@@ -7,12 +7,10 @@ import Clients from '../components/Clients'
 import Portofolio from '../components/Portofolio'
 import Location from '../components/Location'
 import Footer from '../components/Footer'
-import Copyright from '../components/Copyright'
-
 
 const Home = () => {
   return (
-    <main>
+    <main className='pt-10'>
       <Navbar/>
       <Hero/>
       <About />
@@ -21,7 +19,6 @@ const Home = () => {
       <Portofolio/>
       <Location/>
       <Footer/>
-      <Copyright/>
     </main>
   )
 }
