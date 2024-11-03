@@ -4,12 +4,22 @@ import Title from './Title';
 import Points from './Points';
 import styles from '../styles';
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
-import { Graphic } from '../assets/assets';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState(servicesData[1]);
   const [animate, setAnimate] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Animation easing
+      once: true, // Animate only once
+    });
+  }, []);
 
   const handleClick = (service) => {
     setSelectedService(service);
@@ -29,7 +39,7 @@ const Services = () => {
   return (
     <main className={`relative w-full ${styles.containerPadding} `} id='our-services'>
       {/* <img src={Graphic} alt="" className='absolute -left-4 -top-7' /> */}
-      <div className='max-w-7xl mx-auto  '>
+      <div className='max-w-7xl mx-auto' data-aos="fade-up">
         {servicesData.slice(0, 1).map((serv, i) => (
           <Title key={i} serviceHeader={serv.header} serviceTitle={serv.title} serviceSubTitle={serv.subTitle} />
         ))}

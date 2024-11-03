@@ -3,11 +3,22 @@ import styles from '../styles'
 import { footerData } from '../constants/constants'
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebookF, FaTiktok } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Animation easing
+      once: true, // Animate only once
+    });
+  }, []);
+
   return (
     <main className={`pb-20 bg-darkenBlue px-8 md:px-20`} id='footer'>
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-7xl mx-auto' data-aos="fade-up">
         <div className='w-full grid grid-cols-1 sm:grid-cols-4 gap-4 '>
           {footerData.map((xedia, i) => {
             // Define `className` for each `xedia` item
@@ -18,7 +29,7 @@ const Footer = () => {
             } else if (xedia.id === '2') {
               className = " rounded-2xl border-white text-white border-2 border-dashed";
             } else if (xedia.id === '3') {
-              className = "rounded-2xl border-white text-white border-2 border-dashed relative overflow-hidden hover:bg-primaryBlue hover:text-white cursor-pointer transition-all duration-300 group";
+              className = "rounded-2xl border-white text-white border-2 border-dashed ";
             }
 
             return (
@@ -34,7 +45,6 @@ const Footer = () => {
                 {xedia.stat && xedia.stat.map((item, index) => (
                   <div key={index} className='mt-2  '>
                     <a href={`#${item.link}`} className='font-medium hover:text-primaryBlue duration-300 transition-all text-[14px]'>{item.text}</a>
-                    <img src={item.img} alt="" className='absolute w-60 -left-10 -bottom-10 group-hover:scale-110 transition-all duration-300 ' />
                   </div>
                 ))}
               </a>

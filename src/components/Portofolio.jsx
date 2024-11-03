@@ -4,7 +4,9 @@ import Title from './Title';
 import { portofolioData } from '../constants/constants';
 import PortofolioItem from './PortofolioItem';
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
-import LoadingSpinner from './LoadingSpinner'; // Import the LoadingSpinner component
+import LoadingSpinner from './LoadingSpinner'; 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Portofolio = () => {
   const [selectedService, setSelectedService] = useState(portofolioData[1]);
@@ -13,6 +15,14 @@ const Portofolio = () => {
   const [showSeeMore, setShowSeeMore] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false); // Add loading state
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Animation easing
+      once: true, // Animate only once
+    });
+  }, []);
 
   const handleClick = (service) => {
     setIsLoading(true); // Start loading
@@ -59,7 +69,7 @@ const Portofolio = () => {
 
   return (
     <main className={`w-full relative ${styles.containerPadding} border-black z-10`} id='our-portofolio'>
-      <div className='max-w-7xl mx-auto z-20'>
+      <div className='max-w-7xl mx-auto z-20' data-aos="fade-up">
         {portofolioData.slice(0, 1).map((port, i) => (
           <Title
             key={i}

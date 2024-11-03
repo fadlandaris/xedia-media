@@ -9,8 +9,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Clients = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Animation easing
+      once: true, // Animate only once
+    });
+  }, []);
+
   const swiperRef = useRef(null);
 
   const handlePrev = () => {
@@ -27,7 +38,7 @@ const Clients = () => {
 
   return (
     <main className={`w-full bg-darkenBlue text-white ${styles.containerPadding}`} id='our-clients'>
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-7xl mx-auto' data-aos="fade-up">
         {clientsData.slice(0, 1).map((cli, i) => (
           <Title key={i} clientsHeader={cli.header} clientsTitle={cli.title} clientsSubTitle={cli.subTitle} />
         ))}

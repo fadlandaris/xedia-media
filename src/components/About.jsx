@@ -3,16 +3,27 @@ import { aboutData } from '../constants/constants'
 import ProjectStats from './ProjectStats'
 import Title from './Title'
 import styles from '../styles';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const About = () => {
 
   // console.log(aboutData)
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Animation easing
+      once: true, // Animate only once
+    });
+  }, []);
+
 
   return (
-    <main className={`w-full bg-darkenBlue text-white ${styles.containerPadding}`} id='about-us'>
-      <div className='max-w-7xl mx-auto'>
+    <main className={`w-full bg-darkenBlue text-white ${styles.containerPadding}`} id='about-us' >
+      <div className='max-w-7xl mx-auto' data-aos="fade-up">
         {aboutData.slice(0, 1).map((about, i) => (
-          <Title key={i} aboutHeader={about.header} aboutTitle={about.title} aboutSubTitle={about.subTitle}/>
+          <Title key={i} aboutHeader={about.header} aboutTitle={about.title} aboutSubTitle={about.subTitle} />
         ))}
 
           {aboutData.slice(1, 2).map((about, i) => (

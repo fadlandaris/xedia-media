@@ -507,7 +507,27 @@ export const footerData = [
     stat: [
       {
         id: '1',
-        img: phoneImage,
+        text: 'Contact',
+        link: '',
+      },
+      {
+        id: '1',
+        text: 'Contact',
+        link: '',
+      },
+      {
+        id: '1',
+        text: 'Contact',
+        link: '',
+      },
+      {
+        id: '1',
+        text: 'Contact',
+        link: '',
+      },
+      {
+        id: '1',
+        text: 'Contact',
         link: '',
       },
     ]
