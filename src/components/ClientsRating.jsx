@@ -6,7 +6,7 @@ const ClientsRating = ({ data, icon }) => {
   if (data.id % 3 === 1) {
     className = "bg-primaryBlue border-2 border-primaryBlue";
   } else if (data.id % 3 === 2) {
-    className = "border-2 border-dashed bg-darkenBlue border-white";
+    className = " bg-darkenBlue border-white border-2 border-dashed";
   } else {
     className = "text-darkenBlue bg-white border-2 border-white";
   }
@@ -20,7 +20,7 @@ const ClientsRating = ({ data, icon }) => {
       </p>
       <div className='flex items-center gap-x-4'>
         <div className='w-10 h-10 rounded-full bg-white'>
-          <img src={data.img} alt="" className='w-full h-full object-cover rounded-full' />
+          <img src={data.img} alt="" className='w-full h-full rounded-full' />
         </div>
         <div>
           <h2 className='text-[14px] sm:text-[14px] font-bold tracking-wide'>{data.name}</h2>

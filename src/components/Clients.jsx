@@ -12,6 +12,7 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Graphic from './Graphic';
 
 const Clients = () => {
   useEffect(() => {
@@ -37,7 +38,8 @@ const Clients = () => {
   };
 
   return (
-    <main className={`w-full bg-darkenBlue text-white ${styles.containerPadding}`} id='our-clients'>
+    <main className={`w-full bg-darkenBlue text-white ${styles.containerPadding} ${styles.colorGradient}`} id='our-clients'>
+      <Graphic/>
       <div className='max-w-7xl mx-auto' data-aos="fade-up">
         {clientsData.slice(0, 1).map((cli, i) => (
           <Title key={i} clientsHeader={cli.header} clientsTitle={cli.title} clientsSubTitle={cli.subTitle} />

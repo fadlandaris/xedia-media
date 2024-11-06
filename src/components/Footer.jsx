@@ -17,7 +17,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <main className={`pb-20 bg-darkenBlue px-8 md:px-20`} id='footer'>
+    <main className={`mt-16 `} id='footer'>
       <div className='max-w-7xl mx-auto' data-aos="fade-up">
         <div className='w-full grid grid-cols-1 sm:grid-cols-4 gap-4 '>
           {footerData.map((xedia, i) => {

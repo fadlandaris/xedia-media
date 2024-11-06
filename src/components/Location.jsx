@@ -5,6 +5,8 @@ import { locationData } from '../constants/constants';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Footer from './Footer';
+import Graphic from './Graphic';
 
 const Location = () => {
   useEffect(() => {
@@ -16,7 +18,8 @@ const Location = () => {
   }, []);
 
   return (
-    <main className={`${styles.containerPadding} bg-darkenBlue`} id='our-location'>
+    <main className={`${styles.containerPadding} ${styles.colorGradient}`} id='our-location'>
+      <Graphic/>
       <div className='max-w-7xl mx-auto'>
 
         {locationData.slice(0, 1).map((loc, i) => (
@@ -38,6 +41,9 @@ const Location = () => {
           </iframe>
         </div>
       </div>
+
+        <Footer/>
+
     </main>
   );
 }

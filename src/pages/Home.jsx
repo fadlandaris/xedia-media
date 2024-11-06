@@ -6,7 +6,7 @@ import Services from '../components/Services'
 import Clients from '../components/Clients'
 import Portofolio from '../components/Portofolio'
 import Location from '../components/Location'
-import Footer from '../components/Footer'
+
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
       <Clients />
       <Portofolio/>
       <Location/>
-      <Footer/>
+      {/* <Footer/> */}
     </main>
   )
 }

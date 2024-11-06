@@ -10,7 +10,7 @@ import Copyright from './components/Copyright';
 const App = () => {
   return (
     <main>
-      <Copyright/>
+      {/* <Copyright/> */}
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/our-team' element={<Team/>} />

@@ -10,14 +10,14 @@ import AutoSlider from './AutoSlider';
 const Hero = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      easing: 'ease-in-out', // Animation easing
-      once: true, // Animate only once
+      duration: 1000, 
+      easing: 'ease-in-out', 
+      once: true, 
     });
   }, []);
 
   return (
-    <main className={`w-full text-lightBlack ${styles.containerPadding}`} id='home'>
+    <main className={`w-full text-lightBlack ${styles.containerPadding} `} id='home'>
       <div className='max-w-7xl mx-auto grid grid-cols-1 gap-y-8 md:grid-cols-2 gap-x-8'>
         <div
           className='border-2 border-dashed rounded-2xl border-primaryBlue p-10'
