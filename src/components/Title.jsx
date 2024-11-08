@@ -15,7 +15,7 @@ const Title = ({ aboutHeader, aboutTitle, aboutSubTitle, serviceHeader, serviceT
 
   return (
     <div className='' data-aos="fade-up">
-      {/* <p className="text-text uppercase font-medium">/ {aboutHeader}{serviceHeader}{clientsHeader}{portofolioHeader}{locationHeader}</p> */}
+      <p className="text-white uppercase font-medium border-2 inline-block px-4 py-1 rounded-md bg-blue-900 border-blue-600 text-[10px]">{aboutHeader}{serviceHeader}{clientsHeader}{portofolioHeader}{locationHeader}</p>
       <div className="text-2xl lg:text-4xl mt-4 mb-12">
         <h2 className={`font-bold text-white`}>
         {/* ${serviceTitle || portofolioTitle  ? 'text-lightBlack' : 'text-white'} */}
@@ -29,5 +29,6 @@ const Title = ({ aboutHeader, aboutTitle, aboutSubTitle, serviceHeader, serviceT
     </div>
   );
 };
+
 
 export default Title;

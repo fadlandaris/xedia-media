@@ -1,10 +1,58 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { FaInstagram, FaLocationDot, FaPhone } from "react-icons/fa6";
 import { FaFacebookF, FaTiktok, FaYoutube } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-
+import { FaSquareXTwitter, FaLocationArrow } from "react-icons/fa6";
+import { RiServiceFill, RiHomeOfficeFill, RiToolsFill } from "react-icons/ri";
+import { MdEmojiPeople } from "react-icons/md";
+import { HiDocumentDuplicate } from "react-icons/hi";
+import { HiMiniUserGroup } from "react-icons/hi2";
 
 import {  p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, p_img8, p_img9, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, if_1, if_2, if_3, if_4, client_1, client_2, client_3, client_4, client_6, client_7, client_9, client_10, client_13, web_1, web_2, web_3, sos_1, sos_2, sos_3, sos_4, sos_5 } from "../assets/assets";
+
+export const navLinks = [
+  {
+    id: '1',
+    link: 'home',
+    nav: "Home",
+    icon: RiHomeOfficeFill,
+  },
+  {
+    id: '2',
+    link: 'about-us',
+    nav: "About",
+    icon: MdEmojiPeople,
+  },
+  {
+    id: '3',
+    link: 'our-services',
+    nav: "Services",
+    icon: RiToolsFill,
+  },
+  {
+    id: '4',
+    link: 'our-clients',
+    nav: "Clients",
+    icon: RiServiceFill,
+  },
+  {
+    id: '5',
+    link: 'our-portofolio',
+    nav: "Portofolio",
+    icon: HiDocumentDuplicate,
+  },
+  {
+    id: '6',
+    link: 'our-location',
+    nav: "Location",
+    icon: FaLocationArrow,
+  },
+  {
+    id: '6',
+    link: 'our-team',
+    nav: "👨🏻‍💻Our Team",
+    icon: HiMiniUserGroup,
+  },
+]
 
 export const portofolioData = [
   {
@@ -155,43 +203,7 @@ export const portofolioData = [
   },
 ];
 
-export const navLinks = [
-  {
-    id: '1',
-    link: 'home',
-    nav: "Home",
-  },
-  {
-    id: '2',
-    link: 'about-us',
-    nav: "About",
-  },
-  {
-    id: '3',
-    link: 'our-services',
-    nav: "Services",
-  },
-  {
-    id: '4',
-    link: 'our-clients',
-    nav: "Clients",
-  },
-  {
-    id: '5',
-    link: 'our-portofolio',
-    nav: "Portofolio",
-  },
-  {
-    id: '6',
-    link: 'our-location',
-    nav: "Location",
-  },
-  {
-    id: '6',
-    link: 'our-team',
-    nav: "👨🏻‍💻Our Team",
-  },
-]
+
 
 export const heroData = [
   {
@@ -251,7 +263,7 @@ export const servicesData = [
   {
     id: '1',
     header: "Services",
-    title: "👨‍🔧We Provide end-to-end EPC Services that",
+    title: "🔥We Provide end-to-end EPC Services that",
     subTitle: "Ensure the Success of Your Project"
   },
   {
@@ -395,7 +407,7 @@ export const clientsData = [
   {
     id: '1',
     header: "Clients",
-    title: "🤝Delivering Exceptional Creative and Solutions Services",
+    title: "⏳Delivering Exceptional Creative and Solutions Services",
     subTitle: "to Create Impactful Solutions that Drive Success"
   },
   {

@@ -6,12 +6,13 @@ import Services from '../components/Services'
 import Clients from '../components/Clients'
 import Portofolio from '../components/Portofolio'
 import Location from '../components/Location'
+import Footer from '../components/Footer'
 import styles from '../styles'
 
 
 const Home = () => {
   return (
-    <main className={`pt-10 ${styles.colorGradient}`}>
+    <main className={` ${styles.colorGradient}`}>
       <Navbar/>
       <Hero/>
       <About />
@@ -19,7 +20,7 @@ const Home = () => {
       <Clients />
       <Portofolio/>
       <Location/>
-      {/* <Footer/> */}
+      <Footer/>
     </main>
   )
 }

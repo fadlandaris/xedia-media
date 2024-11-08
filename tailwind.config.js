@@ -4,15 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // #236CF6
         primaryBlue: '#236CF6',
         primaryPurple: '#671f75',
         lightBlue: "#A7C5FB",
         darkenBlue: '#072f6A',
-        greenBlue: "#01D0D2",
         text: "#A8B4C7",
         lightBlack: "#25262A",
-        primaryGray: "#f1f5f9"
       },
       fontFamily: {
         kanit: ['Kanit', 'sans-serif'],
@@ -30,6 +27,9 @@ module.exports = {
       animation: {
         fadeIn: 'fadeIn 0.5s ease-in-out',
       },
+      boxShadow: {
+        threeDimension: '0 0px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1)', 
+      },
     },
     screens: {
       xs: "480px",
@@ -44,10 +44,10 @@ module.exports = {
     function ({ addUtilities }) {
       addUtilities({
         '.scrollbar-none': {
-          '-ms-overflow-style': 'none',  /* Internet Explorer 10+ */
-          'scrollbar-width': 'none',  /* Firefox */
+          '-ms-overflow-style': 'none', /* Internet Explorer 10+ */
+          'scrollbar-width': 'none', /* Firefox */
           '&::-webkit-scrollbar': {
-            display: 'none',  /* Safari and Chrome */
+            display: 'none', /* Safari and Chrome */
           },
         },
       });

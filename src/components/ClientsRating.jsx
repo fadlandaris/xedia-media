@@ -6,7 +6,7 @@ const ClientsRating = ({ data, icon }) => {
   if (data.id % 3 === 1) {
     className = " bg-blue-900 border-2 border-blue-600 ";
   } else if (data.id % 3 === 2) {
-    className = " border-2 border-text md:border-none md:shadow-2xl";
+    className = "shadow-threeDimension";
   } else {
     className = "  bg-purple-900 border-2 border-purple-600 ";
   }

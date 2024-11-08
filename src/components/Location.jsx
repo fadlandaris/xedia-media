@@ -41,8 +41,6 @@ const Location = () => {
         </div>
       </div>
 
-        <Footer/>
-
     </main>
   );
 }

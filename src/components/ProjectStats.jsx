@@ -1,6 +1,7 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import { objectImage } from '../assets/assets';
+import styles from '../styles';
 
 const ProjectStats = ({ data, isFirst }) => {
   let className = "";
@@ -8,7 +9,7 @@ const ProjectStats = ({ data, isFirst }) => {
   if (data.title === 'Completion Rate') {
     className = "bg-blue-900 border-2 border-blue-600 col-span-2";
   } else if (data.title === 'Client Statisfication') {
-    className = " border-2 border-text md:border-none md:shadow-2xl";
+    className = "shadow-threeDimension ";
   } else if (data.title === 'Cost Efficiency') {
     className = "bg-defaultColor bg-purple-900 text-white border-2 border-purple-600";
   }
