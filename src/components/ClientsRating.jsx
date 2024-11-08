@@ -4,17 +4,17 @@ const ClientsRating = ({ data, icon }) => {
   let className = '';
 
   if (data.id % 3 === 1) {
-    className = "bg-primaryBlue border-2 border-primaryBlue";
+    className = " bg-blue-900 border-2 border-blue-600 ";
   } else if (data.id % 3 === 2) {
-    className = " bg-darkenBlue border-white border-2 border-dashed";
+    className = " border-2 border-text md:border-none md:shadow-2xl";
   } else {
-    className = "text-darkenBlue bg-white border-2 border-white";
+    className = "  bg-purple-900 border-2 border-purple-600 ";
   }
 
   return (
     <section className={`p-10 rounded-2xl group ${className} cursor-pointer group`}>
       {icon}
-      <span className='font-bold text-2xl font-mono'>"</span>
+      <span className='font-bold text-4xl font-serif'>"</span>
       <p className=' h-[170px] mb-10 md:mb-4 text-[14px] font-medium '>
         {data.desc}
       </p>

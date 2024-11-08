@@ -1,12 +1,7 @@
 import headerImage from './header.jpg'
 import objectImage from './3d.png'
-import phoneImage from './3dphone.png'
 import Profile from './profile.jpg'
 import xediaLogo from './logo.png'
-import Right from './right.png'
-import Left from './left.png'
-import Cloud from './cloud.png'
-import Graphic from './graphic.png'
 import p_img1 from './p_img_1.jpg' 
 import p_img2 from './p_img_2.jpg' 
 import p_img3 from './p_img_3.jpg' 
@@ -14,6 +9,8 @@ import p_img4 from './p_img_4.jpg'
 import p_img5 from './p_img_5.jpg' 
 import p_img6 from './p_img_6.jpg' 
 import p_img7 from './p_img_7.jpg' 
+import p_img8 from './p_img_8.jpg' 
+import p_img9 from './p_img_9.jpg' 
 import client_1 from './client_1.png';
 import client_2 from './client_2.png';
 import client_3 from './client_3.png';
@@ -47,27 +44,23 @@ import port_img17 from './17.png';
 import port_img18 from './18.png';
 import port_img19 from './19.png';
 import port_img20 from './20.png';
-import port_img21 from './21.png';
-import port_img22 from './22.png';
-import port_img23 from './23.png';
-import port_img24 from './24.png';
-import port_img25 from './25.png';
-import port_img26 from './26.png';
-import port_img27 from './27.png';
-import port_img28 from './28.png';
-import port_img29 from './29.png';
 import if_1 from './if_1.jpg'
 import if_2 from './if_2.jpg'
+import if_3 from './if_3.png'
+import if_4 from './if_4.png'
+import web_1 from './web_1.svg'
+import web_2 from './web_2.svg'
+import web_3 from './web_3.svg'
+import sos_1 from './sos_1.svg'
+import sos_2 from './sos_2.svg'
+import sos_3 from './sos_3.svg'
+import sos_4 from './sos_4.svg'
+import sos_5 from './sos_5.svg'
 
 export {
-  Graphic,
-  Right,
-  Left,
-  Cloud,
   xediaLogo,
   headerImage,
   objectImage,
-  phoneImage,
   Profile,
   p_img1,
   p_img2,
@@ -76,6 +69,8 @@ export {
   p_img5,
   p_img6,
   p_img7,
+  p_img8,
+  p_img9,
   port_img1,
   port_img2,
   port_img3,
@@ -96,17 +91,18 @@ export {
   port_img18,
   port_img19,
   port_img20,
-  port_img21,
-  port_img22,
-  port_img23,
-  port_img24,
-  port_img25,
-  port_img26,
-  port_img27,
-  port_img28,
-  port_img29,
   if_1,
   if_2,
+  if_3,
+  if_4,
+  web_1,
+  web_2,
+  web_3,
+  sos_1,
+  sos_2,
+  sos_3,
+  sos_4,
+  sos_5,
   client_1, 
   client_2,
   client_3, 

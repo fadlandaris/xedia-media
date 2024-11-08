@@ -4,7 +4,7 @@ import Title from './Title';
 import { portofolioData } from '../constants/constants';
 import PortofolioItem from './PortofolioItem';
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
-import LoadingSpinner from './LoadingSpinner'; 
+import LoadingSpinner from './LoadingSpinner';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -68,7 +68,7 @@ const Portofolio = () => {
   }, [selectedService]);
 
   return (
-    <main className={`w-full relative ${styles.containerPadding} border-black z-10`} id='our-portofolio'>
+    <main className={`w-full relative ${styles.containerPadding}  z-10`} id='our-portofolio'>
       <div className='max-w-7xl mx-auto z-20' data-aos="fade-up">
         {portofolioData.slice(0, 1).map((port, i) => (
           <Title
@@ -82,7 +82,7 @@ const Portofolio = () => {
         <div className='relative'>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className='text-[12px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150 bg-primaryBlue text-white flex justify-center items-center gap-x-2'
+            className='text-[12px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150 bg-purple-900 border-2 border-purple-600 text-white flex justify-center items-center gap-x-2'
           >
             {selectedService.serviceData.map((item, j) => (
               <h2 key={j} className='font-medium flex justify-start items-center gap-x-2'>
@@ -92,13 +92,13 @@ const Portofolio = () => {
             ))}
           </button>
           {isOpen && (
-            <div className='absolute z-10 mt-2 p-4 border-2 border-dashed border-primaryBlue bg-white rounded-2xl'>
+            <div className='absolute z-10 mt-2 p-4 border-2  border-purple-600 bg-purple-900 rounded-2xl bg-opacity-95'>
               <div className='py-1' role='menu' aria-orientation='vertical' aria-labelledby='options-menu'>
                 {portofolioData.slice(1, 10).map((port, i) => (
                   <a
                     key={i}
                     onClick={() => handleClick(port)}
-                    className={`block px-4 py-2 text-[12px] text-lightBlack cursor-pointer hover:bg-blue-50 hover:text-primaryBlue duration-300 transition-all ${
+                    className={`block px-4 py-2 text-[12px] text-text cursor-pointer hover:text-white duration-300 transition-all ${
                       selectedService.id === port.id ? 'text-primaryBlue' : ''
                     }`}
                     role='menuitem'
@@ -115,7 +115,13 @@ const Portofolio = () => {
 
         {isLoading ? (
           <div className='col-span-3 flex justify-center items-center h-full'>
-            <LoadingSpinner /> {/* Display the loading spinner */}
+            <LoadingSpinner>
+              {showSeeMore && (
+                <button className={`font-semibold text-white bg-blue-900 border-blue-600 py-2 px-4 border-2 text-[12px] flex items-center justify-center gap-1 rounded-2xl ${animate ? 'animate-fadeIn' : ''}`} onClick={handleSeeMore}>
+                  View More <IoMdArrowDropdown className='text-lg'/>
+                </button>
+              )}
+            </LoadingSpinner>
           </div>
         ) : (
           selectedService.serviceData.map((item, i) => (
@@ -129,10 +135,10 @@ const Portofolio = () => {
           ))
         )}
 
-        {showSeeMore && (
-          <div className='text-center mt-4'>
-            <button className={`font-semibold uppercase text-primaryBlue py-4 px-4 text-[12px] rounded-2xl ${animate ? 'animate-fadeIn' : ''}`} onClick={handleSeeMore}>
-              View More
+        {!isLoading && showSeeMore && (
+          <div className='text-center mt-8'>
+            <button className={`font-semibold mx-auto text-white bg-blue-900 border-blue-600 py-2 px-4 border-2 text-[10px] flex items-center justify-center gap-1 rounded-2xl ${animate ? 'animate-fadeIn' : ''}`} onClick={handleSeeMore}>
+              View More 
             </button>
           </div>
         )}

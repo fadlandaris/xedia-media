@@ -8,11 +8,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+import { MdOutlineArrowRight, MdOutlineArrowLeft } from "react-icons/md";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import Graphic from './Graphic';
 
 const Clients = () => {
   useEffect(() => {
@@ -38,17 +37,20 @@ const Clients = () => {
   };
 
   return (
-    <main className={`w-full bg-darkenBlue text-white ${styles.containerPadding} ${styles.colorGradient}`} id='our-clients'>
-      <Graphic/>
+    <main className={`w-full  text-white ${styles.containerPadding} `} id='our-clients'>
       <div className='max-w-7xl mx-auto' data-aos="fade-up">
         {clientsData.slice(0, 1).map((cli, i) => (
           <Title key={i} clientsHeader={cli.header} clientsTitle={cli.title} clientsSubTitle={cli.subTitle} />
         ))}
 
-        <div className='relative group'>
-          <div className="flex justify-between mb-4 ">
-            <FaAngleLeft onClick={handlePrev} className={`${styles.carouselButton}`} />
-            <FaAngleRight onClick={handleNext} className={`${styles.carouselButton}`} />
+        <div className='relative group '>
+          <div className='flex text-2xl justify-between mb-4'>
+            <div className='border-2 bg-blue-900 border-blue-600 rounded-full cursor-pointer ' onClick={handlePrev}>
+              <MdOutlineArrowLeft />
+            </div>
+            <div className='border-2 bg-purple-900 border-purple-600 rounded-full cursor-pointer' onClick={handleNext}>
+              <MdOutlineArrowRight/>
+            </div>
           </div>
 
           <Swiper
@@ -74,10 +76,10 @@ const Clients = () => {
                 spaceBetween: 20,
               },
             }}
-            className="mySwiper "
+            className="mySwiper"
           >
             {clientsData.slice(1, 2).map((clie, i) => (
-              <div key={i}>
+              <div key={i} >
                 {clie.statsData.map((item, i) => (
                   <SwiperSlide key={i}>
                     <ClientsRating data={item} icon={

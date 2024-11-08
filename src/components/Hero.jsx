@@ -17,49 +17,47 @@ const Hero = () => {
   }, []);
 
   return (
-    <main className={`w-full text-lightBlack ${styles.containerPadding} `} id='home'>
+    <main className={`w-full text-white ${styles.containerPadding} `} id='home'>
       <div className='max-w-7xl mx-auto grid grid-cols-1 gap-y-8 md:grid-cols-2 gap-x-8'>
-        <div
-          className='border-2 border-dashed rounded-2xl border-primaryBlue p-10'
-          data-aos='fade-right'
-        >
-          {heroData.slice(0, 1).map((head, i) => (
-            <div key={i}>
-              {head.header.map((item, j) => (
-                <div key={j}>
-                  <div
-                    className='mb-4 font-semibold py-1 px-2 border-2 border-[#e8eff7] inline-block rounded-full'
-                    data-aos='zoom-in'
-                  >
-                    <div className='flex items-center text-[12px]'>
-                      <div className='p-1 border-2 rounded-full mr-2 bg-primaryBlue'>
-                        <FaPenNib className='text-white text-[10px]' />
+        <div data-aos="fade-right" className='bg-blue-900 rounded-2xl p-10 border-2  border-blue-600 '
+          >
+            {heroData.slice(0, 1).map((head, i) => (
+              <div key={i}>
+                {head.header.map((item, j) => (
+                  <div key={j}>
+                    <div
+                      className='mb-10 font-semibold py-1 px-2 border-2 border-blue-600 inline-block rounded-full'
+                      data-aos='zoom-in'
+                    >
+                      <div className='flex items-center text-[12px]'>
+                        <div className='p-1 rounded-full mr-2 bg-primaryBlue'>
+                          <FaPenNib className='text-white text-[10px]' />
+                        </div>
+                        <p className='mr-2'>{item.rating}</p>
+                        <p className='text-text font-medium'>customer rating</p>
                       </div>
-                      <p className='mr-2'>{item.rating}</p>
-                      <p className='text-text font-medium'>customer rating</p>
                     </div>
+                    <div className='font-bold text-3xl lg:text-5xl' data-aos='fade-up'>
+                      <h2>{item.title}</h2>
+                      <h2 className='my-4'>{item.subTitle}</h2>
+                      <h2>{item.thirdTitle}</h2>
+                    </div>
+                    <p className='mt-4  font-medium w-[80%]' data-aos='fade-up'>
+                      {item.desc}
+                    </p>
+                    <button
+                      className={`px-6 py-3 rounded-2xl my-12 text-white text-[14px] flex items-center group bg-primaryBlue`}
+                      data-aos='fade-up'
+                    >
+                      {item.button}
+                      <item.icon className='text-xl ml-2 group-hover:ml-4 transition-all duration-150' />
+                    </button>
+                    <AutoSlider items={item.service} />
                   </div>
-                  <div className='font-bold text-3xl lg:text-5xl' data-aos='fade-up'>
-                    <h2>{item.title}</h2>
-                    <h2 className='my-4'>{item.subTitle}</h2>
-                    <h2>{item.thirdTitle}</h2>
-                  </div>
-                  <p className='mt-4 text-text font-medium w-[80%]' data-aos='fade-up'>
-                    {item.desc}
-                  </p>
-                  <button
-                    className='px-6 py-3 rounded-2xl my-12 bg-primaryBlue text-white text-[14px] flex items-center group'
-                    data-aos='fade-up'
-                  >
-                    {item.button}
-                    <item.icon className='text-xl ml-2 group-hover:ml-4 transition-all duration-150' />
-                  </button>
-                  <AutoSlider items={item.service} />
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
+                ))}
+              </div>
+            ))}
+          </div>
 
         <div className='container h-full' data-aos='fade-left'>
           <img src={headerImage} className='w-full h-full object-cover rounded-2xl' />

@@ -1,8 +1,10 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { FaLocationDot, FaPhone } from "react-icons/fa6";
+import { FaInstagram, FaLocationDot, FaPhone } from "react-icons/fa6";
+import { FaFacebookF, FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 
-import { phoneImage, p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, port_img21, port_img22, port_img23, port_img24, port_img25, port_img26, port_img27, port_img28, port_img29, if_1, if_2, client_1, client_2, client_3, client_4, client_6, client_7, client_9, client_10, client_13 } from "../assets/assets";
+import {  p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, p_img8, p_img9, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, if_1, if_2, if_3, if_4, client_1, client_2, client_3, client_4, client_6, client_7, client_9, client_10, client_13, web_1, web_2, web_3, sos_1, sos_2, sos_3, sos_4, sos_5 } from "../assets/assets";
 
 export const portofolioData = [
   {
@@ -11,108 +13,6 @@ export const portofolioData = [
     title: "✨We Shine in Delivering Creative and Design Services",
     subTitle: "Crafting Impactful Solutions That Propel Your Success"
   },  
-  {
-    id: '2',
-    serviceData: [
-      {
-        title: 'Company Profile Creation',
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
-          { img: port_img7 },
-          { img: port_img8 },
-        ]
-      }
-    ]
-  },
-  {
-    id: '3',
-    serviceData: [
-      {
-        title: 'Digital Advertising',
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
-          { img: port_img7 },
-          { img: port_img8 },
-        ]
-      }
-    ]
-  },
-  {
-    id: '4',
-    serviceData: [
-      {
-        title: 'Logo Design Service',
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
-          { img: port_img7 },
-          { img: port_img8 },
-          { img: port_img9 },
-          { img: port_img10 },
-          { img: port_img11 },
-          { img: port_img12 },
-        ]
-      }
-    ]
-  },
-  {
-    id: '5',
-    serviceData: [
-      {
-        title: 'Social Media Management',
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
-          { img: port_img7 },
-          { img: port_img8 },
-        ]
-      }
-    ]
-  },
-  {
-    id: '6',
-    serviceData: [
-      {
-        title: 'Website Development',
-        content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-        ]
-      }
-    ]
-  },
-  {
-    id: '7',
-    serviceData: [
-      {
-        title: 'Instagram Feeds Design',
-        content: [
-          { img: if_1 },
-          { img: if_2 },
-        ]
-      }
-    ]
-  },
   {
     id: '8',
     serviceData: [
@@ -139,6 +39,87 @@ export const portofolioData = [
           { img: port_img18 },
           { img: port_img19 },
           { img: port_img20 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '3',
+    serviceData: [
+      {
+        title: 'Digital Advertising',
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '4',
+    serviceData: [
+      {
+        title: 'Logo Design Service',
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+          { img: port_img4 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '5',
+    serviceData: [
+      {
+        title: 'Social Media Management',
+        content: [
+          { img: sos_1 },
+          { img: sos_2 },
+          { img: sos_3 },
+          { img: sos_4 },
+          { img: sos_5 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '6',
+    serviceData: [
+      {
+        title: 'Website Development',
+        content: [
+          { img: web_1 },
+          { img: web_2 },
+          { img: web_3 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '7',
+    serviceData: [
+      {
+        title: 'Instagram Feeds Design',
+        content: [
+          { img: if_1 },
+          { img: if_2 },
+          { img: if_3 },
+          { img: if_4 },
+        ]
+      }
+    ]
+  },
+   {
+    id: '2',
+    serviceData: [
+      {
+        title: 'Company Profile Creation',
+        content: [
+          { img: port_img1 },
         ]
       }
     ]
@@ -386,7 +367,7 @@ export const servicesData = [
         content: [
           {
             desc: "e provide top-tier management services that connect your brand with the right market, crafting strategies that amplify your message and drive meaningful engagement with your audience",
-            img: p_img7,
+            img: p_img8,
             point: ['Comprehensive Strategy Development', 'Professional Vendor & Product Management', 'Effective Branding & Market Positioning']
           }
         ]
@@ -401,7 +382,7 @@ export const servicesData = [
         content: [
           {
             desc: "We produce high-quality, engaging videos that effectively convey your brand’s story and message, creating a lasting impact and deepening connections with your audience",
-            img: p_img7,
+            img: p_img9,
             point: ['Concept Development', 'Professional Filming', 'Impactful Editing']
           }
         ]
@@ -460,79 +441,41 @@ export const footerData = [
     contact: [
       {
         id: '1',
-        stat: 'Jl. Pandan Biru III, Blok C No 03, Pandanaran Hills, Mangunharjo, Kec. Tembalang, Kota Semarang, Jawa Tengah 50272', 
-        icon: FaPhone,
+        stat: 'Jl. Pandan Biru III, Blok C No 03, Pandanaran Hills, Mangunharjo, Kec. Tembalang, Kota Semarang, Jawa Tengah 50272',
+        icon: FaLocationDot,
       },
       {
         id: '2',
-        stat: 'CP + 0872348972349', 
-        icon: FaLocationDot,
+        stat: 'CP + 0872348972349',
+        icon: FaPhone,
       },
-    ] 
+    ]
   },
   {
     id: '2',
-    title: 'Navigation',
+    title: 'Navlinks',
     stat: [
-      {
-        id: '1',
-        text: 'Home', 
-        link: 'home',
-      },
-      {
-        id: '2',
-        text: 'About', 
-        link: 'about-us',
-      },
-      {
-        id: '3',
-        text: 'Services',
-        link: 'our-services',
-      },
-      {
-        id: '3',
-        text: 'Clients',
-        link: 'our-clients',
-      },
-      {
-        id: '3',
-        text: 'Portofolio',
-        link: 'our-portofolio',
-      },
+      { id: '1', text: 'Home', link: 'home' },
+      { id: '2', text: 'About', link: 'about-us' },
+      { id: '3', text: 'Services', link: 'our-services' },
+      { id: '4', text: 'Clients', link: 'our-clients' },
+      { id: '5', text: 'Portofolio', link: 'our-portofolio' },
     ]
-  },  
+  },
   {
     id: '3',
-    title: 'Contact Us',
+    title: 'Socmed',
     stat: [
-      {
-        id: '1',
-        text: 'Contact',
-        link: '',
-      },
-      {
-        id: '1',
-        text: 'Contact',
-        link: '',
-      },
-      {
-        id: '1',
-        text: 'Contact',
-        link: '',
-      },
-      {
-        id: '1',
-        text: 'Contact',
-        link: '',
-      },
-      {
-        id: '1',
-        text: 'Contact',
-        link: '',
-      },
+      { id: '1', icon: FaFacebookF, link: '' },
+      { id: '2', icon: FaInstagram, link: '' },
+      { id: '3', icon: FaTiktok, link: '' },
+      { id: '4', icon: FaYoutube, link: '' },
+      { id: '5', icon: FaSquareXTwitter, link: '' },
     ]
-  },  
+  },
 ];
+
+
 
 export const teamData = [
   {

@@ -6,11 +6,11 @@ const ProjectStats = ({ data, isFirst }) => {
   let className = "";
 
   if (data.title === 'Completion Rate') {
-    className = "bg-primaryBlue col-span-2";
-  } else if (data.title === 'Client Satisfaction') {
-    className = "bg-lightBlue text-darkenBlue";
+    className = "bg-blue-900 border-2 border-blue-600 col-span-2";
+  } else if (data.title === 'Client Statisfication') {
+    className = " border-2 border-text md:border-none md:shadow-2xl";
   } else if (data.title === 'Cost Efficiency') {
-    className = "bg-defaultColor bg-white text-darkenBlue";
+    className = "bg-defaultColor bg-purple-900 text-white border-2 border-purple-600";
   }
 
   return (
