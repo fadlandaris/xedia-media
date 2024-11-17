@@ -37,9 +37,10 @@ const Hero = () => {
                       <img src={xediaLogo} className='w-40' />
                     </div>
                   </div>
-                  <div className='lg:flex items-center uppercase font-bold text-2xl gap-1' data-aos='fade-up'>
+                  <div className='mt-8 md:mt-0 md:flex items-center uppercase font-bold sm:text-2xl gap-1' data-aos='fade-up'>
                     <h2 className='uppercase'>{item.title}</h2>
                     <h2 className=''>{item.subTitle}</h2>
+                    <h2 className=''>{item.thirdTitle}</h2>
                   </div>
                   <p className='mt-4 text-[15px]' data-aos='fade-up'>
                     {item.desc}

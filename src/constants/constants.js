@@ -90,7 +90,7 @@ export const portofolioData = [
     id: '1',
     header: "Portfolio",
     title: "Jangan Mau Ketinggalan sama brand-brand Kece ini !",
-    subTitle: "Bukti Solusi yang Bikin Brand Lo Jadi Juara :"
+    subTitle: "Bukti yang Bikin Brand Lo Jadi Juara :"
   },  
   {
     id: '8',
@@ -286,8 +286,9 @@ export const heroData = [
     header: [
       {
         rating: "4.8/5.0",
-        title: "Bikin Brand lo jadi hidup bareng ",
-        subTitle:" Kita !",
+        title: "Bikin Brand  ",
+        subTitle:"lo jadi hidup",
+        thirdTitle: ' bareng Kita !',
         // thirdTitle: "With Us",
         desc: "Xedia Media didirikan untuk membantu bisnis menjangkau pelanggan mereka dengan lebih efektif melalui ide-ide digital yang inovatif. Kami memulai sebagai agensi kecil di Semarang dan berkembang dengan menawarkan layanan pemasaran yang komprehensif. Filosofi kami berfokus pada inovasi, kolaborasi, dan hasil yang terukur, memastikan setiap klien meraih kesuksesan melalui strategi digital yang efektif",
         button: "Contact",
@@ -533,7 +534,7 @@ export const locationData = [
   {
     id: '1',
     header: "Location",
-    title: "Gratis Konsultasi !",
+    title: "Gratis Konsultasi",
     subTitle: "Datang Langsung ke Kantor Kami"
   },
 ];

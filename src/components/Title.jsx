@@ -16,7 +16,7 @@ const Title = ({ aboutHeader, aboutTitle, aboutSubTitle, serviceHeader, serviceT
   return (
     <div className='' data-aos="fade-up">
       <p className="text-white uppercase inline-block px-4 py-1 rounded-md font-bold bg-rose-600 ">{aboutHeader}{serviceHeader}{clientsHeader}{portofolioHeader}{locationHeader}</p>
-      <div className="text-2xl lg:text-4xl mt-4 mb-4">
+      <div className="text-4xl mt-4 mb-4">
         <h2 className={`font-bold text-white`}>
         {/* ${serviceTitle || portofolioTitle  ? 'text-lightBlack' : 'text-white'} */}
           {aboutTitle}{serviceTitle}{clientsTitle}{portofolioTitle}{locationTitle}
