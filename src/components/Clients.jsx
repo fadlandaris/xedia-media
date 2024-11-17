@@ -61,21 +61,23 @@ const Clients = () => {
           />
         ))}
 
-        <div className="relative group">
-          <div className="flex text-2xl justify-between mb-4">
-            <div
-              className="border-2 bg-orange-900 border-orange-600 rounded-full cursor-pointer"
-              onClick={handlePrev}
-            >
-              <MdOutlineArrowLeft />
-            </div>
-            <div
-              className="border-2 bg-yellow-900 border-yellow-600 rounded-full cursor-pointer"
-              onClick={handleNext}
-            >
-              <MdOutlineArrowRight />
-            </div>
+        <div className="relative ">
+        {/* <div className="absolute inset-0 top-1/2 bottom-1/2 -translate-y-1/2 z-50"> */}
+        {/* <div className="flex text-2xl justify-between mb-4"> */}
+          <div
+            className=" absolute z-50  top-1/2 -translate-y-1/2 -left-10 bg-lime-400 text-black  rounded-full cursor-pointer"
+            onClick={handlePrev}
+          >
+            <MdOutlineArrowLeft className='text-xl'/>
           </div>
+          <div
+            className=" absolute z-50 -right-10 top-1/2 -translate-y-1/2 text-black bg-lime-400 rounded-full cursor-pointer"
+            onClick={handleNext}
+          >
+            <MdOutlineArrowRight className='text-xl' />
+          </div>
+        {/* </div> */}
+      {/* </div> */}
 
           <Swiper
             ref={swiperRef}
@@ -100,7 +102,7 @@ const Clients = () => {
                 spaceBetween: 20,
               },
             }}
-            className="mySwiper"
+            className="mySwiper px-8"
           >
             {clientsData.slice(1, 2).map((clie, i) => (
               <div key={i}>

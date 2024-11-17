@@ -123,16 +123,59 @@ export const portofolioData = [
     ]
   },
   {
-    id: '3',
+    id: '2',
     serviceData: [
       {
-        title: 'Jasa Ads',
+        title: 'Professional video <br/> company profile',
         content: [
-          // { img: port_img1 },
+          {
+            title: 'Heli Jateng',
+            img:client_3 ,
+            point: [
+              'Konsep kreatif video dan identitas merek',
+              'Pengambilan video profesional dengan kru ahli',
+              'Penggunaan drone untuk visual udara',
+              'Editing berkualitas tinggi dengan narasi profesional',
+              'Talent terbaik untuk memperkuat pesan'
+            ]
+          },
+          {
+            title: 'Pusat Aquatic',
+            img:client_6 ,
+            point: [
+              'Konsep video sesuai tema fasilitas',
+              'Pengambilan gambar profesional berkualitas tinggi',
+              'Visual udara estetis dengan drone',
+              'Editing detail dengan narasi menarik',
+              'Talent pendukung yang sesuai'
+            ]
+          },
+          {
+            title: 'SAS',
+            img:client_9 ,
+            point: [
+              'Konsep video yang menonjolkan nilai perusahaan',
+              'Pengambilan video sinematik berkualitas tinggi',
+              'Visual udara memukau dengan drone',
+              'Editing kreatif dengan narasi informatif',
+              'Talent representatif yang mendukung'
+            ]
+          },
+          {
+            title: 'Aquaone',
+            img:client_12 ,
+            point: [
+              'Konsep video untuk penguatan identitas produk',
+              'Pengambilan gambar dengan kamera profesional',
+              'Drone untuk visual dinamis dan estetis',
+              'Editing dengan elemen kreatif dan narasi',
+              'Talent untuk memperkuat visualisasi'
+            ]
+          },
         ]
       }
     ]
-  },
+  },  
   {
     id: '4',
     serviceData: [
@@ -192,81 +235,16 @@ export const portofolioData = [
     ]
   },
   {
-    id: '2',
+    id: '3',
     serviceData: [
       {
-        title: 'Professional video <br/> company profile',
+        title: 'Jasa Ads',
         content: [
-          {
-            title: 'Heli Jateng',
-            img:client_3 ,
-            point: [
-              'Konsep kreatif video dan identitas merek',
-              'Pengambilan video profesional dengan kru ahli',
-              'Penggunaan drone untuk visual udara',
-              'Editing berkualitas tinggi dengan narasi profesional',
-              'Talent terbaik untuk memperkuat pesan'
-            ]
-          },
-          {
-            title: 'Pusat Aquatic',
-            img:client_6 ,
-            point: [
-              'Konsep video sesuai tema fasilitas',
-              'Pengambilan gambar profesional berkualitas tinggi',
-              'Visual udara estetis dengan drone',
-              'Editing detail dengan narasi menarik',
-              'Talent pendukung yang sesuai'
-            ]
-          },
-          {
-            title: 'Segara Alam Sinergi',
-            img:client_9 ,
-            point: [
-              'Konsep video yang menonjolkan nilai perusahaan',
-              'Pengambilan video sinematik berkualitas tinggi',
-              'Visual udara memukau dengan drone',
-              'Editing kreatif dengan narasi informatif',
-              'Talent representatif yang mendukung'
-            ]
-          },
-          {
-            title: 'Aquaone',
-            img:client_12 ,
-            point: [
-              'Konsep video untuk penguatan identitas produk',
-              'Pengambilan gambar dengan kamera profesional',
-              'Drone untuk visual dinamis dan estetis',
-              'Editing dengan elemen kreatif dan narasi',
-              'Talent untuk memperkuat visualisasi'
-            ]
-          },
-          {
-            title: 'Sate Cempe Manis',
-            img:client_13 ,
-            point: [
-              'Konsep visual yang menggugah selera',
-              'Pengambilan gambar profesional oleh tim ahli',
-              'Visual lokasi dengan sudut pandang drone',
-              'Editing dengan sentuhan kreatif dan narasi',
-              'Talent untuk mendukung kesan autentik'
-            ]
-          },
-          {
-            title: 'The Arena Mini Soccer',
-            img:client_18 ,
-            point: [
-              'Konsep yang menonjolkan keunggulan fasilitas',
-              'Pengambilan video dinamis dan sinematik',
-              'Visual udara menarik dengan drone',
-              'Editing kreatif dengan voice over menarik',
-              'Talent untuk memperkuat daya tarik video'
-            ]
-          }
+          // { img: port_img1 },
         ]
       }
     ]
-  },  
+  },
   {
     id: '9',
     serviceData: [
@@ -350,8 +328,8 @@ export const aboutData = [
     id: '2',
     statsData: [
       {title: 'Nilai Perusahaan', data: 'Visi', desc: "Kami membangun kepercayaan melalui transparansi dan kejujuran, terus berinovasi untuk mencapai hasil terbaik, dan meyakini bahwa kesuksesan klien adalah kesuksesan kami. ", img: objectImage},
-      {title: 'Visi', data: '95%', desc: "Mitra pemasaran digital terdepan yang mengubah bisnis dengan solusi kreatif dan berbasis data untuk keberlanjutan dan pertumbuhan jangka panjang", img: _3Dhand},
-      {title: 'Misi', data: '20%', desc: "Memberdayakan bisnis dengan solusi pemasaran inovatif sambil membangun kemitraan berbasis kepercayaan dan kesuksesan bersama untuk masa depan", img: _3Dsaving},
+      {title: 'Visi', data: '95%', desc: "Mitra pemasaran digital terdepan yang mengubah bisnis dengan solusi kreatif dan berbasis data untuk keberlanjutan dan pertumbuhan jangka panjang",},
+      {title: 'Misi', data: '20%', desc: "Memberdayakan bisnis dengan solusi pemasaran inovatif sambil membangun kemitraan berbasis kepercayaan dan kesuksesan bersama untuk masa depan",  },
     ]
   },
 ]
@@ -364,6 +342,21 @@ export const servicesData = [
     // subTitle: "Xedia Media Siap nge-backup Lo"
   },
   {
+    id: '8',
+    serviceData: [
+      {
+        title: 'Video Content Production',
+        content: [
+          {
+            // desc: "We produce high-quality, engaging videos that effectively convey your brand’s story and message, creating a lasting impact and deepening connections with your audience",
+            img: p_img7,
+            point: ['Create content ideas for 12 videos', ' no duration limit', 'Production & editing video with professional videographer']
+          }
+        ]
+      }
+    ]
+  },
+  {
     id: '2',
     serviceData: [
       {
@@ -373,21 +366,6 @@ export const servicesData = [
             // desc: "We develop in-depth company profiles that showcase your brand’s core values, mission, and vision in a way that captivates and builds lasting credibility among audiences",
             img: p_img1, 
             point: ['Director, Konsep video & Brand identity', 'Take video camera profesional & profesional videografer', 'Drone & profesional pilot drone', 'Editing with professional editor & Voice over', 'Talent']
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: '3',
-    serviceData: [
-      {
-        title: 'Jasa Ads',
-        content: [
-          {
-            // desc: "Our digital advertising strategies enhance your brand’s online presence by reaching target audiences effectively, delivering impactful ad campaigns with measurable results",
-            img: p_img2,
-            point: ['Minimum anggaran 1 jt', 'Consult target costumer & report', 'Duration start from 3 days', 'Ads in platform Instagram, Tiktok, Youtube, Facebook, and Snack Video']
           }
         ]
       }
@@ -455,15 +433,15 @@ export const servicesData = [
     ]
   },
   {
-    id: '8',
+    id: '3',
     serviceData: [
       {
-        title: 'Video Content Production',
+        title: 'Jasa Ads',
         content: [
           {
-            // desc: "We produce high-quality, engaging videos that effectively convey your brand’s story and message, creating a lasting impact and deepening connections with your audience",
-            img: p_img7,
-            point: ['Create content ideas for 12 videos', ' no duration limit', 'Production & editing video with professional videographer']
+            // desc: "Our digital advertising strategies enhance your brand’s online presence by reaching target audiences effectively, delivering impactful ad campaigns with measurable results",
+            img: p_img2,
+            point: ['Minimum anggaran 1 jt', 'Consult target costumer & report', 'Duration start from 3 days', 'Ads in platform Instagram, Tiktok, Youtube, Facebook, and Snack Video']
           }
         ]
       }

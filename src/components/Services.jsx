@@ -39,39 +39,47 @@ const Services = () => {
           <Title key={i} serviceHeader={serv.header} serviceTitle={serv.title} serviceSubTitle={serv.subTitle} />
         ))}
 
-        <div className=' grid grid-cols-5 gap-4 mb-8'>
+        <div className='grid grid-cols-5 gap-4 mb-8'>
           {servicesData.slice(1).map((serv, i) => (
             <button
-              key={i}
-              onClick={() => handleClick(serv)}
-              className={` text-[15px] py-4 rounded-2xl cursor-pointer transition-all duration-150 bg-purple-900 border-2 border-purple-600 text-white flex justify-center items-center gap-x-2 ${
-                selectedService.id === serv.id ? 'border-primaryBlue' : ''
-              }`}
-            >
-              {serv.serviceData.map((item, j) => (
-                <h2
+            key={serv.id}
+            onClick={() => handleClick(serv)}
+            className={`text-[15px] py-4 rounded-2xl cursor-pointer transition-all duration-150 text-white flex justify-center items-center gap-x-2 hover-two-color-gradient ${
+              selectedService.id === serv.id ? 'two-color-gradient border-none' : 'bg-fuchsia-900 border-fuchsia-600 opacity-100'
+            }`}
+          >
+            {serv.serviceData.map((item, j) => (
+              <h2
                 key={j}
                 className='font-medium flex justify-start items-center gap-x-2'
                 dangerouslySetInnerHTML={{ __html: item.title }}
               />
-              ))}
-            </button>
+            ))}
+          </button>
           ))}
         </div>
 
-        <div className='mt-10 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-8 '>
-          <div className={`  ${animate ? 'animate-fadeIn' : ''}`}>
+        <div className='mt-10 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-8'>
+          <div className={`${animate ? 'animate-fadeIn' : ''}`}>
             {selectedService.serviceData.map((item, i) => (
-              <img className='w-full h-full object-cover object-left rounded-2xl ' key={i} src={item.content[0].img} alt={item.title} />
+              <img
+                className='w-full h-full object-cover object-left rounded-2xl'
+                key={i}
+                src={item.content[0].img}
+                alt={item.title}
+              />
             ))}
           </div>
 
           {selectedService.serviceData.map((item, i) => (
-            <div key={i} className={`col-span-2 p-10 bg-blue-900 border-2 border-blue-600 rounded-2xl text-white ${animate ? 'animate-fadeIn' : ''}`}>
+            <div
+              key={i}
+              className={`col-span-2 p-10 bg-gradient-to-tl from-black via-indigo-950 to-black border-fuchsia-600 border-2  rounded-2xl text-white ${animate ? 'animate-fadeIn' : ''}`}
+            >
               <h2
-              className='font-bold tracking-wide lg:text-2xl'
-              dangerouslySetInnerHTML={{ __html: item.title }}
-            />
+                className='font-bold tracking-wide lg:text-2xl'
+                dangerouslySetInnerHTML={{ __html: item.title }}
+              />
               {item.content.map((contentItem, j) => (
                 <div key={j}>
                   <p className='text-white font-medium text-[12px] mt-4 mb-6'>{contentItem.desc}</p>

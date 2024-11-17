@@ -7,8 +7,8 @@ const Whatsapp = () => {
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <a href={whatsappURL} className='p-2 rounded-full bg-green-500 fixed bottom-4 right-4 text-white z-50'>
-      <FaWhatsapp className='text-xl'/>
+    <a href={whatsappURL} className='p-2 rounded-full bg-green-500 fixed bottom-4 right-4 text-white z-50 animate-bounce'>
+      <FaWhatsapp className='text-3xl'/>
     </a>
   );
 };

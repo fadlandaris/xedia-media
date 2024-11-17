@@ -5,16 +5,16 @@ import { footerData, navLinks } from '../constants/constants';
 const Footer = () => {
   return (
     <>
-      <main className={`w-full bg-black text-white ${styles.containerPadding}`}>
+      <main className={`w-full bg-gradient-to-tl from-black via-indigo-950 to-black text-white font-medium ${styles.containerPadding}`}>
         <div className='max-w-7xl mx-auto grid grid-cols-7 gap-x-16'>
           <div className='col-span-5'>
             {footerData.slice(0, 1).map((footer, i) => (
               <div key={i}>
-                <img src={footer.img} alt={footer.img} className='w-14' />
+                <img src={footer.img} alt={footer.img} className='w-20' />
                 {footer.contact.map((item, i) => (
-                  <a href={item.link || ''} className='flex justify-start items-center gap-x-2 mt-4' target={item.link ? '_blank' : ''} rel="noopener noreferrer">
-                    <item.icon className='text-[12px]'/>
-                    <p key={i} className={`text-[12px] ${item.id === '1' ? 'w-[60%]' : item.id === '3' ? '' : ''}`}>
+                  <a href={item.link || ''} className='flex justify-start items-start gap-x-2 mt-4' target={item.link ? '_blank' : ''} rel="noopener noreferrer">
+                    <item.icon className='text-lg'/>
+                    <p key={i} className={` ${item.id === '1' ? 'w-[70%]' : item.id === '3' ? '' : ''}`}>
                       {item.stat}
                     </p>
                   </a>
@@ -42,7 +42,7 @@ const Footer = () => {
                   <a
                     href={foot.link}
                     key={j}
-                    className={`${styles.footerText}`}
+                    className={`${styles.footerText} `}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
       </main>
 
-      <main className={`bg-blue-900 p-4 text-white text-[12px]`}>
+      <main className={`bg-black p-4 text-white text-[12px]`}>
         <div className='max-w-7xl mx-auto'>
           © 2024 Xedia Media, All rights reserved
         </div>

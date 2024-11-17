@@ -19,3 +19,11 @@
 .four-color-gradient {
   background: linear-gradient(to right, black, indigo, fuchsia, rgb(255, 145, 0));
 }
+
+.two-color-gradient {
+  background: linear-gradient(to right, indigo, blue);
+}
+
+.hover-two-color-gradient:hover {
+  background: linear-gradient(to right, indigo, blue);
+}

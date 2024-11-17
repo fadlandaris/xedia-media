@@ -32,7 +32,7 @@ const ProjectStats = ({ data, isFirst }) => {
         {/* <p className="text-xl md:text-5xl font-bold my-4">
           <CountUp end={parseFloat(data.data)} duration={20} suffix="%" />
         </p> */}
-        <p className='w-[65%] font-medium text-[14px]'>{data.desc}</p>
+        <p className={`${data.title === 'Nilai Perusahaan' ? 'w-[50%]' : ''} font-medium text-[14px]`}>{data.desc}</p>
       </div>
     </main>
   );

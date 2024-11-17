@@ -3,7 +3,7 @@ const styles = {
   colorGradient: "bg-gradient-to-tl  from-primaryPurple via-darkenBlue to-primaryPurple ",
   // from-primaryPurple via-darkenBlue to-primaryPurple
   // from-indigo-950 via-fuchsia-900 to-orange-600
-  footerText:"block mb-2 text-[12px]"
+  footerText:"block mb-2 "
 };
 
 

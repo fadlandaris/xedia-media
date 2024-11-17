@@ -81,16 +81,16 @@ const Portofolio = () => {
             <button
               key={i}
               onClick={() => handleClick(port)}
-              className={`text-[15px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150 bg-purple-900 border-2 border-purple-600 text-white flex justify-center items-center gap-x-2 ${
-                selectedService.id === port.id ? 'border-primaryBlue' : ''
+              className={`text-[15px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150  text-white flex justify-center items-center gap-x-2 hover-two-color-gradient ${
+                selectedService.id === port.id ? 'two-color-gradient border-no' : ' bg-fuchsia-900 border-fuchsia-600'
               }`}
             >
               {port.serviceData.map((item, j) => (
-                 <h2
-                 key={j}
-                 className='font-medium flex justify-start items-center gap-x-2'
-                 dangerouslySetInnerHTML={{ __html: item.title }}
-               />
+                <h2
+                  key={j}
+                  className='font-medium flex justify-start items-center gap-x-2'
+                  dangerouslySetInnerHTML={{ __html: item.title }}
+                />
               ))}
             </button>
           ))}

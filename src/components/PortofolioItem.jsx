@@ -5,7 +5,7 @@ const PortofolioItem = ({ data }) => {
   return (
     <div className='rounded-2xl w-full h-full shadow-md cursor-pointer hover:scale-105 transition-all duration-300'>
       {data.title ? (
-        <div className='border-2 border-blue-600  p-6 rounded-2xl bg-blue-900'>
+        <div className=' p-6 rounded-2xl bg-gradient-to-tl from-black via-indigo-950 to-black border-fuchsia-600 border-2 '>
           <div className='text-white'>
             <div className='flex justify-start gap-x-2 items-center mb-8'>
               <img src={data.img} className='w-10 h-10 rounded-full' />
