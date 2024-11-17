@@ -9,13 +9,13 @@ const ProjectStats = ({ data, isFirst }) => {
   // Conditional styling for the main container
   if (data.title === 'Nilai Perusahaan') {
     className = "bg-re-700 border-4 border-yellow-600 col-span-2";
-    imageClassName = "absolute -right-14 -bottom-36 w-72  ";
+    imageClassName = "absolute -right-14 -bottom-36 w-52 md:w-72  ";
   } else if (data.title === 'Visi') {
     className = "bg-ambr-700 text-w border-4 border-fuchsia-500";
-    imageClassName = "absolute -right-36 -bottom-10 w-80";
+    imageClassName = "opacity-0 sm:opacity-100 absolute -right-36 -bottom-10 w-80";
   } else if (data.title === 'Misi') {
     className = " bg-re-950 border-4 border-lime-500 text-white ";
-    imageClassName = "absolute w-60 -right-36 -bottom-20";
+    imageClassName = "opacity-0 sm:opacity-100 absolute w-60 -right-36 -bottom-20";
   }
 
   return (

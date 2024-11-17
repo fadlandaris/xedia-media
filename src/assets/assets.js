@@ -14,22 +14,23 @@ import p_img6 from './p_img_6.jpg'
 import p_img7 from './p_img_7.jpg' 
 import p_img8 from './p_img_8.jpg' 
 import p_img9 from './p_img_9.jpg' 
-import client_1 from './client_1.png';
-import client_2 from './client_2.png';
-import client_3 from './client_3.png';
+import p_img10 from './p_img_10.jpg' 
+import client_1 from './client_1.jpg';
+import client_2 from './client_2.jpg';
+import client_3 from './client_3.jpg';
 import client_4 from './client_4.jpg';
 import client_5 from './client_5.jpg';
-import client_6 from './client_6.png';
-import client_7 from './client_7.png';
-import client_8 from './client_8.png';
-import client_9 from './client_9.png';
-import client_10 from './client_10.png';
+import client_6 from './client_6.jpg';
+import client_7 from './client_7.jpg';
+import client_8 from './client_8.jpg';
+import client_9 from './client_9.jpg';
+import client_10 from './client_10.jpg';
 import client_11 from './client_11.jpg';
-import client_12 from './client_12.png';
+import client_12 from './client_12.jpg';
 import client_13 from './client_13.jpg';
-import client_14 from './client_14.png';
-import client_15 from './client_15.png';
-import client_16 from './client_16.png';
+import client_14 from './client_14.jpg';
+import client_15 from './client_15.jpg';
+import client_16 from './client_16.jpg';
 import client_17 from './client_17.jpg';
 import client_18 from './client_18.jpg';
 import port_img1 from './1.png';
@@ -70,6 +71,15 @@ import logo_3 from './logo_3.jpg'
 import logo_4 from './logo_4.png'
 import logo_5 from './logo_5.jpg'
 import logo_6 from './logo_6.png'
+import car_1 from './car_1.png'
+import car_2 from './car_2.png'
+import car_3 from './car_3.png'
+import car_4 from './car_4.png'
+import car_5 from './car_5.png'
+import car_6 from './car_6.png'
+import car_7 from './car_7.png'
+import car_8 from './car_8.png'
+import car_9 from './car_9.png'
 
 export {
   xediaLogo,
@@ -88,6 +98,7 @@ export {
   p_img7,
   p_img8,
   p_img9,
+  p_img10,
   port_img1,
   port_img2,
   port_img3,
@@ -144,4 +155,13 @@ export {
   logo_4,
   logo_5,
   logo_6,
+  car_1,
+  car_2,
+  car_3,
+  car_4,
+  car_5,
+  car_6,
+  car_7,
+  car_8,
+  car_9
 };

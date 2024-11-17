@@ -44,14 +44,16 @@ const Services = () => {
             <button
               key={i}
               onClick={() => handleClick(serv)}
-              className={`text-[10px] py-4 rounded-2xl cursor-pointer transition-all duration-150 bg-purple-900 border-2 border-purple-600 text-white flex justify-center items-center gap-x-2 ${
+              className={` text-[15px] py-4 rounded-2xl cursor-pointer transition-all duration-150 bg-purple-900 border-2 border-purple-600 text-white flex justify-center items-center gap-x-2 ${
                 selectedService.id === serv.id ? 'border-primaryBlue' : ''
               }`}
             >
               {serv.serviceData.map((item, j) => (
-                <h2 key={j} className='font-medium flex justify-start items-center gap-x-2'>
-                  {item.title}
-                </h2>
+                <h2
+                key={j}
+                className='font-medium flex justify-start items-center gap-x-2'
+                dangerouslySetInnerHTML={{ __html: item.title }}
+              />
               ))}
             </button>
           ))}
@@ -66,7 +68,10 @@ const Services = () => {
 
           {selectedService.serviceData.map((item, i) => (
             <div key={i} className={`col-span-2 p-10 bg-blue-900 border-2 border-blue-600 rounded-2xl text-white ${animate ? 'animate-fadeIn' : ''}`}>
-              <h2 className='font-bold tracking-wide lg:text-2xl '>{item.title}</h2>
+              <h2
+              className='font-bold tracking-wide lg:text-2xl'
+              dangerouslySetInnerHTML={{ __html: item.title }}
+            />
               {item.content.map((contentItem, j) => (
                 <div key={j}>
                   <p className='text-white font-medium text-[12px] mt-4 mb-6'>{contentItem.desc}</p>

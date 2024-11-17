@@ -64,13 +64,13 @@ const Clients = () => {
         <div className="relative group">
           <div className="flex text-2xl justify-between mb-4">
             <div
-              className="border-2 bg-blue-900 border-blue-600 rounded-full cursor-pointer"
+              className="border-2 bg-orange-900 border-orange-600 rounded-full cursor-pointer"
               onClick={handlePrev}
             >
               <MdOutlineArrowLeft />
             </div>
             <div
-              className="border-2 bg-purple-900 border-purple-600 rounded-full cursor-pointer"
+              className="border-2 bg-yellow-900 border-yellow-600 rounded-full cursor-pointer"
               onClick={handleNext}
             >
               <MdOutlineArrowRight />

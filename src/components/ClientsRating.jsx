@@ -16,16 +16,16 @@ const ClientsRating = ({ data, icon }) => {
   const className = getClassName(data.id);
 
   return (
-    <section className={`p-10 rounded-2xl group  ${className} cursor-pointer`}>
+    <section className={`p-10 rounded-2xl group ${className} cursor-pointer`}>
       {icon}
       <span className="font-bold text-4xl font-serif">"</span>
-      <p className="h-[170px] mb-10 md:mb-4 text-[14px] font-medium">
+      <p className="h-[130px] mb-10 md:mb-4 text-[14px] font-medium">
         {data.desc}
       </p>
       <div className="flex items-center gap-x-4">
-        {/* <div className="w-10 h-10 rounded-full bg-white"> */}
-          <img src={data.img} alt="" className="w-15 h-10 " />
-        {/* </div> */}
+        <div className="w-10 h-10 rounded-full overflow-hidden bg-white">
+          <img src={data.img} alt="" className="w-full h-full rounded-full" />
+        </div>
         <div>
           <h2 className="text-[14px] sm:text-[14px] font-bold tracking-wide">
             {data.name}

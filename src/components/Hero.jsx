@@ -10,6 +10,7 @@ import { xediaLogo } from '../assets/assets';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Autoplay } from 'swiper/modules';
+import { carImage } from '../constants/constants';
 
 const Hero = () => {
   useEffect(() => {
@@ -22,39 +23,31 @@ const Hero = () => {
 
   return (
     <main className={`w-full text-white ${styles.containerPadding} `} id='home'>
-      <div className='max-w-7xl mx-auto grid grid-cols-1 gap-y-8 md:grid-cols-3 gap-x-8'>
-        <div data-aos="fade-right" className=' col-span-2 rounded-2xl p-10 border-2 bg-gradient-to-tl from-black via-indigo-950 to-black  border-fuchsia-600 '>
+      <div className='max-w-7xl mx-auto grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-8'>
+        <div data-aos="fade-right" className='col-span-2 rounded-2xl p-10 border-2 bg-gradient-to-tl from-black via-indigo-950 to-black border-fuchsia-600'>
           {heroData.slice(0, 1).map((head, i) => (
             <div key={i}>
               {head.header.map((item, j) => (
                 <div key={j}>
                   <div
-                    className=' font-semibold py-1 px-2 inline-block rounded-full'
+                    className='font-semibold py-1 px-2 inline-block rounded-full'
                     data-aos='zoom-in'
                   >
                     <div className='flex items-center text-[12px]'>
-                      {/* <div className='p-1 rounded-full mr-2 bg-primaryBlue'>
-                        <FaPenNib className='text-white text-[10px]' />
-                      </div> */}
                       <img src={xediaLogo} className='w-40' />
-                      {/* <p className='text-text font-medium'>Xedia Media</p> */}
                     </div>
                   </div>
-                  <div className='flex items-center uppercase font-bold text-2xl gap-1 ' data-aos='fade-up'>
+                  <div className='md:flex items-center uppercase font-bold text-2xl gap-1' data-aos='fade-up'>
                     <h2 className='uppercase'>{item.title}</h2>
-                    <h2 className='my-4'>{item.subTitle}</h2>
-                    {/* <h2>{item.thirdTitle}</h2> */}
+                    <h2 className='md:my-4'>{item.subTitle}</h2>
                   </div>
                   <p className='mt-4 text-[15px]' data-aos='fade-up'>
                     {item.desc}
                   </p>
-                  <div>
-                  </div>
-
                   <div className='flex justify-between items-center gap-x-12 mt-8'>
                     <a
                       href='https://wa.me/6282328713200?text=Hello%20Xedia%20Media!'
-                      className={`px-6 py-3 rounded-2xl w-80 font-bold text-white text-[14px] flex items-center group bg-[#e4562e] `}
+                      className={`px-6 py-3 rounded-2xl w-72 font-bold text-white text-[14px] flex items-center group bg-[#e4562e]`}
                       data-aos='fade-up'
                     >
                       {item.button}
@@ -77,18 +70,11 @@ const Hero = () => {
             modules={[Autoplay]}
             className="h-full"
           >
-            <SwiperSlide>
-              <img src={headerImage} className='w-full h-full object-cover rounded-2xl' />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={headerImage} className='w-full h-full object-cover rounded-2xl' />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={headerImage} className='w-full h-full object-cover rounded-2xl' />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={headerImage} className='w-full h-full object-cover rounded-2xl' />
-            </SwiperSlide>
+            {carImage.map((item, i) => (
+              <SwiperSlide key={i} className="h-full">
+                <img src={item.img} className='w-full h-full object-cover rounded-2xl' alt={`Slide ${i}`} />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

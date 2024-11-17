@@ -69,7 +69,7 @@ const Navbar = () => {
                       e.preventDefault();
                       scrollToSection(link.link);
                     }}
-                    className={`text-white font-bold shadow-lg text-[13px] hover:text-black transition-all duration-300 ${
+                    className={`text-white font-bold text-[13px] hover:text-black transition-all duration-300 ${
                       activeSection === link.link ? 'underline underline-offset-4 decoration-primaryBlue text-primaryBlue' : ''
                     }`}
                   >

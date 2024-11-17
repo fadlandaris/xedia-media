@@ -1,14 +1,50 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { FaInstagram, FaLocationDot, FaPhone } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import { FaFacebookF, FaTiktok, FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter, FaLocationArrow } from "react-icons/fa6";
 import { RiServiceFill, RiHomeOfficeFill, RiToolsFill } from "react-icons/ri";
 import { MdEmojiPeople } from "react-icons/md";
 import { HiDocumentDuplicate } from "react-icons/hi";
-import { HiMiniUserGroup } from "react-icons/hi2";
+import { IoLocationSharp, IoMail } from "react-icons/io5";
+import { IoLogoWhatsapp } from "react-icons/io";
 
-import { _3Dhand, objectImage, xediaLogo, p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, p_img8, p_img9, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, if_1, if_2, if_3, if_4, client_1, client_2, client_3, client_4, client_6, client_5, client_7, client_8, client_9, client_10, client_13, client_11, client_12, client_14, client_15, client_16, client_17, client_18, web_1, web_2, web_3, sos_1, sos_2, sos_3, sos_4, sos_5, _3Dsaving, logo_1, logo_2, logo_3,logo_4, logo_5, logo_6 } from "../assets/assets";
+import { _3Dhand, objectImage, xediaLogo, p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, p_img8, p_img9, p_img10, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, if_1, if_2, if_3, if_4, client_1, client_2, client_3, client_4, client_6, client_5, client_7, client_8, client_9, client_10, client_13, client_11, client_12, client_14, client_15, client_16, client_17, client_18, web_1, web_2, web_3, sos_1, sos_2, sos_3, sos_4, sos_5, _3Dsaving, logo_1, logo_2, logo_3,logo_4, logo_5, logo_6, car_2, car_3, car_4, car_5, car_6, car_7, car_8, car_9 } from "../assets/assets";
 
+
+export const carImage = [
+  {
+    id: '2',
+    img: car_2
+  },
+  {
+    id: '1',
+    img: car_3
+  },
+  {
+    id: '1',
+    img: car_4
+  },
+  {
+    id: '1',
+    img: car_5
+  },
+  {
+    id: '1',
+    img: car_6
+  },
+  {
+    id: '1',
+    img: car_7
+  },
+  {
+    id: '1',
+    img: car_8
+  },
+  {
+    id: '1',
+    img: car_9
+  }
+]
 
 export const navLinks = [
   {
@@ -47,20 +83,14 @@ export const navLinks = [
     nav: "Location",
     icon: FaLocationArrow,
   },
-  // {
-  //   id: '6',
-  //   link: 'our-team',
-  //   nav: "👨🏻‍💻Our Team",
-  //   icon: HiMiniUserGroup,
-  // },
 ]
 
 export const portofolioData = [
   {
     id: '1',
     header: "Portfolio",
-    title: "✨We Shine in Delivering Creative and Design Services",
-    subTitle: "Crafting Impactful Solutions That Propel Your Success"
+    title: "Jangan Mau Ketinggalan sama brand-brand Kece ini !",
+    subTitle: "Bukti Solusi yang Bikin Brand Lo Jadi Juara :"
   },  
   {
     id: '8',
@@ -98,10 +128,7 @@ export const portofolioData = [
       {
         title: 'Jasa Ads',
         content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
+          // { img: port_img1 },
         ]
       }
     ]
@@ -164,29 +191,88 @@ export const portofolioData = [
       }
     ]
   },
-   {
+  {
     id: '2',
     serviceData: [
       {
-        title: 'Proffesional video company profile',
+        title: 'Professional video <br/> company profile',
         content: [
-          { img: port_img1 },
+          {
+            title: 'Heli Jateng',
+            img:client_3 ,
+            point: [
+              'Konsep kreatif video dan identitas merek',
+              'Pengambilan video profesional dengan kru ahli',
+              'Penggunaan drone untuk visual udara',
+              'Editing berkualitas tinggi dengan narasi profesional',
+              'Talent terbaik untuk memperkuat pesan'
+            ]
+          },
+          {
+            title: 'Pusat Aquatic',
+            img:client_6 ,
+            point: [
+              'Konsep video sesuai tema fasilitas',
+              'Pengambilan gambar profesional berkualitas tinggi',
+              'Visual udara estetis dengan drone',
+              'Editing detail dengan narasi menarik',
+              'Talent pendukung yang sesuai'
+            ]
+          },
+          {
+            title: 'Segara Alam Sinergi',
+            img:client_9 ,
+            point: [
+              'Konsep video yang menonjolkan nilai perusahaan',
+              'Pengambilan video sinematik berkualitas tinggi',
+              'Visual udara memukau dengan drone',
+              'Editing kreatif dengan narasi informatif',
+              'Talent representatif yang mendukung'
+            ]
+          },
+          {
+            title: 'Aquaone',
+            img:client_12 ,
+            point: [
+              'Konsep video untuk penguatan identitas produk',
+              'Pengambilan gambar dengan kamera profesional',
+              'Drone untuk visual dinamis dan estetis',
+              'Editing dengan elemen kreatif dan narasi',
+              'Talent untuk memperkuat visualisasi'
+            ]
+          },
+          {
+            title: 'Sate Cempe Manis',
+            img:client_13 ,
+            point: [
+              'Konsep visual yang menggugah selera',
+              'Pengambilan gambar profesional oleh tim ahli',
+              'Visual lokasi dengan sudut pandang drone',
+              'Editing dengan sentuhan kreatif dan narasi',
+              'Talent untuk mendukung kesan autentik'
+            ]
+          },
+          {
+            title: 'The Arena Mini Soccer',
+            img:client_18 ,
+            point: [
+              'Konsep yang menonjolkan keunggulan fasilitas',
+              'Pengambilan video dinamis dan sinematik',
+              'Visual udara menarik dengan drone',
+              'Editing kreatif dengan voice over menarik',
+              'Talent untuk memperkuat daya tarik video'
+            ]
+          }
         ]
       }
     ]
-  },
+  },  
   {
     id: '9',
     serviceData: [
       {
-        title: 'Jasa Publikasi Media/Berita Online',
+        title: 'Jasa Publikasi Media <br/> Berita Online',
         content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
-          { img: port_img5 },
-          { img: port_img6 },
         ]
       }
     ]
@@ -197,9 +283,6 @@ export const portofolioData = [
       {
         title: 'Pembuatan Rumah Digital',
         content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
         ]
       }
     ]
@@ -210,9 +293,7 @@ export const portofolioData = [
       {
         title: 'Admin Marketing',
         content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
+          // { img: port_img1 },
         ]
       }
     ]
@@ -262,7 +343,7 @@ export const aboutData = [
   {
     id: '1',
     header: "About Us",
-    title: "🏅Xedia Media jagonya bikin konten viral",
+    title: "Xedia Media Jagonya Bikin Konten Viral",
     subTitle: "& Bikin Penjualan atau Brand-mu Pecah Telor !"
   },
   {
@@ -279,14 +360,14 @@ export const servicesData = [
   {
     id: '1',
     header: "Services",
-    title: "🎨Layanan Kami",
-    subTitle: "Xedia Media siap Membantu"
+    title: "Layanan Kami ",
+    // subTitle: "Xedia Media Siap nge-backup Lo"
   },
   {
     id: '2',
     serviceData: [
       {
-        title: 'Profesional Video Company Profile',
+        title: 'Profesional Video <br/> Company Profile',
         content: [
           {
             // desc: "We develop in-depth company profiles that showcase your brand’s core values, mission, and vision in a way that captivates and builds lasting credibility among audiences",
@@ -392,7 +473,7 @@ export const servicesData = [
     id: '9',
     serviceData: [
       {
-        title: 'Jasa Publikasi Media/Berita Online ',
+        title: 'Jasa Publikasi Media <br/> Berita Online ',
         content: [
           {
             // desc: "e provide top-tier management services that connect your brand with the right market, crafting strategies that amplify your message and drive meaningful engagement with your audience",
@@ -413,7 +494,7 @@ export const servicesData = [
             // desc: "We produce high-quality, engaging videos that effectively convey your brand’s story and message, creating a lasting impact and deepening connections with your audience",
             img: p_img9,
             
-            point: ['CMarketplace (Shopee, Tokopedia, Tiktok shop)', 'Professional Filming', 'Akun Media Sosial (Instagram, Tiktok, Twitter, Facebook, Snack Video, Youtube)']
+            point: ['Marketplace (Shopee, Tokopedia, Tiktok shop)', 'Professional Filming', 'Akun Media Sosial (Instagram, Tiktok, Twitter, Facebook, Snack Video, Youtube)']
           }
         ]
       }
@@ -427,7 +508,7 @@ export const servicesData = [
         content: [
           {
             // desc: "We produce high-quality, engaging videos that effectively convey your brand’s story and message, creating a lasting impact and deepening connections with your audience",
-            img: p_img9,
+            img: p_img10,
             point: [' Active  respond pertanyaan yang masuk ke WA atau nomor admin', 'Bertanggung jawab memfollow up calon customer yang berpotensi hingga dealing/closing', 'Menyajikan monthly report dari project yang sudah selesai untuk bahan evaluasi di project berikutnya']
           }
         ]
@@ -440,8 +521,8 @@ export const clientsData = [
   {
     id: '1',
     header: "Clients",
-    title: "🗨️Apa Kata Mereka ?",
-    subTitle: "Ini Dia Kisah Sukses Klien Kami"
+    title: "Apa Komentar Mereka ?",
+    subTitle: "Nih, Cerita Sukses dari klien-klien Kita !"
   },
   {
     id: '2',
@@ -474,8 +555,8 @@ export const locationData = [
   {
     id: '1',
     header: "Location",
-    title: "🧭Let's Discover Our Vibrant Location",
-    subTitle: "Connect with us in the heart of the action"
+    title: "Gratis Konsultasi !",
+    subTitle: "Datang Langsung ke Kantor Kami"
   },
 ];
 
@@ -488,18 +569,20 @@ export const footerData = [
       {
         id: '1',
         stat: 'Jl. Pandan Biru III, Blok C No 03, Pandanaran Hills, Mangunharjo, Kec. Tembalang, Kota Semarang, Jawa Tengah 50272',
-        icon: FaLocationDot,
+        icon: IoLocationSharp,
       },
-      // {
-      //   id: '2',
-      //   stat: 'CP + 0872348972349',
-      //   icon: FaPhone,
-      // },
-      // {
-      //   id: '3',
-      //   stat: 'Xedia Media, 2024',
-      //   icon: FaPhone,
-      // },
+      {
+        id: '2',
+        stat: 'xedia.id@gmail.com',
+        icon: IoMail,
+        link: 'https://mail.google.com/mail/?view=cm&fs=1&to=xedia.id@gmail.com'
+      },
+      {
+        id: '3',
+        stat: '+62 823-2871-3200',
+        icon: IoLogoWhatsapp,
+        link: 'https://wa.me/6282328713200'
+      },
     ]
   },
   {
@@ -517,11 +600,12 @@ export const footerData = [
     id: '3',
     title: 'Reach Us',
     stat: [
-      { id: '1', icon: FaFacebookF, link: '', text:'Facebook' },
-      { id: '2', icon: FaInstagram, link: '', text:'Instagram' },
-      { id: '3', icon: FaTiktok, link: '', text:'Tiktok' },
+      { id: '1', icon: FaFacebookF, link: 'https://www.facebook.com/profile.php?id=61568549061377', text:'Facebook' },
+      { id: '2', icon: FaInstagram, link: 'https://www.instagram.com/xediamedia/', text:'Instagram' },
+      { id: '3', icon: FaTiktok, link: 'https://www.tiktok.com/@xediamedia?_t=8qfKRJvlZGT&_r=1', text:'Tiktok' },
       { id: '4', icon: FaYoutube, link: '', text:'Youtube' },
-      { id: '5', icon: FaSquareXTwitter, link:'', text:'X' },
+      { id: '5', icon: FaSquareXTwitter, link:'https://www.snackvideo.com/@xediamedia?kpn=KWAI_BULLDOG&share_device_id=3D579FFC-9F4F-440F-B9D0-FF835EB3A4FE&share_item_type=profile&share_id=3D579FFC-9F4F-440F-B9D0-FF835EB3A4FE_1729314071517&language=en-ID&share_uid=150001647117076&fid=150001647117076&cc=COPY_LINK&timestamp=1729314071517&authorKwaiId=xediamedia&translateKey=share_profile_default_word&shareBucket=in&pwa_source=share&shareCountry=IDN&shareBiz=profile&share_item_info=%40xediamedia&ept=v2&short_key=vjdi1uqb&PWA_share_N_string=20&request_source=1001&share_redirect_switch_choice=pwa', text:'Snack Video' },
+      { id: '6', icon: FaSquareXTwitter, link:'https://x.com/xediamedia', text:'X' },
     ]
   },
 ];
