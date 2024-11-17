@@ -7,7 +7,8 @@ import { MdEmojiPeople } from "react-icons/md";
 import { HiDocumentDuplicate } from "react-icons/hi";
 import { HiMiniUserGroup } from "react-icons/hi2";
 
-import {  p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, p_img8, p_img9, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, if_1, if_2, if_3, if_4, client_1, client_2, client_3, client_4, client_6, client_7, client_9, client_10, client_13, web_1, web_2, web_3, sos_1, sos_2, sos_3, sos_4, sos_5 } from "../assets/assets";
+import { _3Dhand, objectImage, xediaLogo, p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, p_img8, p_img9, port_img1, port_img2, port_img3, port_img4, port_img5, port_img6, port_img7, port_img8, port_img9, port_img10, port_img11, port_img12, port_img13, port_img14, port_img15, port_img16, port_img17, port_img18, port_img19, port_img20, if_1, if_2, if_3, if_4, client_1, client_2, client_3, client_4, client_6, client_5, client_7, client_8, client_9, client_10, client_13, client_11, client_12, client_14, client_15, client_16, client_17, client_18, web_1, web_2, web_3, sos_1, sos_2, sos_3, sos_4, sos_5, _3Dsaving, logo_1, logo_2, logo_3,logo_4, logo_5, logo_6 } from "../assets/assets";
+
 
 export const navLinks = [
   {
@@ -46,12 +47,12 @@ export const navLinks = [
     nav: "Location",
     icon: FaLocationArrow,
   },
-  {
-    id: '6',
-    link: 'our-team',
-    nav: "👨🏻‍💻Our Team",
-    icon: HiMiniUserGroup,
-  },
+  // {
+  //   id: '6',
+  //   link: 'our-team',
+  //   nav: "👨🏻‍💻Our Team",
+  //   icon: HiMiniUserGroup,
+  // },
 ]
 
 export const portofolioData = [
@@ -65,7 +66,7 @@ export const portofolioData = [
     id: '8',
     serviceData: [
       {
-        title: 'Video Production',
+        title: 'Video Content Production',
         content: [
           { img: port_img1 },
           { img: port_img2 },
@@ -95,7 +96,7 @@ export const portofolioData = [
     id: '3',
     serviceData: [
       {
-        title: 'Digital Advertising',
+        title: 'Jasa Ads',
         content: [
           { img: port_img1 },
           { img: port_img2 },
@@ -109,12 +110,14 @@ export const portofolioData = [
     id: '4',
     serviceData: [
       {
-        title: 'Logo Design Service',
+        title: 'Jasa Pembuatan Logo',
         content: [
-          { img: port_img1 },
-          { img: port_img2 },
-          { img: port_img3 },
-          { img: port_img4 },
+          { img: logo_1 },
+          { img: logo_2 },
+          { img: logo_3 },
+          { img: logo_4 },
+          { img: logo_5 },
+          { img: logo_6 },
         ]
       }
     ]
@@ -138,7 +141,7 @@ export const portofolioData = [
     id: '6',
     serviceData: [
       {
-        title: 'Website Development',
+        title: 'Jasa Pembuatan Web',
         content: [
           { img: web_1 },
           { img: web_2 },
@@ -151,7 +154,7 @@ export const portofolioData = [
     id: '7',
     serviceData: [
       {
-        title: 'Instagram Feeds Design',
+        title: 'Design Feeds',
         content: [
           { img: if_1 },
           { img: if_2 },
@@ -165,7 +168,7 @@ export const portofolioData = [
     id: '2',
     serviceData: [
       {
-        title: 'Company Profile Creation',
+        title: 'Proffesional video company profile',
         content: [
           { img: port_img1 },
         ]
@@ -176,7 +179,7 @@ export const portofolioData = [
     id: '9',
     serviceData: [
       {
-        title: 'Management Marketplace',
+        title: 'Jasa Publikasi Media/Berita Online',
         content: [
           { img: port_img1 },
           { img: port_img2 },
@@ -192,7 +195,20 @@ export const portofolioData = [
     id: '10',
     serviceData: [
       {
-        title: 'Online Media News',
+        title: 'Pembuatan Rumah Digital',
+        content: [
+          { img: port_img1 },
+          { img: port_img2 },
+          { img: port_img3 },
+        ]
+      }
+    ]
+  },
+  {
+    id: '11',
+    serviceData: [
+      {
+        title: 'Admin Marketing',
         content: [
           { img: port_img1 },
           { img: port_img2 },
@@ -211,10 +227,10 @@ export const heroData = [
     header: [
       {
         rating: "4.8/5.0",
-        title: "Make Your Content",
-        subTitle:"Feels Alive ",
-        thirdTitle: "With Us",
-        desc: "We create and design applications, website, or other digital product with professionalism",
+        title: "Bikin Brand lo jadi hidup bareng ",
+        subTitle:" Kita !",
+        // thirdTitle: "With Us",
+        desc: "Xedia Media didirikan untuk membantu bisnis menjangkau pelanggan mereka dengan lebih efektif melalui ide-ide digital yang inovatif. Kami memulai sebagai agensi kecil di Semarang dan berkembang dengan menawarkan layanan pemasaran yang komprehensif. Filosofi kami berfokus pada inovasi, kolaborasi, dan hasil yang terukur, memastikan setiap klien meraih kesuksesan melalui strategi digital yang efektif",
         button: "Contact Us",
         icon: IoIosArrowRoundForward,
         service: [
@@ -246,15 +262,15 @@ export const aboutData = [
   {
     id: '1',
     header: "About Us",
-    title: "🏅We are a Local leader in Creative Solutions and Design Services",
-    subTitle: "Innovative and Impactful Solutions Across the Industry"
+    title: "🏅Xedia Media jagonya bikin konten viral",
+    subTitle: "& Bikin Penjualan atau Brand-mu Pecah Telor !"
   },
   {
     id: '2',
     statsData: [
-      {title: 'Completion Rate', data: '100%', desc: "On-time project Delivery "},
-      {title: 'Client Statisfication', data: '95%', desc: "commitment to quality"},
-      {title: 'Cost Efficiency', data: '20%', desc: "Cost saving for clients "},
+      {title: 'Nilai Perusahaan', data: 'Visi', desc: "Kami membangun kepercayaan melalui transparansi dan kejujuran, terus berinovasi untuk mencapai hasil terbaik, dan meyakini bahwa kesuksesan klien adalah kesuksesan kami. ", img: objectImage},
+      {title: 'Visi', data: '95%', desc: "Mitra pemasaran digital terdepan yang mengubah bisnis dengan solusi kreatif dan berbasis data untuk keberlanjutan dan pertumbuhan jangka panjang", img: _3Dhand},
+      {title: 'Misi', data: '20%', desc: "Memberdayakan bisnis dengan solusi pemasaran inovatif sambil membangun kemitraan berbasis kepercayaan dan kesuksesan bersama untuk masa depan", img: _3Dsaving},
     ]
   },
 ]
@@ -263,19 +279,19 @@ export const servicesData = [
   {
     id: '1',
     header: "Services",
-    title: "🔥We Provide end-to-end EPC Services that",
-    subTitle: "Ensure the Success of Your Project"
+    title: "🎨Layanan Kami",
+    subTitle: "Xedia Media siap Membantu"
   },
   {
     id: '2',
     serviceData: [
       {
-        title: 'Company Profile Creation',
+        title: 'Profesional Video Company Profile',
         content: [
           {
-            desc: "We develop in-depth company profiles that showcase your brand’s core values, mission, and vision in a way that captivates and builds lasting credibility among audiences",
-            img: p_img1,
-            point: ['Brand Storytelling', 'Mission Articulation', 'Audience Connection']
+            // desc: "We develop in-depth company profiles that showcase your brand’s core values, mission, and vision in a way that captivates and builds lasting credibility among audiences",
+            img: p_img1, 
+            point: ['Director, Konsep video & Brand identity', 'Take video camera profesional & profesional videografer', 'Drone & profesional pilot drone', 'Editing with professional editor & Voice over', 'Talent']
           }
         ]
       }
@@ -285,12 +301,12 @@ export const servicesData = [
     id: '3',
     serviceData: [
       {
-        title: 'Digital Advertising',
+        title: 'Jasa Ads',
         content: [
           {
-            desc: "Our digital advertising strategies enhance your brand’s online presence by reaching target audiences effectively, delivering impactful ad campaigns with measurable results",
+            // desc: "Our digital advertising strategies enhance your brand’s online presence by reaching target audiences effectively, delivering impactful ad campaigns with measurable results",
             img: p_img2,
-            point: ['Targeted Outreach', 'Campaign Optimization', 'Performance Tracking']
+            point: ['Minimum anggaran 1 jt', 'Consult target costumer & report', 'Duration start from 3 days', 'Ads in platform Instagram, Tiktok, Youtube, Facebook, and Snack Video']
           }
         ]
       }
@@ -300,12 +316,12 @@ export const servicesData = [
     id: '4',
     serviceData: [
       {
-        title: 'Logo Design Service',
+        title: 'Jasa Pembuatan Logo',
         content: [
           {
-            desc: "We create distinctive, memorable logos that reflect your brand’s essence, ensuring a strong visual presence that resonates with audiences and builds brand recognition",
+            // desc: "We create distinctive, memorable logos that reflect your brand’s essence, ensuring a strong visual presence that resonates with audiences and builds brand recognition",
             img: p_img3,
-            point: ['Brand Identity', 'Creative Concepts', 'Visual Impact']
+            point: ['Logo guidelines ', 'Color guidelines', 'Typography', 'Logo application']
           }
         ]
       }
@@ -315,12 +331,12 @@ export const servicesData = [
     id: '5',
     serviceData: [
       {
-        title: 'Social Media Management',
+        title: 'Social Media Management ',
         content: [
           {
-            desc: "Our team manages your social media, fostering audience engagement and growth through customized content, consistent interaction, and insightful analytics reporting",
+            // desc: "Our team manages your social media, fostering audience engagement and growth through customized content, consistent interaction, and insightful analytics reporting",
             img: p_img4,
-            point: ['Content Strategy', 'Engagement Boosting', 'Analytics Insights']
+            point: ['Upload content', 'Copywriting (captions, hashtags, tags)', 'Story Sosmed dan Whatsapp everyday', 'Active respond customer on sosmed (DM, Comment, Repost) in platform Instagram, Tiktok, Youtube, Facebook, Twitter, and Snack Video']
           }
         ]
       }
@@ -330,12 +346,12 @@ export const servicesData = [
     id: '6',
     serviceData: [
       {
-        title: 'Website Development',
+        title: 'Jasa Pembuatan Web',
         content: [
           {
-            desc: "We design and build SEO-optimized, user-friendly websites that enhance client experiences and seamlessly convert visitors into loyal customers through effective functionality",
+            // desc: "We design and build SEO-optimized, user-friendly websites that enhance client experiences and seamlessly convert visitors into loyal customers through effective functionality",
             img: p_img5,
-            point: ['Responsive Design', 'SEO Integration', 'User-Centric Features']
+            point: ['Landing page or Website complex', 'Include domain & hosting', 'Free 1 year maintenance ']
           }
         ]
       }
@@ -345,12 +361,13 @@ export const servicesData = [
     id: '7',
     serviceData: [
       {
-        title: 'Instagram Feeds Design',
+        title: 'Design Feeds',
         content: [
           {
-            desc: "Our Instagram feed design service helps create visually appealing and cohesive profiles that reflect your brand identity, drawing in and engaging new followers effectively",
+            // desc: "Our Instagram feed design service helps create visually appealing and cohesive profiles that reflect your brand identity, drawing in and engaging new followers effectively",
             img: p_img6,
-            point: ['Aesthetic Consistency', 'Brand Voice', 'Follower Engagement']
+          
+            point: ['Photography product/service with professional photographer duration 3 hours', 'Create 12 feeds with professional photographer /designer']
           }
         ]
       }
@@ -360,12 +377,12 @@ export const servicesData = [
     id: '8',
     serviceData: [
       {
-        title: 'Video Production',
+        title: 'Video Content Production',
         content: [
           {
-            desc: "We produce high-quality, engaging videos that effectively convey your brand’s story and message, creating a lasting impact and deepening connections with your audience",
+            // desc: "We produce high-quality, engaging videos that effectively convey your brand’s story and message, creating a lasting impact and deepening connections with your audience",
             img: p_img7,
-            point: ['Concept Development', 'Professional Filming', 'Impactful Editing']
+            point: ['Create content ideas for 12 videos', ' no duration limit', 'Production & editing video with professional videographer']
           }
         ]
       }
@@ -375,12 +392,12 @@ export const servicesData = [
     id: '9',
     serviceData: [
       {
-        title: 'Management Marketplace',
+        title: 'Jasa Publikasi Media/Berita Online ',
         content: [
           {
-            desc: "e provide top-tier management services that connect your brand with the right market, crafting strategies that amplify your message and drive meaningful engagement with your audience",
+            // desc: "e provide top-tier management services that connect your brand with the right market, crafting strategies that amplify your message and drive meaningful engagement with your audience",
             img: p_img8,
-            point: ['Comprehensive Strategy Development', 'Professional Vendor & Product Management', 'Effective Branding & Market Positioning']
+            point: ['Media Pemberitaan Lokal atau Nasional',]
           }
         ]
       }
@@ -390,12 +407,28 @@ export const servicesData = [
     id: '10',
     serviceData: [
       {
-        title: 'Online Media News',
+        title: 'Pembuatan Rumah Digital',
         content: [
           {
-            desc: "We produce high-quality, engaging videos that effectively convey your brand’s story and message, creating a lasting impact and deepening connections with your audience",
+            // desc: "We produce high-quality, engaging videos that effectively convey your brand’s story and message, creating a lasting impact and deepening connections with your audience",
             img: p_img9,
-            point: ['Concept Development', 'Professional Filming', 'Impactful Editing']
+            
+            point: ['CMarketplace (Shopee, Tokopedia, Tiktok shop)', 'Professional Filming', 'Akun Media Sosial (Instagram, Tiktok, Twitter, Facebook, Snack Video, Youtube)']
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: '11',
+    serviceData: [
+      {
+        title: 'Admin Marketing',
+        content: [
+          {
+            // desc: "We produce high-quality, engaging videos that effectively convey your brand’s story and message, creating a lasting impact and deepening connections with your audience",
+            img: p_img9,
+            point: [' Active  respond pertanyaan yang masuk ke WA atau nomor admin', 'Bertanggung jawab memfollow up calon customer yang berpotensi hingga dealing/closing', 'Menyajikan monthly report dari project yang sudah selesai untuk bahan evaluasi di project berikutnya']
           }
         ]
       }
@@ -407,8 +440,8 @@ export const clientsData = [
   {
     id: '1',
     header: "Clients",
-    title: "⏳Delivering Exceptional Creative and Solutions Services",
-    subTitle: "to Create Impactful Solutions that Drive Success"
+    title: "🗨️Apa Kata Mereka ?",
+    subTitle: "Ini Dia Kisah Sukses Klien Kami"
   },
   {
     id: '2',
@@ -417,20 +450,20 @@ export const clientsData = [
       { id: 2, name: 'Ave Salon', img: client_2, desc: `Dengan strategi yang tepat dari Xedia, AVÉ kami mampu memperluas pasar kami di luar area lokal. Kini, salon kami dikenal Hair & Beauty Salon lebih luas, dan peluang bisnis baru terus bermunculan` },
       { id: 3, name: 'Heli Jateng', img: client_3, desc: `Xedia Media berhasil membantu kami HELITE memperkenalkan layanan helikopter kami dengan pendekatan digital yang tepat, menjangkau pasar yang sebelumnya sulit kami capai` },
       { id: 4, name: 'Galaxy Decoration', img: client_4, desc: `Melalui kerja sama dengan Xedia, kami GALAXY mendapatkan visibilitas yang lebih tinggi dalam industri dekorasi. Klien kami meningkat, terutama dari segmen acara besar` },
-      { id: 5, name: 'The Facial', desc: `Xedia Media membantu kami Amembangun branding yang kuat di media sosial, sehingga layanan kecantikan kami semakin dikenal luas oleh banyak orang` },
+      { id: 5, name: 'The Facial', img:client_5, desc: `Xedia Media membantu kami Amembangun branding yang kuat di media sosial, sehingga layanan kecantikan kami semakin dikenal luas oleh banyak orang` },
       { id: 6, name: 'Pusat Aquatic', img: client_6, desc: `Dengan strategi pemasaran digital dari Xedia, kami berhasil meningkatkan PUSAT penjualan keperluan aquarium serta memperkuat relasi dengan klien-klien baru` },
       { id: 7, name: 'United E-Motor Jateng & DIY', img: client_7, desc: `Berkat Xedia Media, kami bisa memperkenalkan produk motor listrik UNITED kami ke lebih banyak calon pelanggan, meningkatkan penjualan dan memperkuat posisi kami di pasar kendaraan ramah lingkungan` },
-      { id: 8, name: 'Reza Lunar Lighting', desc: `Xedia membantu kami memperluas LUNAR jangkauan pasar kami di sektor pencahayaan, dan hasilnya, kami mendapatkan banyak proyek baru dan memperkuat hubungan dengan klien lama` },
+      { id: 8, name: 'Reza Lunar Lighting', img:client_8, desc: `Xedia membantu kami memperluas LUNAR jangkauan pasar kami di sektor pencahayaan, dan hasilnya, kami mendapatkan banyak proyek baru dan memperkuat hubungan dengan klien lama` },
       { id: 9, name: 'PT Segara Alam Sinergi', img: client_9, desc: `Bekerja sama dengan Xedia Media telah membantu kami merancang strategi pemasaran yang efektif untuk memperkenalkan produk energi biomass kami ke pasar yang lebih luas, baik di tingkat lokal, nasional, maupun internasional` },
       { id: 10, name: 'Virenze Interior', img: client_10, desc: `Xedia Media membantu kami memperkuat citra merek di sektor desain interior. Berkat strategi pemasaran yang tepat, proyek kami kini lebih mudah ditemukan oleh klien potensial, dan permintaan untuk layanan kami meningkat secara signifikan` },
-      { id: 11, name: 'Satset Indonesia', desc: `Berkat dukungan dari Xedia, bisnis kami semakin dikenal di berbagai wilayah. Kami melihat peningkatan signifikan dalam jumlah pelanggan yang menggunakan layanan kebersihan kami, baik untuk rumah tangga maupun bisnis.` },
-      { id: 12, name: 'Aquaone', desc: `Xedia Media membantu kami dalam A UA membangun brand awareness di industri pipa, sehingga produk kami semakin dikenal dan diandalkan oleh para kontraktor dan perusahaan besar` },
-      { id: 13, name: 'Sate Cempe Manis', desc: `Berkat Xedia Media, branding Sate Cempe Manis naik kelas! Kehadiran kami di media sosial semakin kuat, dan pelanggan semakin banyak yang penasaran untuk mencoba kelezatan sate kami` },
-      { id: 14, name: 'Puma Production', desc: `Bekerja sama dengan Xedia Media benar-benar mengangkat citra kami sebagai event organizer. Dengan strategi branding mereka, kami berhasil menarik lebih banyak klien dan menjadikan setiap acara lebih berkesan serta profesional` },
-      { id: 15, name: 'Tiara Wedding Organizer', desc: `Xedia Media sangat memahami keunikan pernikahan tradisional. Mereka membantu kami menampilkan sisi elegan dan otentik dari budaya lokal, sehingga semakin banyak pasangan yang memilih kami untuk merayakan hari istimewa mereka` },
-      { id: 16, name: 'Ave Bridal', desc: `Dengan bantuan Xedia Media, Ave Bridal berhasil menarik lebih banyak calon pengantin. Desain konten yang fresh dan menarik membuat kami semakin dikenal sebagai penyedia gaun pernikahan yang elegan dan berkualitas` },
-      { id: 17, name: 'Marabunta', desc: `Xedia Media memberikan kami solusi branding yang sangat efektif, membuat restoran kami semakin dikenal sebagai salah satu destinasi kuliner ikonik. Peningkatan kunjungan dan reservasi semakin terasa sejak bekerja sama dengan mereka` },
-      { id: 18, name: 'The Arena Mini Soccer', desc: `Dengan dukungan Xedia Media, The Arena Mini Soccer kini semakin dikenal sebagai tempat favorit bagi komunitas sepak bola mini. Branding yang kuat dan konten menarik meningkatkan kunjungan dan pemesanan lapangan secara signifikan` },
+      { id: 11, name: 'Satset Indonesia', img: client_11, desc: `Berkat dukungan dari Xedia, bisnis kami semakin dikenal di berbagai wilayah. Kami melihat peningkatan signifikan dalam jumlah pelanggan yang menggunakan layanan kebersihan kami, baik untuk rumah tangga maupun bisnis.` },
+      { id: 12, name: 'Aquaone', img: client_12, desc: `Xedia Media membantu kami dalam A UA membangun brand awareness di industri pipa, sehingga produk kami semakin dikenal dan diandalkan oleh para kontraktor dan perusahaan besar` },
+      { id: 13, name: 'Sate Cempe Manis', img: client_13,  desc: `Berkat Xedia Media, branding Sate Cempe Manis naik kelas! Kehadiran kami di media sosial semakin kuat, dan pelanggan semakin banyak yang penasaran untuk mencoba kelezatan sate kami` },
+      { id: 14, name: 'Puma Production', img: client_14, desc: `Bekerja sama dengan Xedia Media benar-benar mengangkat citra kami sebagai event organizer. Dengan strategi branding mereka, kami berhasil menarik lebih banyak klien dan menjadikan setiap acara lebih berkesan serta profesional` },
+      { id: 15, name: 'Tiara Wedding Organizer', img: client_15, desc: `Xedia Media sangat memahami keunikan pernikahan tradisional. Mereka membantu kami menampilkan sisi elegan dan otentik dari budaya lokal, sehingga semakin banyak pasangan yang memilih kami untuk merayakan hari istimewa mereka` },
+      { id: 16, name: 'Ave Bridal',img: client_16, desc: `Dengan bantuan Xedia Media, Ave Bridal berhasil menarik lebih banyak calon pengantin. Desain konten yang fresh dan menarik membuat kami semakin dikenal sebagai penyedia gaun pernikahan yang elegan dan berkualitas` },
+      { id: 17, name: 'Marabunta', img: client_17, desc: `Xedia Media memberikan kami solusi branding yang sangat efektif, membuat restoran kami semakin dikenal sebagai salah satu destinasi kuliner ikonik. Peningkatan kunjungan dan reservasi semakin terasa sejak bekerja sama dengan mereka` },
+      { id: 18, name: 'The Arena Mini Soccer', img: client_18, desc: `Dengan dukungan Xedia Media, The Arena Mini Soccer kini semakin dikenal sebagai tempat favorit bagi komunitas sepak bola mini. Branding yang kuat dan konten menarik meningkatkan kunjungan dan pemesanan lapangan secara signifikan` },
     ]
   },
 ];
@@ -450,22 +483,28 @@ export const footerData = [
   {
     id: '1',
     title: "Xedia Media",
+    img: xediaLogo,
     contact: [
       {
         id: '1',
         stat: 'Jl. Pandan Biru III, Blok C No 03, Pandanaran Hills, Mangunharjo, Kec. Tembalang, Kota Semarang, Jawa Tengah 50272',
         icon: FaLocationDot,
       },
-      {
-        id: '2',
-        stat: 'CP + 0872348972349',
-        icon: FaPhone,
-      },
+      // {
+      //   id: '2',
+      //   stat: 'CP + 0872348972349',
+      //   icon: FaPhone,
+      // },
+      // {
+      //   id: '3',
+      //   stat: 'Xedia Media, 2024',
+      //   icon: FaPhone,
+      // },
     ]
   },
   {
     id: '2',
-    title: 'Navlinks',
+    title: 'Company',
     stat: [
       { id: '1', text: 'Home', link: 'home' },
       { id: '2', text: 'About', link: 'about-us' },
@@ -476,13 +515,13 @@ export const footerData = [
   },
   {
     id: '3',
-    title: 'Socmed',
+    title: 'Reach Us',
     stat: [
-      { id: '1', icon: FaFacebookF, link: '' },
-      { id: '2', icon: FaInstagram, link: '' },
-      { id: '3', icon: FaTiktok, link: '' },
-      { id: '4', icon: FaYoutube, link: '' },
-      { id: '5', icon: FaSquareXTwitter, link: '' },
+      { id: '1', icon: FaFacebookF, link: '', text:'Facebook' },
+      { id: '2', icon: FaInstagram, link: '', text:'Instagram' },
+      { id: '3', icon: FaTiktok, link: '', text:'Tiktok' },
+      { id: '4', icon: FaYoutube, link: '', text:'Youtube' },
+      { id: '5', icon: FaSquareXTwitter, link:'', text:'X' },
     ]
   },
 ];

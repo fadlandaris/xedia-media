@@ -3,7 +3,6 @@ import styles from '../styles';
 import Title from './Title';
 import { portofolioData } from '../constants/constants';
 import PortofolioItem from './PortofolioItem';
-import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 import LoadingSpinner from './LoadingSpinner';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -13,7 +12,6 @@ const Portofolio = () => {
   const [animate, setAnimate] = useState(false);
   const [itemsToShow, setItemsToShow] = useState(4);
   const [showSeeMore, setShowSeeMore] = useState(true);
-  const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false); // Add loading state
 
   useEffect(() => {
@@ -30,7 +28,6 @@ const Portofolio = () => {
     setAnimate(true);
     setItemsToShow(4);
     setShowSeeMore(true);
-    setIsOpen(false);
 
     // Simulate a delay to show the loading spinner
     setTimeout(() => {
@@ -79,49 +76,27 @@ const Portofolio = () => {
           />
         ))}
 
-        <div className='relative'>
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className='text-[12px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150 bg-purple-900 border-2 border-purple-600 text-white flex justify-center items-center gap-x-2'
-          >
-            {selectedService.serviceData.map((item, j) => (
-              <h2 key={j} className='font-medium flex justify-start items-center gap-x-2'>
-                {item.title}
-                {isOpen ? <IoMdArrowDropup className='text-lg' /> : <IoMdArrowDropdown className='text-lg' />}
-              </h2>
-            ))}
-          </button>
-          {isOpen && (
-            <div className='absolute z-10 mt-2 p-4 border-2  border-purple-600 bg-purple-900 rounded-2xl bg-opacity-95'>
-              <div className='py-1' role='menu' aria-orientation='vertical' aria-labelledby='options-menu'>
-                {portofolioData.slice(1, 10).map((port, i) => (
-                  <a
-                    key={i}
-                    onClick={() => handleClick(port)}
-                    className={`block px-4 py-2 text-[12px] text-text cursor-pointer hover:text-white duration-300 transition-all ${
-                      selectedService.id === port.id ? 'text-primaryBlue' : ''
-                    }`}
-                    role='menuitem'
-                  >
-                    {port.serviceData.map((item, j) => (
-                      <h2 key={j} className='font-medium'>{item.title}</h2>
-                    ))}
-                  </a>
-                ))}
-              </div>
-            </div>
-          )}
+        <div className='grid grid-cols-5 gap-4 mb-8'>
+          {portofolioData.slice(1).map((port, i) => (
+            <button
+              key={i}
+              onClick={() => handleClick(port)}
+              className={`text-[10px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150 bg-purple-900 border-2 border-purple-600 text-white flex justify-center items-center gap-x-2 ${
+                selectedService.id === port.id ? 'border-primaryBlue' : ''
+              }`}
+            >
+              {port.serviceData.map((item, j) => (
+                <h2 key={j} className='font-medium flex justify-start items-center gap-x-2'>
+                  {item.title}
+                </h2>
+              ))}
+            </button>
+          ))}
         </div>
 
         {isLoading ? (
           <div className='col-span-3 flex justify-center items-center h-full'>
-            <LoadingSpinner>
-              {showSeeMore && (
-                <button className={`font-semibold text-white bg-blue-900 border-blue-600 py-2 px-4 border-2 text-[12px] flex items-center justify-center gap-1 rounded-2xl ${animate ? 'animate-fadeIn' : ''}`} onClick={handleSeeMore}>
-                  View More <IoMdArrowDropdown className='text-lg'/>
-                </button>
-              )}
-            </LoadingSpinner>
+            <LoadingSpinner />
           </div>
         ) : (
           selectedService.serviceData.map((item, i) => (
@@ -138,7 +113,7 @@ const Portofolio = () => {
         {!isLoading && showSeeMore && (
           <div className='text-center mt-8'>
             <button className={`font-semibold mx-auto text-white bg-blue-900 border-blue-600 py-2 px-4 border-2 text-[10px] flex items-center justify-center gap-1 rounded-2xl ${animate ? 'animate-fadeIn' : ''}`} onClick={handleSeeMore}>
-              View More 
+              View More
             </button>
           </div>
         )}

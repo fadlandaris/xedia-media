@@ -15,13 +15,13 @@ const Title = ({ aboutHeader, aboutTitle, aboutSubTitle, serviceHeader, serviceT
 
   return (
     <div className='' data-aos="fade-up">
-      <p className="text-white uppercase font-medium border-2 inline-block px-4 py-1 rounded-md bg-blue-900 border-blue-600 text-[10px]">{aboutHeader}{serviceHeader}{clientsHeader}{portofolioHeader}{locationHeader}</p>
-      <div className="text-2xl lg:text-4xl mt-4 mb-12">
+      <p className="text-white uppercase inline-block px-4 py-1 rounded-md font-bold bg-rose-600 text-[10px]">{aboutHeader}{serviceHeader}{clientsHeader}{portofolioHeader}{locationHeader}</p>
+      <div className="text-2xl lg:text-4xl mt-4 mb-8">
         <h2 className={`font-bold text-white`}>
         {/* ${serviceTitle || portofolioTitle  ? 'text-lightBlack' : 'text-white'} */}
           {aboutTitle}{serviceTitle}{clientsTitle}{portofolioTitle}{locationTitle}
         </h2>
-        <h2 className={`font-bold text-text `}>
+        <h2 className={`font-bold text-white text-2xl `}>
         {/* ${serviceSubTitle || portofolioSubTitle  ? 'text-lightBlack' : 'text-text'} */}
           {aboutSubTitle}{serviceSubTitle}{clientsSubTitle}{portofolioSubTitle}{locationSubTitle}
         </h2>

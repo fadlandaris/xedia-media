@@ -9,10 +9,10 @@ import Location from '../components/Location'
 import Footer from '../components/Footer'
 import styles from '../styles'
 
-
 const Home = () => {
   return (
-    <main className={` ${styles.colorGradient}`}>
+    <main className={`pt-16 bg-black`}>
+      {/* ${styles.colorGradient} */}
       <Navbar/>
       <Hero/>
       <About />

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Title from './Title';
 import { clientsData } from '../constants/constants';
 import styles from '../styles';
@@ -11,7 +11,7 @@ import { Navigation } from 'swiper/modules';
 import { MdOutlineArrowRight, MdOutlineArrowLeft } from "react-icons/md";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { Graphic } from '../assets/assets'; // Replace with your background image path
 
 const Clients = () => {
   useEffect(() => {
@@ -37,19 +37,43 @@ const Clients = () => {
   };
 
   return (
-    <main className={`w-full  text-white ${styles.containerPadding} `} id='our-clients'>
-      <div className='max-w-7xl mx-auto' data-aos="fade-up">
+    <main
+      className={`w-full text-white ${styles.containerPadding} relative`}
+      id="our-clients"
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black opacity-90 z-10"></div>
+
+      {/* Background Image */}
+      <img
+        src={Graphic} 
+        alt="Background Graphic"
+        className="w-full h-full object-cover absolute inset-0 z-0"
+      />
+
+      <div className="max-w-7xl mx-auto relative z-20" data-aos="fade-up">
         {clientsData.slice(0, 1).map((cli, i) => (
-          <Title key={i} clientsHeader={cli.header} clientsTitle={cli.title} clientsSubTitle={cli.subTitle} />
+          <Title
+            key={i}
+            clientsHeader={cli.header}
+            clientsTitle={cli.title}
+            clientsSubTitle={cli.subTitle}
+          />
         ))}
 
-        <div className='relative group '>
-          <div className='flex text-2xl justify-between mb-4'>
-            <div className='border-2 bg-blue-900 border-blue-600 rounded-full cursor-pointer ' onClick={handlePrev}>
+        <div className="relative group">
+          <div className="flex text-2xl justify-between mb-4">
+            <div
+              className="border-2 bg-blue-900 border-blue-600 rounded-full cursor-pointer"
+              onClick={handlePrev}
+            >
               <MdOutlineArrowLeft />
             </div>
-            <div className='border-2 bg-purple-900 border-purple-600 rounded-full cursor-pointer' onClick={handleNext}>
-              <MdOutlineArrowRight/>
+            <div
+              className="border-2 bg-purple-900 border-purple-600 rounded-full cursor-pointer"
+              onClick={handleNext}
+            >
+              <MdOutlineArrowRight />
             </div>
           </div>
 
@@ -79,18 +103,21 @@ const Clients = () => {
             className="mySwiper"
           >
             {clientsData.slice(1, 2).map((clie, i) => (
-              <div key={i} >
+              <div key={i}>
                 {clie.statsData.map((item, i) => (
                   <SwiperSlide key={i}>
-                    <ClientsRating data={item} icon={
-                      <div className='flex text-xl text-yellow-400 mb-6'>
-                        <RiStarSFill />
-                        <RiStarSFill />
-                        <RiStarSFill />
-                        <RiStarSFill />
-                        <RiStarSFill />
-                      </div>
-                    } />
+                    <ClientsRating
+                      data={item}
+                      icon={
+                        <div className="flex text-xl text-yellow-400 mb-6">
+                          <RiStarSFill />
+                          <RiStarSFill />
+                          <RiStarSFill />
+                          <RiStarSFill />
+                          <RiStarSFill />
+                        </div>
+                      }
+                    />
                   </SwiperSlide>
                 ))}
               </div>

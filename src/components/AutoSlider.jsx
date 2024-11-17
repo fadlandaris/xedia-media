@@ -34,8 +34,8 @@ const AutoSlider = ({ items }) => {
         {[...items, ...items].map((serv, i) => (
           <div key={i} className=''>
             <div className='flex justify-start items-start text-[10px] font-medium  w-[120px]  '>
-              <div className='p-1 bg-primaryBlue rounded-full mr-2 scale-75'>
-                <FaCheck className='text-white' />
+              <div className='p-1 bg-lime-400 rounded-full mr-2 scale-75'>
+                <FaCheck className='text-black' />
               </div>
               {serv.serv}
             </div>

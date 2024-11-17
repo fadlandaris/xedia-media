@@ -3,15 +3,12 @@ import { servicesData } from '../constants/constants';
 import Title from './Title';
 import Points from './Points';
 import styles from '../styles';
-import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState(servicesData[1]);
   const [animate, setAnimate] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -24,7 +21,6 @@ const Services = () => {
   const handleClick = (service) => {
     setSelectedService(service);
     setAnimate(true);
-    setIsOpen(false);
   };
 
   useEffect(() => {
@@ -38,49 +34,27 @@ const Services = () => {
 
   return (
     <main className={`relative w-full ${styles.containerPadding} `} id='our-services'>
-      {/* <img src={Graphic} alt="" className='absolute -left-4 -top-7' /> */}
       <div className='max-w-7xl mx-auto' data-aos="fade-up">
         {servicesData.slice(0, 1).map((serv, i) => (
           <Title key={i} serviceHeader={serv.header} serviceTitle={serv.title} serviceSubTitle={serv.subTitle} />
         ))}
 
-        <div>
-          <div className='relative '>
+        <div className=' grid grid-cols-5 gap-4 mb-8'>
+          {servicesData.slice(1).map((serv, i) => (
             <button
-              onClick={() => setIsOpen(!isOpen)}
-              className='text-[12px] py-4 px-4 rounded-2xl cursor-pointer transition-all duration-150 bg-purple-900 border-2 border-purple-600 text-white flex justify-center items-center gap-x-2'
+              key={i}
+              onClick={() => handleClick(serv)}
+              className={`text-[10px] py-4 rounded-2xl cursor-pointer transition-all duration-150 bg-purple-900 border-2 border-purple-600 text-white flex justify-center items-center gap-x-2 ${
+                selectedService.id === serv.id ? 'border-primaryBlue' : ''
+              }`}
             >
-              {selectedService.serviceData.map((item, j) => (
+              {serv.serviceData.map((item, j) => (
                 <h2 key={j} className='font-medium flex justify-start items-center gap-x-2'>
                   {item.title}
-                  {isOpen ? <IoMdArrowDropup className='text-lg' /> : <IoMdArrowDropdown className='text-lg' />}
                 </h2>
               ))}
             </button>
-            {isOpen && (
-              <div className='absolute z-10 mt-2 p-4 border-2  border-purple-600 bg-purple-900 bg-opacity-95 rounded-2xl'>
-                <div className='py-1' role='menu' aria-orientation='vertical' aria-labelledby='options-menu'>
-                  {servicesData.slice(1, 10).map((serv, i) => (
-                    <a
-                      key={i}
-                      onClick={() => handleClick(serv)}
-                      className={`block px-4 py-2 text-[12px] text-text cursor-pointer hover:text-white duration-300 transition-all ${
-                        selectedService.id === serv.id ? 'text-primaryBlue' : ''
-                      }`}
-                      role='menuitem'
-                    >
-                      {serv.serviceData.map((item, j) => (
-                        <h2 key={j} className='font-medium'>{item.title}</h2>
-                      ))}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            )}
-        </div>
-        
-
-          
+          ))}
         </div>
 
         <div className='mt-10 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-8 '>
@@ -95,7 +69,7 @@ const Services = () => {
               <h2 className='font-bold tracking-wide lg:text-2xl '>{item.title}</h2>
               {item.content.map((contentItem, j) => (
                 <div key={j}>
-                  <p className='text-white font-medium w-[80%] text-[14px] mt-4 mb-6'>{contentItem.desc}</p>
+                  <p className='text-white font-medium text-[12px] mt-4 mb-6'>{contentItem.desc}</p>
                   <Points points={contentItem.point} />
                 </div>
               ))}
