@@ -65,13 +65,13 @@ const Clients = () => {
         {/* <div className="absolute inset-0 top-1/2 bottom-1/2 -translate-y-1/2 z-50"> */}
         {/* <div className="flex text-2xl justify-between mb-4"> */}
           <div
-            className=" absolute z-50  top-1/2 -translate-y-1/2 -left-10 bg-lime-400 text-black  rounded-full cursor-pointer"
+            className=" absolute z-50 -left-6  top-1/2 -translate-y-1/2 md:-left-10 bg-lime-400 text-black  rounded-full cursor-pointer"
             onClick={handlePrev}
           >
             <MdOutlineArrowLeft className='text-xl'/>
           </div>
           <div
-            className=" absolute z-50 -right-10 top-1/2 -translate-y-1/2 text-black bg-lime-400 rounded-full cursor-pointer"
+            className=" absolute z-50 -right-6 md:-right-10 top-1/2 -translate-y-1/2 text-black bg-lime-400 rounded-full cursor-pointer"
             onClick={handleNext}
           >
             <MdOutlineArrowRight className='text-xl' />

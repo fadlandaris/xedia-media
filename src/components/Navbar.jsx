@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`w-full py-4 px-8 md:px-20 shadow-sm fixed top-0 z-50 transition-transform duration-500 four-color-gradient`}
+        className={`w-full py-2 sm:py-4 px-8 md:px-20 shadow-sm fixed top-0 z-50 transition-transform duration-500 four-color-gradient`}
       >
         <div className="max-w-7xl mx-auto relative">
           <div className="flex justify-between items-center">

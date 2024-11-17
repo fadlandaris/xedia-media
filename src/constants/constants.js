@@ -290,7 +290,7 @@ export const heroData = [
         subTitle:" Kita !",
         // thirdTitle: "With Us",
         desc: "Xedia Media didirikan untuk membantu bisnis menjangkau pelanggan mereka dengan lebih efektif melalui ide-ide digital yang inovatif. Kami memulai sebagai agensi kecil di Semarang dan berkembang dengan menawarkan layanan pemasaran yang komprehensif. Filosofi kami berfokus pada inovasi, kolaborasi, dan hasil yang terukur, memastikan setiap klien meraih kesuksesan melalui strategi digital yang efektif",
-        button: "Contact Us",
+        button: "Contact",
         icon: IoIosArrowRoundForward,
         service: [
           {serv: "Company Profile Creation"},

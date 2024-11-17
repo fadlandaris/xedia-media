@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <>
       <main className={`w-full bg-gradient-to-tl from-black via-indigo-950 to-black text-white font-medium ${styles.containerPadding}`}>
-        <div className='max-w-7xl mx-auto grid grid-cols-7 gap-x-16'>
-          <div className='col-span-5'>
+        <div className='max-w-7xl mx-auto grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-16'>
+          <div className='col-span-2'>
             {footerData.slice(0, 1).map((footer, i) => (
               <div key={i}>
                 <img src={footer.img} alt={footer.img} className='w-20' />
@@ -23,35 +23,43 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="col-span-1">
-            {footerData.slice(1, 2).map((item, i) => (
-              <div key={i}>
-                <h2 className='text-md font-bold mb-6'>{item.title}</h2>
-                {item.stat.map((foot, j) => (
-                  <a href={`#${foot.link}`} key={j} className={`${styles.footerText}`}>{foot.text}</a>
+          <div className=''>
+            <div className='grid grid-cols-1 gap-y-8 sm:grid-cols-2 '>
+              <div className="col-span-1">
+                {footerData.slice(1, 2).map((item, i) => (
+                  <div key={i}>
+                    <h2 className='text-md font-bold mb-6'>{item.title}</h2>
+                    {item.stat.map((foot, j) => (
+                      <a href={`#${foot.link}`} key={j} className={`${styles.footerText}`}>{foot.text}</a>
+                    ))}
+                  </div>
                 ))}
               </div>
-            ))}
-          </div>
 
-          <div className="col-span-1">
-            {footerData.slice(2, 3).map((item, i) => (
-              <div key={i}>
-                <h2 className='text-md font-bold mb-6'>{item.title}</h2>
-                {item.stat.map((foot, j) => (
-                  <a
-                    href={foot.link}
-                    key={j}
-                    className={`${styles.footerText} `}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {foot.text}
-                  </a>
+              <div className="col-span-1 ">
+                {footerData.slice(2, 3).map((item, i) => (
+                  <div key={i} className=''>
+                    <h2 className='text-md font-bold mb-6'>{item.title}</h2>
+                    {item.stat.map((foot, j) => (
+                      <a
+                        href={foot.link}
+                        key={j}
+                        className={`${styles.footerText} `}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {foot.text}
+                      </a>
+                    ))}
+                  </div>
                 ))}
               </div>
-            ))}
+            </div>
           </div>
+          
+          
+
+
         </div>
       </main>
 

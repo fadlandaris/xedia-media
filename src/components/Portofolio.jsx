@@ -76,7 +76,7 @@ const Portofolio = () => {
           />
         ))}
 
-        <div className='grid grid-cols-5 gap-4 mb-8'>
+        <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-8'>
           {portofolioData.slice(1).map((port, i) => (
             <button
               key={i}
